@@ -14,8 +14,8 @@ const Navbar = () => {
   };
   return (
     <>
-      <section className="w-full h-full flex items-center justify-between px-5 sm:px-10 py-5">
-        <section className="w-full h-full flex items-center justify-start gap-5 sm:gap-10">
+      <section className="w-full h-full flex items-center justify-between px-0 xl:px-5 py-5">
+        <section className="w-full h-full flex items-center justify-start gap-5 sm:gap-10 xl:gap-20">
           <div className="w-20 h-10">
             <img
               src={logo}
@@ -66,7 +66,7 @@ const Navbar = () => {
             </Link>
           </ul>
         </section>
-        <section className="w-full h-full flex items-center justify-end gap-5 sm:gap-10">
+        <section className="w-full h-full hidden md:flex items-center justify-end gap-10">
           <form className="flex items-center bg-white-100 px-3 py-2 gap-2">
             <AiOutlineSearch className="text-light-gray" />
             <input
