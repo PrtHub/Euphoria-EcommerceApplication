@@ -5,20 +5,27 @@ import {
   Hero,
   MenCategories,
   NewArrivals,
+  SEO,
   Shopping,
 } from "../components";
 
 const Shop = () => {
   return (
-    <main>
-      <Hero />
-      <Deals />
-      <NewArrivals />
-      <BigSavingZone />
-      <Shopping />
-      <MenCategories />
-      <FemaleCategories />
-    </main>
+    <>
+      <SEO
+        title="Online Shopping for Men, Women & Kids Fashion - Euphoria"
+        desc="Online Shopping for Men, Women & Kids Fashion with exclusive deals"
+      />
+      <main className="w-full h-full">
+        <Hero />
+        <Deals />
+        <NewArrivals />
+        <BigSavingZone />
+        <Shopping />
+        <MenCategories />
+        <FemaleCategories />
+      </main>
+    </>
   );
 };
 
