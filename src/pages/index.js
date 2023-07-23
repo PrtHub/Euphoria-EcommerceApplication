@@ -7,5 +7,6 @@ import Cart from "./Cart";
 import Combos from "./Combos";
 import Success from "./Success";
 import Favorite from "./Favorite";
+import Products from "./Products";
 
-export { Shop, Men, Product, Joggers, Cart, Combos, Women, Success, Favorite };
+export { Shop, Men, Product, Joggers, Cart, Combos, Women, Success, Favorite, Products };

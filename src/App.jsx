@@ -1,15 +1,16 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import {
+  // Combos,
+  // Joggers,
+  // Men,
+  // Women,
   Cart,
-  Combos,
   Favorite,
-  Joggers,
-  Men,
   Product,
+  Products,
   Shop,
   Success,
-  Women,
 } from "./pages";
 import { Footer, Navbar } from "./components";
 import { ToastContainer } from "react-toastify";
@@ -23,10 +24,11 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Shop />} />
-          <Route path="/men" element={<Men />} />
-          <Route path="/women" element={<Women />} />
-          <Route path="/combos" element={<Combos />} />
-          <Route path="/joggers" element={<Joggers />} />
+          {/* <Route path="/products/men" element={<Men />} />
+          <Route path="/products/women" element={<Women />} />
+          <Route path="/products/combos" element={<Combos />} />
+          <Route path="/products/joggers" element={<Joggers />} /> */}
+          <Route path="/products/:category" element={<Products />} />
           <Route path="/product/:id" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/favorite" element={<Favorite />} />

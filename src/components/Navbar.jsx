@@ -35,7 +35,7 @@ const Navbar = () => {
               <li>Shop</li>
             </Link>
             <Link
-              to="/men"
+              to="/products/men"
               className={`${
                 locationRoute("/men") ? "text-black-100 font-semibold" : ""
               }`}
@@ -43,7 +43,7 @@ const Navbar = () => {
               <li>Men</li>
             </Link>
             <Link
-              to="/women"
+              to="/products/women"
               className={`${
                 locationRoute("/women") ? "text-black-100 font-semibold" : ""
               }`}
@@ -51,7 +51,7 @@ const Navbar = () => {
               <li>Women</li>
             </Link>
             <Link
-              to="/combos"
+              to="/products/combos"
               className={`${
                 locationRoute("/combos") ? "text-black-100 font-semibold" : ""
               }`}
@@ -59,7 +59,7 @@ const Navbar = () => {
               <li>Combos</li>
             </Link>
             <Link
-              to="/joggers"
+              to="/products/joggers"
               className={`${
                 locationRoute("/joggers") ? "text-black-100 font-semibold" : ""
               }`}
