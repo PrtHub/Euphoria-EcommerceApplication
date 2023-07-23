@@ -1,9 +1,16 @@
-
+import { SEO } from "../components";
 
 const Men = () => {
   return (
-    <div>Men</div>
-  )
-}
+    <>
+      <SEO
+        title="Men Shopping Online - Shop for Men Clothings"
+        desc="Men Shopping Online - Shop for Men Clothings"
+      />
 
-export default Men
+      <section>Men</section>
+    </>
+  );
+};
+
+export default Men;

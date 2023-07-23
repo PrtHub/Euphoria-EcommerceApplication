@@ -9,7 +9,7 @@ import MenCategories from "./shop/MenCategories";
 import NewArrivals from "./shop/NewArrivals";
 import Shopping from "./shop/Shopping";
 
-import SEO from "./SEO/SEO";
+import { SEO } from "./SEO/SEO";
 
 export {
   Navbar,

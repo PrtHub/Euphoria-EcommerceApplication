@@ -1,8 +1,16 @@
+import { SEO } from "../components"
 
 
 const Cart = () => {
   return (
-    <div>Cart</div>
+    <>
+      <SEO
+        title="Shopping Bag"
+        desc="Men Shopping Online - Shop for Men Clothings"
+      />
+
+      <section>Men</section>
+    </>
   )
 }
 

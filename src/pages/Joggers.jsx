@@ -1,8 +1,16 @@
+import { SEO } from "../components"
 
 
 const Joggers = () => {
   return (
-    <div>Joggers</div>
+    <>
+    <SEO
+      title="Joggers Shopping Online - Shop for Joggers"
+      desc="Men Shopping Online - Shop for Men Clothings"
+    />
+
+    <section>Men</section>
+  </>
   )
 }
 
