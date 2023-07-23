@@ -11,7 +11,8 @@ export default {
         'dark-violet': '#8A33FD',
         'black-100': '#3C4242',
         'light-gray': '#807D7E',
-        'dark-white': '#BEBCBD'
+        'dark-white': '#BEBCBD',
+        'white-100': '#F6F6F6'
       }
     },
   },

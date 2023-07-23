@@ -3,6 +3,7 @@ import "./App.css";
 import {
   Cart,
   Combos,
+  Favorite,
   Joggers,
   Men,
   Product,
@@ -13,6 +14,7 @@ import {
 import { Footer, Navbar } from "./components";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 
 const App = () => {
   return (
@@ -27,6 +29,7 @@ const App = () => {
           <Route path="/joggers" element={<Joggers />} />
           <Route path="/product/:id" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/favorite" element={<Favorite />} />
           <Route path="/success" element={<Success />} />
         </Routes>
         <Footer />
