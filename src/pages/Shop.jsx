@@ -1,12 +1,11 @@
 import {
   BigSavingZone,
-  Deals,
   FemaleCategories,
   Hero,
   MenCategories,
   NewArrivals,
   SEO,
-  Shopping,
+  LimeLight,
 } from "../components";
 
 const Shop = () => {
@@ -18,12 +17,11 @@ const Shop = () => {
       />
       <main className="w-full h-full">
         <Hero />
-        {/* <Deals /> */}
         <NewArrivals />
         <BigSavingZone />
-        <Shopping />
         <MenCategories />
         <FemaleCategories />
+        <LimeLight />
       </main>
     </>
   );

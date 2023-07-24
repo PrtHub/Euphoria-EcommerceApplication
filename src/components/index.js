@@ -7,7 +7,7 @@ import FemaleCategories from "./shop/FemaleCategories";
 import Hero from "./shop/Hero";
 import MenCategories from "./shop/MenCategories";
 import NewArrivals from "./shop/NewArrivals";
-import Shopping from "./shop/Shopping";
+import LimeLight from "./shop/LimeLight";
 
 import { SEO } from "./SEO/SEO";
 
@@ -21,7 +21,7 @@ export {
   NewArrivals,
   Deals,
   FemaleCategories,
-  Shopping,
+  LimeLight,
   Hero,
   BigSavingZone,
 
