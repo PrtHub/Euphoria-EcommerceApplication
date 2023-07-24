@@ -10,7 +10,7 @@ const NewArrivals = () => {
     <section className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-5">
       <span className="flex items-center gap-4 mb-10">
         <div className="w-1 h-6 rounded text-dark-violet bg-dark-violet" />
-        <h1 className="text-black-100 font-semibold text-3xl">New Arrival</h1>
+        <h1 className="text-black-100 font-semibold text-2xl md:text-3xl">New Arrival</h1>
       </span>
      <Swiper
         slidesPerView="auto"
