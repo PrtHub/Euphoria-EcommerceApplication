@@ -20,7 +20,7 @@ import "react-toastify/dist/ReactToastify.css";
 const App = () => {
   return (
     <>
-      <main className="overflow-hidden max-w-[1920px] mx-auto">
+      <main className="w-full h-full overflow-hidden max-w-[1448px] mx-auto">
         <Navbar />
         <Routes>
           <Route path="/" element={<Shop />} />

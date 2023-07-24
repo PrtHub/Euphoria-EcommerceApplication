@@ -18,7 +18,7 @@ const Shop = () => {
       />
       <main className="w-full h-full">
         <Hero />
-        <Deals />
+        {/* <Deals /> */}
         <NewArrivals />
         <BigSavingZone />
         <Shopping />

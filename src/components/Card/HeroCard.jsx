@@ -9,7 +9,7 @@ const HeroCard = ({image, para, title1, title2, url}) => {
       <Lazy
         img={image}
         alt=""
-        className="w-full md:w-[1920px] h-[440px] sm:h-[540px] md:h-[800px] object-cover object-center"
+        className="w-full md:w-[1448px] h-[440px] sm:h-[540px] md:h-[750px] object-cover object-center"
       />
       <article className="absolute bottom-20 sm:bottom-40 md:top-60 left-10 md:left-10 lg:left-20 text-white flex flex-col items-start gap-5 md:gap-10 font-satoshi">
         <p className=" text-start text-sm md:text-base lg:text-xl font-medium">

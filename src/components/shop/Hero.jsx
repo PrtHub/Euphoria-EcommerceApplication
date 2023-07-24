@@ -19,7 +19,7 @@ const Hero = () => {
         clickable: true,
       }}
       modules={[Autoplay, Pagination]}
-      className=""
+      className="mb-5"
     >
       <SwiperSlide>
         <HeroCard
