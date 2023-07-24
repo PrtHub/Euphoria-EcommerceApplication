@@ -31,3 +31,10 @@
     transform: translateX(0);
   }
 }
+
+
+
+.swiper-pagination-bullet-active {
+  background-color: white; /* Replace #00ff00 with your desired active color */
+}
+

@@ -9,6 +9,8 @@ import Banner6 from './images/Banner6.jpg'
 import deal1 from './images/deal1.jpg'
 import deal2 from './images/deal2.jpg'
 
+import joggers from './images/Arrival/joggers.png'
+
 export {
     logo,
     
@@ -19,5 +21,7 @@ export {
     Banner6,
 
     deal1,
-    deal2
+    deal2,
+
+    joggers
 }
