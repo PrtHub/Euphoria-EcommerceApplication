@@ -1,21 +1,32 @@
+/* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
-import { Banner } from "../../assets";
 import Lazy from "../LazyLoading/Lazy";
+import { Link } from "react-router-dom";
 
-const HeroCard = () => {
+const HeroCard = ({image, para, title1, title2}) => {
   return (
     <section className="w-full h-full relative">
       <Lazy
-        img={Banner}
+        img={image}
         alt=""
-        className="w-[1920px] h-[800px] object-cover object-center"
+        className="w-full md:w-[1920px] h-[440px] sm:h-[540px] md:h-[800px] object-cover object-center"
       />
-      <article className="absolute bottom-12 sm:bottom-32 left-20 text-white flex flex-col items-start text">
-        <h1 className="text-3xl font-semibold"></h1>
-        <p className="text-left ">Female Fashion Pack</p>
-        <p className="max-w-sm text-left my-5 text-xs sm:text-base">cool / colorful / comfy</p>
-        <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} className="">
-          Shop Now
+      <article className="absolute bottom-20 sm:bottom-40 md:top-60 left-10 md:left-10 lg:left-20 text-white flex flex-col items-start gap-5 md:gap-10 font-satoshi">
+        <p className=" text-start text-sm md:text-base lg:text-xl font-medium">
+          {para}
+        </p>
+        <h1 className="text-start text-4xl md:text-5xl lg:text-7xl font-extrabold leading-10">
+          {title1} <br /> {title2}
+        </h1>
+        <p className="text-start text-sm md:text-base lg:text-xl font-medium">
+          cool / colorful / comfy
+        </p>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.8 }}
+          className="bg-white text-black-100 font-semibold px-6 py-3 md:px-8 lg:px-10 md:py-4 text-base sm:text-lg md:text-xl rounded"
+        >
+          <Link to="/products/female">Shop Now</Link>
         </motion.button>
       </article>
     </section>
