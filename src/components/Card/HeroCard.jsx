@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 import Lazy from "../LazyLoading/Lazy";
-import { Link } from "react-router-dom";
 
-const HeroCard = ({image, para, title1, title2}) => {
+
+const HeroCard = ({image, para, title1, title2, url}) => {
   return (
     <section className="w-full h-full relative">
       <Lazy
@@ -26,7 +26,7 @@ const HeroCard = ({image, para, title1, title2}) => {
           whileTap={{ scale: 0.8 }}
           className="bg-white text-black-100 font-semibold px-6 py-3 md:px-8 lg:px-10 md:py-4 text-base sm:text-lg md:text-xl rounded"
         >
-          <Link to="/products/female">Shop Now</Link>
+          {url}
         </motion.button>
       </article>
     </section>
