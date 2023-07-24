@@ -16,7 +16,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="w-full h-full flex items-center justify-between px-0 xl:px-5 py-5">
+      <nav className="w-full h-full flex items-center justify-between px-5 xl:px-10 py-5">
         <section className="w-full h-full flex items-center justify-start gap-5 sm:gap-10 xl:gap-20">
           <div className="w-20 h-10">
             <img

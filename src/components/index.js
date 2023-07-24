@@ -11,6 +11,8 @@ import Shopping from "./shop/Shopping";
 
 import { SEO } from "./SEO/SEO";
 
+import Lazy from "./LazyLoading/Lazy";
+
 export {
   Navbar,
   Footer,
@@ -23,5 +25,7 @@ export {
   Hero,
   BigSavingZone,
 
-  SEO
+  SEO,
+
+  Lazy
 };
