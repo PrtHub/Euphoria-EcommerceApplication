@@ -32,6 +32,12 @@ import blackshort from "./images/women/blackshorts.png";
 import blacksweatshirt from "./images/women/blacksweatshirt.png";
 import lavenderhoodie from "./images/women/lavenderhoodie.png";
 
+import cargo from './images/cargo.png';
+import hawai from './images/Hawai.png';
+import oversized from './images/oversized.png';
+import print from './images/Printed.png';
+import urban from './images/urban.png'
+
 export {
   logo,
   Banner1,
@@ -61,4 +67,9 @@ export {
   blackshort,
   blacksweatshirt,
   lavenderhoodie,
+  print,
+  hawai,
+  oversized,
+  urban,
+  cargo
 };
