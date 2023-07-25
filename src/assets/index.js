@@ -24,6 +24,11 @@ import sweatshirt from './images/category/sweatshirt.png'
 import coats from './images/category/coats.png'
 import fboxer from  './images/category/fboxer.png'
 
+import blackshirt from './images/women/blackshirt.png'
+import blackshort from './images/women/blackshorts.png'
+import blacksweatshirt from './images/women/blacksweatshirt.png'
+import lavenderhoodie from './images/women/lavenderhoodie.png'
+
 
 export {
     logo,
@@ -50,5 +55,10 @@ export {
     tees,
     sweatshirt,
     fboxer,
-    coats
+    coats,
+
+    blackshirt,
+    blackshort,
+    blacksweatshirt,
+    lavenderhoodie
 }
