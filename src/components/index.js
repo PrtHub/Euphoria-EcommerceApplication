@@ -13,6 +13,8 @@ import { SEO } from "./SEO/SEO";
 
 import Lazy from "./LazyLoading/Lazy";
 
+import ProductCard from "./Card/ProductCard";
+
 export {
   Navbar,
   Footer,
@@ -27,5 +29,6 @@ export {
 
   SEO,
 
-  Lazy
+  Lazy,
+  ProductCard
 };

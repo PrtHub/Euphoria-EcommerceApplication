@@ -1,4 +1,4 @@
-import { Shirt, activeware, boxer, coats, fboxer, hoodie, jeans, plain, polo, printed, sweatshirt, tees } from "../assets";
+import { Shirt, activeware, blackshirt, blackshort, blacksweatshirt, boxer, coats, fboxer, hoodie, jeans, lavenderhoodie, plain, polo, printed, sweatshirt, tees } from "../assets";
 
 
 export const ManCategories = [
@@ -56,13 +56,58 @@ export const Femalecategories = [
         title: 'Coats & Parkas'
     },
     {
-        id: 1,
+        id: 3,
         img: tees,
         title: 'Tees & T-Shirt'
     },
     {
-        id: 1,
+        id: 4,
         img: sweatshirt,
         title: 'Hoodies & Sweetshirt'
     },
+]
+
+export const InLimeLight = [
+   {
+    id: 1,
+    img: blacksweatshirt,
+    title: 'Black Sweatshirt',
+    price: '₹500',
+    brand: 'Jhanvi’s  Brand'
+   },
+   {
+    id: 2,
+    img: blackshort,
+    title: 'Black Sweatshirt',
+    price: '₹500',
+    brand: 'Jhanvi’s  Brand'
+   },
+   {
+    id: 3,
+    img: lavenderhoodie,
+    title: 'Black Sweatshirt',
+    price: '₹500',
+    brand: 'Jhanvi’s  Brand'
+   },
+   {
+    id: 4,
+    img: blackshirt,
+    title: 'Black Sweatshirt',
+    price: '₹500',
+    brand: 'Jhanvi’s  Brand'
+   },
+   {
+    id: 4,
+    img: blackshirt,
+    title: 'Black Sweatshirt',
+    price: '₹500',
+    brand: 'Jhanvi’s  Brand'
+   },
+   {
+    id: 4,
+    img: blackshirt,
+    title: 'Black Sweatshirt',
+    price: '₹500',
+    brand: 'Jhanvi’s  Brand'
+   },
 ]
