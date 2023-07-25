@@ -11,6 +11,16 @@ import deal2 from './images/deal2.jpg'
 
 import joggers from './images/Arrival/joggers.png'
 
+import Shirt from './images/category/Shirt.png'
+import boxer from './images/category/boxer.png'
+import activeware from './images/category/activeware.png'
+import jeans from './images/category/jeans.png'
+import plain from './images/category/plain.png'
+import polo from './images/category/polo.png'
+import printed from './images/category/printed.png'
+import hoodie from './images/category/hoodie.png'
+
+
 export {
     logo,
     
@@ -23,5 +33,14 @@ export {
     deal1,
     deal2,
 
-    joggers
+    joggers,
+
+    Shirt,
+    activeware,
+    hoodie,
+    jeans,
+    plain,
+    polo,
+    printed,
+    boxer
 }
