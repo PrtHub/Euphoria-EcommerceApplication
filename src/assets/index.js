@@ -19,6 +19,10 @@ import plain from './images/category/plain.png'
 import polo from './images/category/polo.png'
 import printed from './images/category/printed.png'
 import hoodie from './images/category/hoodie.png'
+import tees from './images/category/tees.png'
+import sweatshirt from './images/category/sweatshirt.png'
+import coats from './images/category/coats.png'
+import fboxer from  './images/category/fboxer.png'
 
 
 export {
@@ -42,5 +46,9 @@ export {
     plain,
     polo,
     printed,
-    boxer
+    boxer,
+    tees,
+    sweatshirt,
+    fboxer,
+    coats
 }

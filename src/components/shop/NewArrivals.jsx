@@ -8,7 +8,7 @@ import TitleCard from "../Card/TitleCard";
 
 const NewArrivals = () => {
   return (
-    <section className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-5">
+    <section className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10">
       <TitleCard title="New Arrival" />
       <Swiper
         slidesPerView={2}

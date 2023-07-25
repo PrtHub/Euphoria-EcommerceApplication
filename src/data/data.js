@@ -1,4 +1,4 @@
-import { Shirt, activeware, boxer, hoodie, jeans, plain, polo, printed } from "../assets";
+import { Shirt, activeware, boxer, coats, fboxer, hoodie, jeans, plain, polo, printed, sweatshirt, tees } from "../assets";
 
 
 export const ManCategories = [
@@ -41,5 +41,28 @@ export const ManCategories = [
         id: 8,
         img: boxer,
         title: 'Boxers'
+    },
+]
+
+export const Femalecategories = [
+    {
+        id: 1,
+        img: fboxer,
+        title: 'Boxer'
+    },
+    {
+        id: 2,
+        img: coats,
+        title: 'Coats & Parkas'
+    },
+    {
+        id: 1,
+        img: tees,
+        title: 'Tees & T-Shirt'
+    },
+    {
+        id: 1,
+        img: sweatshirt,
+        title: 'Hoodies & Sweetshirt'
     },
 ]
