@@ -1,22 +1,41 @@
 /* eslint-disable react/prop-types */
-import Lazy from "../LazyLoading/Lazy"
+import { useState } from "react";
+import Lazy from "../LazyLoading/Lazy";
+import { MdOutlineFavoriteBorder, MdOutlineFavorite } from "react-icons/md";
 
+const ProductCard = ({ img, title, brand, price }) => {
+  const [color, setColor] = useState(false);
 
-const ProductCard = ({img,title, brand, price }) => {
   return (
     <section className="w-[282px] h-[440px] flex flex-col items-start justify-start gap-2">
-    <div className="w-full h-full">
-      <Lazy img={img} className="w-[282px] h-[370px]" />
-    </div>
-    <article className="w-full flex items-center justify-between gap-1">
-      <div className="w-full flex flex-col justify-between">
-        <h1 className="text-lg font-semibold text-black-100">{title}</h1>
-      <p className="text-light-gray-100 text-xs lg:text-sm">{brand}</p>
+      <div className="w-full h-[370px] relative">
+        <Lazy
+          img={img}
+          className="w-[282px] h-[370px] object-cover object-center"
+        />
+        <section className="absolute top-5 right-5 bg-white rounded-full p-1">
+          {color ? (
+            <MdOutlineFavorite
+              className="text-red-500 cursor-pointer"
+              onClick={() => setColor(false)}
+            />
+          ) : (
+            <MdOutlineFavoriteBorder
+              className="text-black-100 cursor-pointer"
+              onClick={() => setColor(true)}
+            />
+          )}
+        </section>
       </div>
-       <p>{price}</p>
-    </article>
-  </section>
-  )
-}
+      <article className="w-full flex items-center justify-between gap-1">
+        <div className="w-full flex flex-col justify-between">
+          <h1 className="text-lg font-semibold text-black-100">{title}</h1>
+          <p className="text-light-gray-100 text-xs lg:text-sm">{brand}</p>
+        </div>
+        <p>{price}</p>
+      </article>
+    </section>
+  );
+};
 
-export default ProductCard
+export default ProductCard;
