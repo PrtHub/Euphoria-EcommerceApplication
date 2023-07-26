@@ -46,7 +46,7 @@ const BigSavingZone = () => {
             className="w-full h-full object-cover object-center"
           />
           <article className="absolute top-10 sm:top-8 lg:top-20 right-5 xl:right-10 flex flex-col sm:items-end md:items-start gap-4 sm:gap-2 md:gap-4 text-black-100">
-            <h1 className="font-semibold text-2xl sm:text-base md:text-2xl lg:text-4xl lg:text-4xl text-end md:text-start">
+            <h1 className="font-semibold text-2xl sm:text-base md:text-2xl lg:text-4xl text-end md:text-start">
               Cargo <br /> Joggers
             </h1>
             <p className="text-xs sm:text-[10px] md:text-xs">Move with style & comfort</p>
