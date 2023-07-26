@@ -13,6 +13,9 @@ import usPolo from "./images/usPolo.png";
 import puma from './images/puma.png';
 
 import joggers from "./images/Arrival/joggers.png";
+import sleeves from "./images/Arrival/sleeves.png";
+import nurban from "./images/Arrival/urban.png";
+import tshirt from "./images/Arrival/T-shirts.png";
 
 import Shirt from "./images/category/Shirt.png";
 import boxer from "./images/category/boxer.png";
@@ -51,6 +54,9 @@ export {
   usPolo,
   puma,
   joggers,
+  sleeves,
+  nurban,
+  tshirt,
   Shirt,
   activeware,
   hoodie,

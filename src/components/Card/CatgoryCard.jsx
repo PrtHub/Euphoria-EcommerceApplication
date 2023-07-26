@@ -4,7 +4,7 @@ import Lazy from "../LazyLoading/Lazy";
 
 const CatgoryCard = ({ img, title }) => {
   return (
-    <section className="w-full h-full flex flex-col items-start justify-start gap-2">
+    <section className="w-[270px] h-[460px] flex flex-col items-start justify-start gap-2">
       <div className="w-full h-full">
         <Lazy img={img} className="w-[270px] h-[393px]" />
       </div>

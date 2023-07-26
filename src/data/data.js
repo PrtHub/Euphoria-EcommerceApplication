@@ -1,5 +1,43 @@
-import { Shirt, activeware, blackshirt, blackshort, blacksweatshirt, boxer, coats, fboxer, hoodie, jeans, lavenderhoodie, plain, polo, printed, sweatshirt, tees } from "../assets";
+import { Shirt, activeware, blackshirt, blackshort, blacksweatshirt, boxer, coats, fboxer, hoodie, jeans, joggers, lavenderhoodie, nurban, plain, polo, printed, sleeves, sweatshirt, tees, tshirt } from "../assets";
 
+export const NewArrival = [
+    {
+        id: 1,
+        img: joggers,
+        title: 'Knitted Joggers',
+        category: 'joggers'
+    },
+    {
+        id: 2,
+        img: sleeves,
+        title: 'Full sleeves',
+        category: 'men'
+    },
+    {
+        id: 3,
+        img: nurban,
+        title: 'Urban Shirts',
+        category: 'female'
+    },
+    {
+        id: 4,
+        img: tshirt,
+        title: 'Active T-shirts',
+        category: 'men'
+    },
+    {
+        id: 5,
+        img: tshirt,
+        title: 'Active T-shirts',
+        category: 'men'
+    },
+    {
+        id: 6,
+        img: tshirt,
+        title: 'Active T-shirts',
+        category: 'men'
+    },
+]
 
 export const ManCategories = [
     {
@@ -75,6 +113,12 @@ export const Femalecategories = [
     {
         id: 4,
         img: sweatshirt,
+        title: 'Hoodies & Sweetshirt',
+        category: 'female'
+    },
+    {
+        id: 4,
+        img: blacksweatshirt,
         title: 'Hoodies & Sweetshirt',
         category: 'female'
     },
