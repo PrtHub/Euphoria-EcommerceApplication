@@ -46,7 +46,7 @@ const BigSavingZone = () => {
             className="w-full h-full object-cover object-center"
           />
           <article className="absolute top-10 sm:top-8 lg:top-20 right-5 xl:right-10 flex flex-col sm:items-end md:items-start gap-4 sm:gap-2 md:gap-4 text-black-100">
-            <h1 className="font-semibold text-2xl sm:text-base md:text-2xl lg:text-4xl">
+            <h1 className="font-semibold text-2xl sm:text-base md:text-2xl lg:text-4xl lg:text-4xl text-end md:text-start">
               Cargo <br /> Joggers
             </h1>
             <p className="text-xs sm:text-[10px] md:text-xs">Move with style & comfort</p>
@@ -58,18 +58,42 @@ const BigSavingZone = () => {
             </button>
           </article>
         </section>
-        {/* <section className="w-[49%] h-[393px]">
+        <section className="w-[300px] sm:w-[49%] lg:w-[49.4%] h-72 sm:h-full md:h-[300px] lg:h-[393px] relative ">
           <img
             src={urban}
-            className="w-full h-[393px] object-cover object-center"
+            className="w-full h-full object-cover object-center"
           />
+           <article className="absolute top-10 sm:top-8 lg:top-20 right-10 xl:right-20 flex flex-col sm:items-end md:items-start gap-4 sm:gap-2 md:gap-4 text-black-100">
+          <h1 className="font-semibold text-2xl sm:text-base md:text-2xl lg:text-4xl">
+              Urban <br /> Shirts
+            </h1>
+            <p className="text-xs sm:text-[10px] md:text-xs">Live in comfort</p>
+            <h3 className="text-base sm:text-xs md:text-base font-semibold">
+              UPTO 50% OFF
+            </h3>
+            <button className="bg-transparent border-[1px] border-black-100 text-black-100 font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base">
+              Shop Now
+            </button>
+          </article>
         </section>
-        <section className="w-[49%] h-[393px]">
+        <section className="w-[300px] sm:w-[49%] lg:w-[49.4%] h-72 sm:h-full md:h-[300px] lg:h-[393px] relative ">
           <img
             src={oversized}
-            className="w-full h-[393px] object-cover object-center"
+            className="w-full h-full object-cover object-center"
           />
-        </section> */}
+          <article className="absolute top-10 sm:top-8 lg:top-20 right-10 xl:right-20 flex flex-col sm:items-end md:items-start gap-4 sm:gap-2 md:gap-4 text-black-100">
+          <h1 className="font-semibold text-2xl sm:text-base md:text-2xl lg:text-4xl text-end md:text-start">
+              Oversized <br /> T-Shirts
+            </h1>
+            <p className="text-xs sm:text-[10px] md:text-xs">Street Style Icon</p>
+            <h3 className="text-base sm:text-xs md:text-base font-semibold">
+              UPTO 60% OFF
+            </h3>
+            <button className="bg-transparent border-[1px] border-black-100 text-black-100 font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base">
+              Shop Now
+            </button>
+          </article>
+        </section>
       </main>
     </section>
   );
