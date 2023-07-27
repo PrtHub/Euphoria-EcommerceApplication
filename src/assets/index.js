@@ -41,6 +41,9 @@ import oversized from './images/oversized.png';
 import print from './images/Printed.png';
 import urban from './images/urban.png'
 
+import LightShirt from './images/men/LightShirt.jpg';
+import pinkHoddie from './images/women/pinkHoddie.webp';
+
 export {
   logo,
   Banner1,
@@ -77,5 +80,8 @@ export {
   hawai,
   oversized,
   urban,
-  cargo
+  cargo,
+
+  LightShirt,
+  pinkHoddie
 };

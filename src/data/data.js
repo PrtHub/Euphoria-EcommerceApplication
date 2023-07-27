@@ -1,4 +1,4 @@
-import { Shirt, activeware, blackshirt, blackshort, blacksweatshirt, boxer, coats, fboxer, hoodie, jeans, joggers, lavenderhoodie, nurban, plain, polo, printed, sleeves, sweatshirt, tees, tshirt } from "../assets";
+import { LightShirt, Shirt, activeware, blackshirt, blackshort, blacksweatshirt, boxer, coats, fboxer, hoodie, jeans, joggers, lavenderhoodie, nurban, pinkHoddie, plain, polo, printed, sleeves, sweatshirt, tees, tshirt } from "../assets";
 
 export const NewArrival = [
     {
@@ -173,4 +173,24 @@ export const InLimeLight = [
     brand: 'Jhanvi’s  Brand',
     category: 'female'
    },
+]
+
+
+export const products = [
+    {
+        id: 1,
+        img: LightShirt,
+        title: "Light Blue Shirt",
+        category: 'men',
+        color: 'blue',
+        tag: 'shirt'
+    },
+    {
+        id: 2,
+        img: pinkHoddie,
+        title: "Pink Hoddie",
+        category: 'women',
+        color: 'pink',
+        tag: 'hoddie'
+    }
 ]
