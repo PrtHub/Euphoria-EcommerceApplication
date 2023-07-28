@@ -1,4 +1,4 @@
-import { LightShirt, Shirt, activeware, blackshirt, blackshort, blacksweatshirt, boxer, coats, fboxer, hoodie, jeans, joggers, lavenderhoodie, nurban, pinkHoddie, plain, polo, printed, saree, sleeves, sweatshirt, tees, tshirt } from "../assets";
+import { LightShirt, Shirt, activeware, blackshirt, blackshort, blacksweatshirt, boxer, dress, hoodie, hs, jac, jeans, joggers, kurta, lavenderhoodie, lehenga, nurban, pinkHoddie, plain, polo, printed, saree, skirts, sleeves, sports, top, tshirt, tshirts } from "../assets";
 
 export const NewArrival = [
     {
@@ -94,25 +94,25 @@ export const ManCategories = [
 export const Femalecategories = [
     {
         id: 15,
-        img: fboxer,
-        title: 'Boxer',
+        img: kurta,
+        title: 'Kurta',
         category: 'female'
     },
     {
         id: 16,
-        img: coats,
-        title: 'Coats & Parkas',
+        img: jac,
+        title: 'jackets & coats',
         category: 'female'
     },
     {
         id: 17,
-        img: tees,
-        title: 'Tees & T-Shirt',
+        img: top,
+        title: 'Tops',
         category: 'female'
     },
     {
         id: 18,
-        img: sweatshirt,
+        img: hs,
         title: 'Hoodies & Sweetshirt',
         category: 'female'
     },
@@ -124,8 +124,32 @@ export const Femalecategories = [
     },
     {
         id: 20,
-        img: saree,
-        title: 'saree',
+        img: skirts,
+        title: 'skirts Palazzos',
+        category: 'female'
+    },
+    {
+        id: 21,
+        img: dress,
+        title: 'Dress',
+        category: 'female'
+    },
+    {
+        id: 24,
+        img: tshirts,
+        title: 'T-shirts',
+        category: 'female'
+    },
+    {
+        id: 22,
+        img: lehenga,
+        title: 'lehenga',
+        category: 'female'
+    },
+    {
+        id: 23,
+        img: sports,
+        title: 'sportsware',
         category: 'female'
     },
 ]

@@ -26,10 +26,19 @@ import polo from "./images/category/polo.png";
 import printed from "./images/category/printed.png";
 import hoodie from "./images/category/hoodie.png";
 import tees from "./images/category/tees.png";
-import sweatshirt from "./images/category/sweatshirt.png";
 import coats from "./images/category/coats.png";
 import fboxer from "./images/category/fboxer.png";
 import saree from './images/category/saree.png';
+import sports from './images/category/sportsware.png';
+import lehenga from './images/category/lehenga.png';
+import dress from './images/category/dress.png'
+import kurta from './images/category/kurta.png';
+import skirts from './images/category/skirts.png'
+import top from './images/category/Tops.png';
+import tshirts from './images/category/Tshirts.png'
+import jac from './images/category/jac.png';
+import hs from './images/category/hs.png'
+
 
 import blackshirt from "./images/women/blackshirt.png";
 import blackshort from "./images/women/blackshorts.png";
@@ -70,7 +79,6 @@ export {
   printed,
   boxer,
   tees,
-  sweatshirt,
   fboxer,
   coats,
   blackshirt,
@@ -83,6 +91,15 @@ export {
   urban,
   cargo,
   saree,
+  sports,
+  lehenga,
+  skirts,
+  kurta,
+  dress,
+  top,
+  tshirts,
+  jac,
+  hs,
 
   LightShirt,
   pinkHoddie
