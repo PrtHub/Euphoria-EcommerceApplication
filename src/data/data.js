@@ -1,4 +1,4 @@
-import { Shirt, activeware, blackshirt, blackshort, blacksweatshirt, boxer, dress, hoodie, hs, jac, jacket, jeans, joggers, kurta, lavenderhoodie, lehenga, mhs, mkurta, nurban, pinkHoddie, plain, polo, printed, saree, skirts, sleeves, sports, top, tshirt, tshirts } from "../assets";
+import { Shirt, activeware, blackshirt, blackshort, blacksweatshirt, dress, hs, jac, jacket, jeans, joggers, kurta, lavenderhoodie, lehenga, mhs, mkurta, nurban, pinkHoddie, plain, polo, printed, saree, skirts, sleeves, sports, top, tshirt, tshirts } from "../assets";
 
 export const NewArrival = [
     {
