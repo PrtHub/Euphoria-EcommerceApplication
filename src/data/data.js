@@ -39,6 +39,57 @@ export const NewArrival = [
     },
 ]
 
+export const InLimeLight = [
+    {
+     id: 25,
+     img: blacksweatshirt,
+     title: 'Black Sweatshirt',
+     price: '500',
+     brand: 'Jhanvi’s  Brand',
+     category: 'women'
+    },
+    {
+     id: 26,
+     img: blackshort,
+     title: 'Black Sweatshirt',
+     price: '500',
+     brand: 'Jhanvi’s  Brand',
+     category: 'women'
+    },
+    {
+     id: 27,
+     img: lavenderhoodie,
+     title: 'Black Sweatshirt',
+     price: '500',
+     brand: 'Jhanvi’s  Brand',
+     category: 'women'
+    },
+    {
+     id: 28,
+     img: blackshirt,
+     title: 'Black Sweatshirt',
+     price: '500',
+     brand: 'Jhanvi’s  Brand',
+     category: 'women'
+    },
+    {
+     id: 29,
+     img: blackshirt,
+     title: 'Black Sweatshirt',
+     price: '500',
+     brand: 'Jhanvi’s  Brand',
+     category: 'women'
+    },
+    {
+     id: 30,
+     img: blackshirt,
+     title: 'Black Sweatshirt',
+     price: '500',
+     brand: 'Jhanvi’s  Brand',
+     category: 'women'
+    },
+ ]
+
 export const Categories  = [
     {
         id: 7,
@@ -110,7 +161,7 @@ export const Categories  = [
     {
         id: 18,
         img: hs,
-        title: 'Hoodies & Sweetshirt',
+        title: 'Hoodies & Sweetshirts',
         category: 'women'
     },
     {
@@ -151,59 +202,6 @@ export const Categories  = [
     },
 ]
 
-
-export const InLimeLight = [
-   {
-    id: 25,
-    img: blacksweatshirt,
-    title: 'Black Sweatshirt',
-    price: '500',
-    brand: 'Jhanvi’s  Brand',
-    category: 'women'
-   },
-   {
-    id: 26,
-    img: blackshort,
-    title: 'Black Sweatshirt',
-    price: '500',
-    brand: 'Jhanvi’s  Brand',
-    category: 'women'
-   },
-   {
-    id: 27,
-    img: lavenderhoodie,
-    title: 'Black Sweatshirt',
-    price: '500',
-    brand: 'Jhanvi’s  Brand',
-    category: 'women'
-   },
-   {
-    id: 28,
-    img: blackshirt,
-    title: 'Black Sweatshirt',
-    price: '500',
-    brand: 'Jhanvi’s  Brand',
-    category: 'women'
-   },
-   {
-    id: 29,
-    img: blackshirt,
-    title: 'Black Sweatshirt',
-    price: '500',
-    brand: 'Jhanvi’s  Brand',
-    category: 'women'
-   },
-   {
-    id: 30,
-    img: blackshirt,
-    title: 'Black Sweatshirt',
-    price: '500',
-    brand: 'Jhanvi’s  Brand',
-    category: 'women'
-   },
-]
-
-
 export const products = [
     {
         id: 31,
@@ -223,7 +221,7 @@ export const products = [
         price: '550',
         category: 'women',
         color: 'pink',
-        tag: 'hoddie'
+        tag: 'Hoodies & Sweetshirts'
     },
     {
         id: 33,
