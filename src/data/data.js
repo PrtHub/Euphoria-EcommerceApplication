@@ -1,4 +1,4 @@
-import { LightShirt, Shirt, activeware, blackshirt, blackshort, blacksweatshirt, boxer, coats, fboxer, hoodie, jeans, joggers, lavenderhoodie, nurban, pinkHoddie, plain, polo, printed, sleeves, sweatshirt, tees, tshirt } from "../assets";
+import { LightShirt, Shirt, activeware, blackshirt, blackshort, blacksweatshirt, boxer, coats, fboxer, hoodie, jeans, joggers, lavenderhoodie, nurban, pinkHoddie, plain, polo, printed, saree, sleeves, sweatshirt, tees, tshirt } from "../assets";
 
 export const NewArrival = [
     {
@@ -118,8 +118,14 @@ export const Femalecategories = [
     },
     {
         id: 19,
-        img: blacksweatshirt,
-        title: 'Hoodies & Sweetshirt',
+        img: saree,
+        title: 'saree',
+        category: 'female'
+    },
+    {
+        id: 20,
+        img: saree,
+        title: 'saree',
         category: 'female'
     },
 ]

@@ -29,6 +29,7 @@ import tees from "./images/category/tees.png";
 import sweatshirt from "./images/category/sweatshirt.png";
 import coats from "./images/category/coats.png";
 import fboxer from "./images/category/fboxer.png";
+import saree from './images/category/saree.png';
 
 import blackshirt from "./images/women/blackshirt.png";
 import blackshort from "./images/women/blackshorts.png";
@@ -81,6 +82,7 @@ export {
   oversized,
   urban,
   cargo,
+  saree,
 
   LightShirt,
   pinkHoddie
