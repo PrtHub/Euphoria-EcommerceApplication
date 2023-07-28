@@ -7,11 +7,11 @@ const ProductCard = ({ img, title, brand, price }) => {
   const [color, setColor] = useState(false);
 
   return (
-    <section className="w-[282px] h-[440px] flex flex-col items-start justify-start gap-2">
+    <section className="w-[282px] h-[440px] flex flex-col items-start justify-start gap-2 rounded">
       <div className="w-full h-[370px] relative">
         <Lazy
           img={img}
-          className="w-[282px] h-[370px] object-cover object-center"
+          className="w-[282px] h-[370px] object-cover object-center rounded"
         />
         <section className="absolute top-5 right-5 bg-white rounded-full p-1">
           {color ? (
@@ -32,7 +32,7 @@ const ProductCard = ({ img, title, brand, price }) => {
           <h1 className="text-lg font-semibold text-black-100">{title}</h1>
           <p className="text-light-gray-100 text-xs lg:text-sm">{brand}</p>
         </div>
-        <p>{price}</p>
+        <p>₹{price}</p>
       </article>
     </section>
   );

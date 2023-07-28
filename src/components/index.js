@@ -14,6 +14,7 @@ import { SEO } from "./SEO/SEO";
 import Lazy from "./LazyLoading/Lazy";
 
 import ProductCard from "./Card/ProductCard";
+import TitleCard from "./Card/TitleCard";
 
 export {
   Navbar,
@@ -30,5 +31,6 @@ export {
   SEO,
 
   Lazy,
-  ProductCard
+  ProductCard,
+  TitleCard
 };

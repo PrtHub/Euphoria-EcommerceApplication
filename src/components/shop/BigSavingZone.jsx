@@ -3,7 +3,7 @@ import TitleCard from "../Card/TitleCard";
 
 const BigSavingZone = () => {
   return (
-    <section className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10">
+    <section className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10 gap-10">
       <TitleCard title="Big Saving Zone" />
       <main className="w-full h-full flex flex-wrap justify-between gap-3">
         <section className="w-[300px] sm:w-[32%] lg:w-[32.5%] h-full md:h-[300px] lg:h-[393px] relative">

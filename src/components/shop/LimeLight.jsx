@@ -5,7 +5,7 @@ import TitleCard from "../Card/TitleCard"
 
 const LimeLight = () => {
   return (
-    <section className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10">
+    <section className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10 gap-10">
       <TitleCard title="In the Limelight"/>
       <section className="w-full h-full flex flex-row gap-10 overflow-x-scroll">
         {InLimeLight?.map((product) => (

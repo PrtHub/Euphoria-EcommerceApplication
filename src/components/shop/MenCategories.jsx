@@ -4,7 +4,7 @@ import { ManCategories } from "../../data/data";
 
 const MenCategories = () => {
   return (
-    <section className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10">
+    <section className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10 gap-10">
       <TitleCard title="Categories For Men" />
       <section className="w-full h-full flex items-center justify-center sm:justify-between overflow-x-scroll gap-10">
         {ManCategories?.map((cat) => (

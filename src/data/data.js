@@ -41,50 +41,50 @@ export const NewArrival = [
 
 export const ManCategories = [
     {
-        id: 1,
+        id: 7,
         img: Shirt,
         title: 'Shirts',
         category: 'men'
     },
     {
-        id: 2,
+        id: 8,
         img: printed,
         title: 'Printed T-Shirts',
         category: 'men'
         
     },
     {
-        id: 3,
+        id: 9,
         img: polo,
         title: 'Polo T-Shirts',
         category: 'men'
     },
     {
-        id: 4,
+        id: 10,
         img: plain,
         title: 'Printed T-Shirts',
         category: 'men'
     },
     {
-        id: 5,
+        id: 11,
         img: activeware,
         title: 'Activeware',
         category: 'men'
     },
     {
-        id: 6,
+        id: 12,
         img: hoodie,
         title: 'Hoodies & Sweatshirts',
         category: 'men'
     },
     {
-        id: 7,
+        id: 13,
         img: jeans,
         title: 'Jeans',
         category: 'men'
     },
     {
-        id: 8,
+        id: 14,
         img: boxer,
         title: 'Boxers',
         category: 'men'
@@ -93,31 +93,31 @@ export const ManCategories = [
 
 export const Femalecategories = [
     {
-        id: 1,
+        id: 15,
         img: fboxer,
         title: 'Boxer',
         category: 'female'
     },
     {
-        id: 2,
+        id: 16,
         img: coats,
         title: 'Coats & Parkas',
         category: 'female'
     },
     {
-        id: 3,
+        id: 17,
         img: tees,
         title: 'Tees & T-Shirt',
         category: 'female'
     },
     {
-        id: 4,
+        id: 18,
         img: sweatshirt,
         title: 'Hoodies & Sweetshirt',
         category: 'female'
     },
     {
-        id: 4,
+        id: 19,
         img: blacksweatshirt,
         title: 'Hoodies & Sweetshirt',
         category: 'female'
@@ -126,50 +126,50 @@ export const Femalecategories = [
 
 export const InLimeLight = [
    {
-    id: 1,
+    id: 20,
     img: blacksweatshirt,
     title: 'Black Sweatshirt',
-    price: '₹500',
+    price: '500',
     brand: 'Jhanvi’s  Brand',
     category: 'female'
    },
    {
-    id: 2,
+    id: 21,
     img: blackshort,
     title: 'Black Sweatshirt',
-    price: '₹500',
+    price: '500',
     brand: 'Jhanvi’s  Brand',
     category: 'female'
    },
    {
-    id: 3,
+    id: 22,
     img: lavenderhoodie,
     title: 'Black Sweatshirt',
-    price: '₹500',
+    price: '500',
     brand: 'Jhanvi’s  Brand',
     category: 'female'
    },
    {
-    id: 4,
+    id: 23,
     img: blackshirt,
     title: 'Black Sweatshirt',
-    price: '₹500',
+    price: '500',
     brand: 'Jhanvi’s  Brand',
     category: 'female'
    },
    {
-    id: 4,
+    id: 24,
     img: blackshirt,
     title: 'Black Sweatshirt',
-    price: '₹500',
+    price: '500',
     brand: 'Jhanvi’s  Brand',
     category: 'female'
    },
    {
-    id: 4,
+    id: 25,
     img: blackshirt,
     title: 'Black Sweatshirt',
-    price: '₹500',
+    price: '500',
     brand: 'Jhanvi’s  Brand',
     category: 'female'
    },
@@ -178,17 +178,21 @@ export const InLimeLight = [
 
 export const products = [
     {
-        id: 1,
+        id: 26,
         img: LightShirt,
         title: "Light Blue Shirt",
+        brand: 'Jhanvi',
+        price: '300',
         category: 'men',
         color: 'blue',
         tag: 'shirt'
     },
     {
-        id: 2,
+        id: 27,
         img: pinkHoddie,
         title: "Pink Hoddie",
+        brand: 'Jhanvi',
+        price: '300',
         category: 'women',
         color: 'pink',
         tag: 'hoddie'
