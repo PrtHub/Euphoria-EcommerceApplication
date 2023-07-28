@@ -1,4 +1,4 @@
-import { Shirt, activeware, blackshirt, blackshort, blacksweatshirt, boxer, dress, hoodie, hs, jac, jeans, joggers, kurta, lavenderhoodie, lehenga, nurban, pinkHoddie, plain, polo, printed, saree, skirts, sleeves, sports, top, tshirt, tshirts } from "../assets";
+import { Shirt, activeware, blackshirt, blackshort, blacksweatshirt, boxer, dress, hoodie, hs, jac, jacket, jeans, joggers, kurta, lavenderhoodie, lehenga, mhs, mkurta, nurban, pinkHoddie, plain, polo, printed, saree, skirts, sleeves, sports, top, tshirt, tshirts } from "../assets";
 
 export const NewArrival = [
     {
@@ -90,118 +90,6 @@ export const InLimeLight = [
     },
  ]
 
-export const Categories  = [
-    {
-        id: 7,
-        img: Shirt,
-        title: 'Shirts',
-        category: 'men'
-    },
-    {
-        id: 8,
-        img: printed,
-        title: 'Printed T-Shirts',
-        category: 'men'
-        
-    },
-    {
-        id: 9,
-        img: polo,
-        title: 'Polo T-Shirts',
-        category: 'men'
-    },
-    {
-        id: 10,
-        img: plain,
-        title: 'Printed T-Shirts',
-        category: 'men'
-    },
-    {
-        id: 11,
-        img: activeware,
-        title: 'Active Ware',
-        category: 'men'
-    },
-    {
-        id: 12,
-        img: hoodie,
-        title: 'Hoodies & Sweatshirts',
-        category: 'men'
-    },
-    {
-        id: 13,
-        img: jeans,
-        title: 'Jeans',
-        category: 'men'
-    },
-    {
-        id: 14,
-        img: boxer,
-        title: 'Boxers',
-        category: 'men'
-    },
-    // {
-    //     id: 15,
-    //     img: kurta,
-    //     title: 'Kurta',
-    //     category: 'women'
-    // },
-    // {
-    //     id: 16,
-    //     img: jac,
-    //     title: 'Jackets & Coats',
-    //     category: 'women'
-    // },
-    // {
-    //     id: 17,
-    //     img: top,
-    //     title: 'Tops',
-    //     category: 'women'
-    // },
-    // {
-    //     id: 18,
-    //     img: hs,
-    //     title: 'Hoodies & Sweetshirts',
-    //     category: 'women'
-    // },
-    // {
-    //     id: 19,
-    //     img: saree,
-    //     title: 'Saree',
-    //     category: 'women'
-    // },
-    // {
-    //     id: 20,
-    //     img: skirts,
-    //     title: 'Skirts & Palazzos',
-    //     category: 'women'
-    // },
-    // {
-    //     id: 21,
-    //     img: dress,
-    //     title: 'Dress',
-    //     category: 'women'
-    // },
-    // {
-    //     id: 24,
-    //     img: tshirts,
-    //     title: 'T-shirts',
-    //     category: 'women'
-    // },
-    // {
-    //     id: 22,
-    //     img: lehenga,
-    //     title: 'Lehenga Choli',
-    //     category: 'women'
-    // },
-    // {
-    //     id: 23,
-    //     img: sports,
-    //     title: 'Sports Ware',
-    //     category: 'women'
-    // },
-]
-
 export const products = [
     {
         id: 7,
@@ -261,7 +149,7 @@ export const products = [
     },
     {
         id: 12,
-        img: hoodie,
+        img: mhs,
         title: 'Hoodies & Sweatshirts',
         brand: 'Jhanvi',
         price: '300',
@@ -279,6 +167,28 @@ export const products = [
         category: 'men',
         color: 'blue',
         tag: 'Trousers',
+        range: 'Under 500'
+    },
+    {
+        id: 15,
+        img: mkurta,
+        title: 'Kurta',
+        brand: 'Jhanvi',
+        price: '300',
+        category: 'men',
+        color: 'blue',
+        tag: 'Kurta',
+        range: 'Under 500'
+    },
+    {
+        id: 15,
+        img: jacket,
+        title: 'Active bomber jacket',
+        brand: 'Jhanvi',
+        price: '300',
+        category: 'men',
+        color: 'blue',
+        tag: 'Jacket',
         range: 'Under 500'
     },
 

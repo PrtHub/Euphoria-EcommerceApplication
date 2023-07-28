@@ -51,8 +51,10 @@ import oversized from './images/oversized.png';
 import print from './images/Printed.png';
 import urban from './images/urban.png'
 
-import LightShirt from './images/men/LightShirt.jpg';
 import pinkHoddie from './images/women/pinkHoddie.webp';
+import mhs from './images/men/mhs.png';
+import mkurta from './images/men/mkurta.png';
+import jacket from './images/men/jacket.png';
 
 export {
   logo,
@@ -101,6 +103,8 @@ export {
   jac,
   hs,
 
-  LightShirt,
-  pinkHoddie
+  pinkHoddie,
+  mhs,
+  mkurta,
+  jacket
 };
