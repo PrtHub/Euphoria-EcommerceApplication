@@ -8,6 +8,7 @@ const Products = () => {
   const { category } = useParams();
   const [openFilter, setOpenFilter] = useState(false);
 
+
   const filteredProducts = products.filter(
     (product) => product.category === category
   );
@@ -29,7 +30,10 @@ const Products = () => {
               onClick={() => setOpenFilter(!openFilter)}
             >
               Filters
-              <BsFilter className="text-lg" />
+              <BsFilter
+                className={`text-lg ${openFilter ? "rotate-180" : ""}`}
+                style={{ transition: "transform 0.5s" }}
+              />
             </button>
           </header>
           <section className="w-full h-full flex flex-wrap items-center justify-center lg:justify-start gap-10">
@@ -46,9 +50,7 @@ const Products = () => {
           </section>
         </section>
         {openFilter && (
-          <section className="absolute top-0 right-0 bottom-0 left-0  w-[30%] h-screen bg-white shadow-lg">
-            
-          </section>
+          <section className="absolute top-0 right-0 bottom-0 left-0  w-[30%] h-screen bg-white shadow-lg"></section>
         )}
       </main>
     </>
