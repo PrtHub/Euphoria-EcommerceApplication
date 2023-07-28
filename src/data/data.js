@@ -211,7 +211,8 @@ export const products = [
         price: '300',
         category: 'men',
         color: 'blue',
-        tag: 'shirt'
+        tag: 'shirt',
+        range: 'Under 500'
     },
     {
         id: 32,
@@ -221,7 +222,8 @@ export const products = [
         price: '550',
         category: 'women',
         color: 'pink',
-        tag: 'Hoodies & Sweetshirts'
+        tag: 'Hoodies & Sweetshirts',
+        range: 'Under 1000'
     },
     {
         id: 33,
@@ -231,16 +233,109 @@ export const products = [
         price: '607',
         category: 'women',
         color: 'gray',
-        tag: 'Hoodies & Sweetshirts'
+        tag: 'Hoodies & Sweetshirts',
+        range: 'Under 1000'
     },
-    // {
-    //     id: 32,
-    //     img: tshirts,
-    //     title: "Green T-shirts",
-    //     brand: 'Jhanvi',
-    //     price: '300',
-    //     category: 'women',
-    //     color: 'green',
-    //     tag: 'tshirts'
-    // },
+    {
+        id: 34,
+        img: tshirts,
+        title: "Green T-shirts",
+        brand: 'Jhanvi',
+        price: '300',
+        category:'women',
+        color: 'green',
+        tag: 'T-shirts',
+        range: 'Under 500'
+    },
+    {
+        id: 21,
+        img: dress,
+        title: 'Dress',
+        category: 'women',
+        brand: 'Jhanvi',
+        price: '300',
+        color: 'black',
+        tag: 'Dress',
+        range: 'Under 500'
+    },
+    {
+        id: 22,
+        img: lehenga,
+        title: 'Lehenga Choli',
+        category: 'women',
+        brand: 'Jhanvi',
+        price: '300',
+        color: 'green',
+        tag: 'Lehenga',
+        range: 'Under 500'
+    },
+    {
+        id: 20,
+        img: skirts,
+        title: 'Skirts & Palazzos',
+        category: 'women',
+        brand: 'Jhanvi',
+        price: '300',
+        color: 'green',
+        tag: 'Skirts & Palazzos',
+        range: 'Under 500'
+    },
+    {
+        id: 19,
+        img: saree,
+        title: 'Saree',
+        category: 'women',
+        brand: 'Jhanvi',
+        price: '300',
+        color: 'green',
+        tag: 'Saree',
+        range: 'Under 500'
+    },
+    {
+        id: 17,
+        img: top,
+        title: 'Tops',
+        category: 'women',
+        brand: 'Jhanvi',
+        price: '300',
+        color: 'green',
+        tag: 'Tops',
+        range: 'Under 500'
+    },
+    {
+        id: 16,
+        img: jac,
+        title: 'Jackets & Coats',
+        category: 'women',
+        brand: 'Jhanvi',
+        price: '300',
+        color: 'green',
+        tag: 'Jackets & Coats',
+        range: 'Under 500'
+    },
+    {
+        id: 15,
+        img: kurta,
+        title: 'Kurta',
+        category: 'women',
+        brand: 'Jhanvi',
+        price: '300',
+        color: 'green',
+        tag: 'Kurta',
+        range: 'Under 500'
+    },
+    {
+        id: 23,
+        img: sports,
+        title: 'Sports Ware',
+        category: 'women',
+        brand: 'Jhanvi',
+        price: '300',
+        color: 'green',
+        tag: 'Sports Ware',
+        range: 'Under 500'
+    },
+ 
+    
+
 ]
