@@ -15,6 +15,7 @@ import Lazy from "./LazyLoading/Lazy";
 
 import ProductCard from "./Card/ProductCard";
 import TitleCard from "./Card/TitleCard";
+import FilterCard from "./Card/FilterCard";
 
 export {
   Navbar,
@@ -32,5 +33,6 @@ export {
 
   Lazy,
   ProductCard,
-  TitleCard
+  TitleCard,
+  FilterCard
 };

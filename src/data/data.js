@@ -39,7 +39,7 @@ export const NewArrival = [
     },
 ]
 
-export const ManCategories = [
+export const Categories  = [
     {
         id: 7,
         img: Shirt,
@@ -68,7 +68,7 @@ export const ManCategories = [
     {
         id: 11,
         img: activeware,
-        title: 'Activeware',
+        title: 'Active Ware',
         category: 'men'
     },
     {
@@ -89,9 +89,6 @@ export const ManCategories = [
         title: 'Boxers',
         category: 'men'
     },
-]
-
-export const Femalecategories = [
     {
         id: 15,
         img: kurta,
@@ -101,7 +98,7 @@ export const Femalecategories = [
     {
         id: 16,
         img: jac,
-        title: 'jackets & coats',
+        title: 'Jackets & Coats',
         category: 'women'
     },
     {
@@ -119,13 +116,13 @@ export const Femalecategories = [
     {
         id: 19,
         img: saree,
-        title: 'saree',
+        title: 'Saree',
         category: 'women'
     },
     {
         id: 20,
         img: skirts,
-        title: 'skirts Palazzos',
+        title: 'Skirts & Palazzos',
         category: 'women'
     },
     {
@@ -143,16 +140,17 @@ export const Femalecategories = [
     {
         id: 22,
         img: lehenga,
-        title: 'lehenga',
+        title: 'Lehenga Choli',
         category: 'women'
     },
     {
         id: 23,
         img: sports,
-        title: 'sportsware',
+        title: 'Sports Ware',
         category: 'women'
     },
 ]
+
 
 export const InLimeLight = [
    {

@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { products } from "../data/data";
-import { ProductCard, SEO, TitleCard } from "../components";
+import { FilterCard, ProductCard, SEO, TitleCard } from "../components";
 import { BsFilter } from "react-icons/bs";
 import { useState } from "react";
 
@@ -48,7 +48,9 @@ const Products = () => {
           </section>
         </section>
         {openFilter && (
-          <section className="absolute top-0 right-0 bottom-0 left-0  w-[30%] h-screen bg-white shadow-lg"></section>
+          <section className="absolute top-0 right-0 bottom-0 left-0 w-[50%] sm:w-[50%] md:w-[40%] lg:w-[30%] h-screen bg-white shadow-lg">
+            <FilterCard category={category} setOpenFilter={setOpenFilter}/>
+          </section>
         )}
       </main>
     </>
