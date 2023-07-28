@@ -8,23 +8,21 @@ const Products = () => {
   const { category } = useParams();
   const [openFilter, setOpenFilter] = useState(false);
 
-
   const filteredProducts = products.filter(
     (product) => product.category === category
   );
 
-  const cat = filteredProducts.map((f) => f.category);
 
   return (
     <>
       <SEO
-        title={`Online Shopping for ${cat} Fashion - Euphoria`}
+        title={`Online Shopping for ${category} Fashion - Euphoria`}
         desc="Online Shopping for Men, Women & Kids Fashion with exclusive deals"
       />
       <main className="w-full h-full">
         <section className="w-full h-full flex flex-col items-start justify-start px-5 xl:px-10 py-10 gap-10 ">
           <header className="w-full h-full flex items-center ">
-            <TitleCard title={`${cat} Fashion Products`} />
+            <TitleCard title={`${category} Fashion Products`} />
             <button
               className="flex items-center gap-1 text-black-100 border-[1px] border-black-100 rounded px-2 py-1"
               onClick={() => setOpenFilter(!openFilter)}

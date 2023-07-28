@@ -17,7 +17,7 @@ export const NewArrival = [
         id: 3,
         img: nurban,
         title: 'Urban Shirts',
-        category: 'female'
+        category: 'women'
     },
     {
         id: 4,
@@ -96,119 +96,119 @@ export const Femalecategories = [
         id: 15,
         img: kurta,
         title: 'Kurta',
-        category: 'female'
+        category: 'women'
     },
     {
         id: 16,
         img: jac,
         title: 'jackets & coats',
-        category: 'female'
+        category: 'women'
     },
     {
         id: 17,
         img: top,
         title: 'Tops',
-        category: 'female'
+        category: 'women'
     },
     {
         id: 18,
         img: hs,
         title: 'Hoodies & Sweetshirt',
-        category: 'female'
+        category: 'women'
     },
     {
         id: 19,
         img: saree,
         title: 'saree',
-        category: 'female'
+        category: 'women'
     },
     {
         id: 20,
         img: skirts,
         title: 'skirts Palazzos',
-        category: 'female'
+        category: 'women'
     },
     {
         id: 21,
         img: dress,
         title: 'Dress',
-        category: 'female'
+        category: 'women'
     },
     {
         id: 24,
         img: tshirts,
         title: 'T-shirts',
-        category: 'female'
+        category: 'women'
     },
     {
         id: 22,
         img: lehenga,
         title: 'lehenga',
-        category: 'female'
+        category: 'women'
     },
     {
         id: 23,
         img: sports,
         title: 'sportsware',
-        category: 'female'
+        category: 'women'
     },
 ]
 
 export const InLimeLight = [
    {
-    id: 20,
+    id: 25,
     img: blacksweatshirt,
     title: 'Black Sweatshirt',
     price: '500',
     brand: 'Jhanvi’s  Brand',
-    category: 'female'
+    category: 'women'
    },
    {
-    id: 21,
+    id: 26,
     img: blackshort,
     title: 'Black Sweatshirt',
     price: '500',
     brand: 'Jhanvi’s  Brand',
-    category: 'female'
+    category: 'women'
    },
    {
-    id: 22,
+    id: 27,
     img: lavenderhoodie,
     title: 'Black Sweatshirt',
     price: '500',
     brand: 'Jhanvi’s  Brand',
-    category: 'female'
+    category: 'women'
    },
    {
-    id: 23,
+    id: 28,
     img: blackshirt,
     title: 'Black Sweatshirt',
     price: '500',
     brand: 'Jhanvi’s  Brand',
-    category: 'female'
+    category: 'women'
    },
    {
-    id: 24,
+    id: 29,
     img: blackshirt,
     title: 'Black Sweatshirt',
     price: '500',
     brand: 'Jhanvi’s  Brand',
-    category: 'female'
+    category: 'women'
    },
    {
-    id: 25,
+    id: 30,
     img: blackshirt,
     title: 'Black Sweatshirt',
     price: '500',
     brand: 'Jhanvi’s  Brand',
-    category: 'female'
+    category: 'women'
    },
 ]
 
 
 export const products = [
     {
-        id: 26,
+        id: 31,
         img: LightShirt,
         title: "Light Blue Shirt",
         brand: 'Jhanvi',
@@ -218,13 +218,33 @@ export const products = [
         tag: 'shirt'
     },
     {
-        id: 27,
+        id: 32,
         img: pinkHoddie,
-        title: "Pink Hoddie",
-        brand: 'Jhanvi',
-        price: '300',
+        title: "Rose Hooded Sweatshirt",
+        brand: 'plusS',
+        price: '550',
         category: 'women',
         color: 'pink',
         tag: 'hoddie'
-    }
+    },
+    {
+        id: 33,
+        img: hs,
+        title: "Women Solid Sweatshirt",
+        brand: 'Roadster',
+        price: '607',
+        category: 'women',
+        color: 'gray',
+        tag: 'Hoodies & Sweetshirts'
+    },
+    // {
+    //     id: 32,
+    //     img: tshirts,
+    //     title: "Green T-shirts",
+    //     brand: 'Jhanvi',
+    //     price: '300',
+    //     category: 'women',
+    //     color: 'green',
+    //     tag: 'tshirts'
+    // },
 ]

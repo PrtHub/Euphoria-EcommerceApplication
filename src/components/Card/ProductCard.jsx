@@ -29,7 +29,7 @@ const ProductCard = ({ img, title, brand, price }) => {
       </div>
       <article className="w-full flex items-center justify-between gap-1">
         <div className="w-full flex flex-col justify-between">
-          <h1 className="text-lg font-semibold text-black-100">{title}</h1>
+          <h1 className="text-base font-medium text-black-100">{title}</h1>
           <p className="text-light-gray-100 text-xs lg:text-sm">{brand}</p>
         </div>
         <p>₹{price}</p>

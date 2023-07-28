@@ -5,8 +5,8 @@ const Women = () => {
   return (
     <>
     <SEO
-      title="Women Shopping Online - Shop for Men Clothings"
-      desc="Women Shopping Online - Shop for Men Clothings"
+      title="Women Shopping Online - Shop for Women Clothings"
+      desc="Women Shopping Online - Shop for Women Clothings"
     />
     <section>Women</section>
   </>
