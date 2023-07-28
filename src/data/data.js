@@ -1,4 +1,4 @@
-import { LightShirt, Shirt, activeware, blackshirt, blackshort, blacksweatshirt, boxer, dress, hoodie, hs, jac, jeans, joggers, kurta, lavenderhoodie, lehenga, nurban, pinkHoddie, plain, polo, printed, saree, skirts, sleeves, sports, top, tshirt, tshirts } from "../assets";
+import { Shirt, activeware, blackshirt, blackshort, blacksweatshirt, boxer, dress, hoodie, hs, jac, jeans, joggers, kurta, lavenderhoodie, lehenga, nurban, pinkHoddie, plain, polo, printed, saree, skirts, sleeves, sports, top, tshirt, tshirts } from "../assets";
 
 export const NewArrival = [
     {
@@ -140,80 +140,149 @@ export const Categories  = [
         title: 'Boxers',
         category: 'men'
     },
-    {
-        id: 15,
-        img: kurta,
-        title: 'Kurta',
-        category: 'women'
-    },
-    {
-        id: 16,
-        img: jac,
-        title: 'Jackets & Coats',
-        category: 'women'
-    },
-    {
-        id: 17,
-        img: top,
-        title: 'Tops',
-        category: 'women'
-    },
-    {
-        id: 18,
-        img: hs,
-        title: 'Hoodies & Sweetshirts',
-        category: 'women'
-    },
-    {
-        id: 19,
-        img: saree,
-        title: 'Saree',
-        category: 'women'
-    },
-    {
-        id: 20,
-        img: skirts,
-        title: 'Skirts & Palazzos',
-        category: 'women'
-    },
-    {
-        id: 21,
-        img: dress,
-        title: 'Dress',
-        category: 'women'
-    },
-    {
-        id: 24,
-        img: tshirts,
-        title: 'T-shirts',
-        category: 'women'
-    },
-    {
-        id: 22,
-        img: lehenga,
-        title: 'Lehenga Choli',
-        category: 'women'
-    },
-    {
-        id: 23,
-        img: sports,
-        title: 'Sports Ware',
-        category: 'women'
-    },
+    // {
+    //     id: 15,
+    //     img: kurta,
+    //     title: 'Kurta',
+    //     category: 'women'
+    // },
+    // {
+    //     id: 16,
+    //     img: jac,
+    //     title: 'Jackets & Coats',
+    //     category: 'women'
+    // },
+    // {
+    //     id: 17,
+    //     img: top,
+    //     title: 'Tops',
+    //     category: 'women'
+    // },
+    // {
+    //     id: 18,
+    //     img: hs,
+    //     title: 'Hoodies & Sweetshirts',
+    //     category: 'women'
+    // },
+    // {
+    //     id: 19,
+    //     img: saree,
+    //     title: 'Saree',
+    //     category: 'women'
+    // },
+    // {
+    //     id: 20,
+    //     img: skirts,
+    //     title: 'Skirts & Palazzos',
+    //     category: 'women'
+    // },
+    // {
+    //     id: 21,
+    //     img: dress,
+    //     title: 'Dress',
+    //     category: 'women'
+    // },
+    // {
+    //     id: 24,
+    //     img: tshirts,
+    //     title: 'T-shirts',
+    //     category: 'women'
+    // },
+    // {
+    //     id: 22,
+    //     img: lehenga,
+    //     title: 'Lehenga Choli',
+    //     category: 'women'
+    // },
+    // {
+    //     id: 23,
+    //     img: sports,
+    //     title: 'Sports Ware',
+    //     category: 'women'
+    // },
 ]
 
 export const products = [
     {
-        id: 31,
-        img: LightShirt,
-        title: "Light Blue Shirt",
+        id: 7,
+        img: Shirt,
+        title: 'Shirts',
         brand: 'Jhanvi',
         price: '300',
         category: 'men',
         color: 'blue',
-        tag: 'shirt',
+        tag: 'Shirts',
         range: 'Under 500'
     },
+    {
+        id: 8,
+        img: printed,
+        title: 'Printed T-Shirts',
+        brand: 'Jhanvi',
+        price: '300',
+        category: 'men',
+        color: 'blue',
+        tag: 'T-Shirts',
+        range: 'Under 500'
+        
+    },
+    {
+        id: 9,
+        img: polo,
+        title: 'Polo T-Shirts',
+        brand: 'Jhanvi',
+        price: '300',
+        category: 'men',
+        color: 'blue',
+        tag: 'T-Shirts',
+        range: 'Under 500'
+    },
+    {
+        id: 10,
+        img: plain,
+        title: 'Printed T-Shirts',
+        brand: 'Jhanvi',
+        price: '300',
+        category: 'men',
+        color: 'blue',
+        tag: 'T-Shirts',
+        range: 'Under 500'
+    },
+    {
+        id: 11,
+        img: activeware,
+        title: 'Active Ware',
+        brand: 'Jhanvi',
+        price: '300',
+        category: 'men',
+        color: 'blue',
+        tag: 'Sports Ware',
+        range: 'Under 500'
+    },
+    {
+        id: 12,
+        img: hoodie,
+        title: 'Hoodies & Sweatshirts',
+        brand: 'Jhanvi',
+        price: '300',
+        category: 'men',
+        color: 'blue',
+        tag: 'Hoodies & Sweatshirts',
+        range: 'Under 500'
+    },
+    {
+        id: 13,
+        img: jeans,
+        title: 'Jeans',
+        brand: 'Jhanvi',
+        price: '300',
+        category: 'men',
+        color: 'blue',
+        tag: 'Trousers',
+        range: 'Under 500'
+    },
+
+    //womens products
     {
         id: 32,
         img: pinkHoddie,
