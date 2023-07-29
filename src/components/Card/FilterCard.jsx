@@ -1,10 +1,34 @@
 /* eslint-disable react/prop-types */
 import { MdClose } from "react-icons/md";
-import { Categories } from "../../data/data";
 
+const FilterCard = ({ setOpenFilter, filteredProducts }) => {
+  const uniqueTag = new Set();
+  const uniquepriceRange = new Set();
+  const uniqueColor = new Set();
 
-const FilterCard = ({ setOpenFilter, category }) => {
-  const filterCategory = Categories?.filter((cat) => cat.category === category);
+  const uniqueFilterTags = filteredProducts.filter((fil) => {
+    if (uniqueTag.has(fil.tag)) {
+      return false;
+    }
+    uniqueTag.add(fil.tag);
+    return true;
+  });
+
+  const uniqueFilterRange = filteredProducts.filter((fil) => {
+    if (uniquepriceRange.has(fil.range)) {
+      return false;
+    }
+    uniquepriceRange.add(fil.range);
+    return true;
+  });
+
+  const uniqueFilterColor = filteredProducts.filter((fil) => {
+    if (uniqueColor.has(fil.color)) {
+      return false;
+    }
+    uniqueColor.add(fil.color);
+    return true;
+  });
 
   return (
     <section className="w-full h-full p-5 sm:p-10 flex flex-col items-start justify-start gap-10">
@@ -22,40 +46,58 @@ const FilterCard = ({ setOpenFilter, category }) => {
           <h1 className="text-sm font-semibold text-black-100 uppercase">
             Categories
           </h1>
-          {filterCategory.map((cat) => (
-            <section key={cat.id} className="flex items-center gap-5">
+          {uniqueFilterTags.map((fil) => (
+            <section key={fil.id} className="flex items-center gap-5">
               <input
                 type="checkbox"
-                name={`${cat.title}`}
-                id={`${cat.title}`}
+                name={`${fil.title}`}
+                id={`${fil.title}`}
               />
               <label
-                htmlFor={`${cat.title}`}
-                className="text-black-100 text-xs sm:text-base"
+                htmlFor={`${fil.title}`}
+                className="text-black-100 text-xs sm:text-base capitalize"
               >
-                {cat.title}
+                {fil.tag}
               </label>
             </section>
           ))}
         </section>
-        {/* <section className="flex flex-col items-start justify-start gap-2">
-        <h1 className="text-sm font-semibold text-black-100 uppercase">
+        <section className="flex flex-col items-start justify-start gap-2">
+          <h1 className="text-sm font-semibold text-black-100 uppercase">
             Price
           </h1>
-          <section className="flex flex-col items-center gap-2">
-          {filteredProducts.map((fil) => (
-            <section key={fil.id} className="flex items-center gap-5">
-              <input type="checkbox" name="catCheckbox" id="catCheckbox" />
-              <label
-                htmlFor="catCheckbox"
-                className="text-black-100 text-xs sm:text-base"
-              >
-                {fil.range}
-              </label>
-            </section>
-          ))}
+          <section className="flex flex-col items-start gap-2">
+            {uniqueFilterRange.map((fil) => (
+              <section key={fil.id} className="flex items-center gap-5">
+                <input type="checkbox" name="catCheckbox" id="catCheckbox" />
+                <label
+                  htmlFor="catCheckbox"
+                  className="text-black-100 text-xs sm:text-base capitalize"
+                >
+                  {fil.range}
+                </label>
+              </section>
+            ))}
           </section>
-        </section> */}
+        </section>
+        <section className="flex flex-col items-start justify-start gap-2">
+          <h1 className="text-sm font-semibold text-black-100 uppercase">
+            Color
+          </h1>
+          <section className="flex flex-col items-start gap-2">
+            {uniqueFilterColor.map((fil) => (
+              <section key={fil.id} className="flex items-center gap-5">
+                <input type="checkbox" name="catCheckbox" id="catCheckbox" />
+                <label
+                  htmlFor="catCheckbox"
+                  className="text-black-100 text-xs sm:text-base capitalize"
+                >
+                  {fil.color}
+                </label>
+              </section>
+            ))}
+          </section>
+        </section>
       </section>
     </section>
   );

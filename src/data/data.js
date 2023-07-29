@@ -41,7 +41,7 @@ export const NewArrival = [
 
 export const InLimeLight = [
     {
-     id: 25,
+     id: 7,
      img: blacksweatshirt,
      title: 'Black Sweatshirt',
      price: '500',
@@ -49,7 +49,7 @@ export const InLimeLight = [
      category: 'women'
     },
     {
-     id: 26,
+     id: 8,
      img: blackshort,
      title: 'Black Sweatshirt',
      price: '500',
@@ -57,7 +57,7 @@ export const InLimeLight = [
      category: 'women'
     },
     {
-     id: 27,
+     id: 9,
      img: lavenderhoodie,
      title: 'Black Sweatshirt',
      price: '500',
@@ -65,7 +65,7 @@ export const InLimeLight = [
      category: 'women'
     },
     {
-     id: 28,
+     id: 10,
      img: blackshirt,
      title: 'Black Sweatshirt',
      price: '500',
@@ -73,7 +73,7 @@ export const InLimeLight = [
      category: 'women'
     },
     {
-     id: 29,
+     id: 11,
      img: blackshirt,
      title: 'Black Sweatshirt',
      price: '500',
@@ -81,7 +81,7 @@ export const InLimeLight = [
      category: 'women'
     },
     {
-     id: 30,
+     id: 12,
      img: blackshirt,
      title: 'Black Sweatshirt',
      price: '500',
@@ -92,7 +92,7 @@ export const InLimeLight = [
 
 export const products = [
     {
-        id: 7,
+        id: 13,
         img: Shirt,
         title: 'Shirts',
         brand: 'Jhanvi',
@@ -103,7 +103,7 @@ export const products = [
         range: 'Under 500'
     },
     {
-        id: 8,
+        id: 14,
         img: printed,
         title: 'Printed T-Shirts',
         brand: 'Jhanvi',
@@ -115,7 +115,7 @@ export const products = [
         
     },
     {
-        id: 9,
+        id: 15,
         img: polo,
         title: 'Polo T-Shirts',
         brand: 'Jhanvi',
@@ -126,7 +126,7 @@ export const products = [
         range: 'Under 500'
     },
     {
-        id: 10,
+        id: 16,
         img: plain,
         title: 'Printed T-Shirts',
         brand: 'Jhanvi',
@@ -137,7 +137,7 @@ export const products = [
         range: 'Under 500'
     },
     {
-        id: 11,
+        id: 17,
         img: activeware,
         title: 'Active Ware',
         brand: 'Jhanvi',
@@ -148,7 +148,7 @@ export const products = [
         range: 'Under 500'
     },
     {
-        id: 12,
+        id: 18,
         img: mhs,
         title: 'Hoodies & Sweatshirts',
         brand: 'Jhanvi',
@@ -159,7 +159,7 @@ export const products = [
         range: 'Under 500'
     },
     {
-        id: 13,
+        id: 19,
         img: jeans,
         title: 'Jeans',
         brand: 'Jhanvi',
@@ -170,7 +170,7 @@ export const products = [
         range: 'Under 500'
     },
     {
-        id: 15,
+        id: 20,
         img: mkurta,
         title: 'Kurta',
         brand: 'Jhanvi',
@@ -181,7 +181,7 @@ export const products = [
         range: 'Under 500'
     },
     {
-        id: 15,
+        id: 21,
         img: jacket,
         title: 'Active bomber jacket',
         brand: 'Jhanvi',
@@ -194,7 +194,7 @@ export const products = [
 
     //womens products
     {
-        id: 32,
+        id: 22,
         img: pinkHoddie,
         title: "Rose Hooded Sweatshirt",
         brand: 'plusS',
@@ -205,7 +205,7 @@ export const products = [
         range: 'Under 1000'
     },
     {
-        id: 33,
+        id: 23,
         img: hs,
         title: "Women Solid Sweatshirt",
         brand: 'Roadster',
@@ -216,7 +216,7 @@ export const products = [
         range: 'Under 1000'
     },
     {
-        id: 34,
+        id: 24,
         img: tshirts,
         title: "Green T-shirts",
         brand: 'Jhanvi',
@@ -227,7 +227,7 @@ export const products = [
         range: 'Under 500'
     },
     {
-        id: 21,
+        id: 25,
         img: dress,
         title: 'Dress',
         category: 'women',
@@ -238,7 +238,7 @@ export const products = [
         range: 'Under 500'
     },
     {
-        id: 22,
+        id: 26,
         img: lehenga,
         title: 'Lehenga Choli',
         category: 'women',
@@ -249,7 +249,7 @@ export const products = [
         range: 'Under 500'
     },
     {
-        id: 20,
+        id: 27,
         img: skirts,
         title: 'Skirts & Palazzos',
         category: 'women',
@@ -260,7 +260,7 @@ export const products = [
         range: 'Under 500'
     },
     {
-        id: 19,
+        id: 28,
         img: saree,
         title: 'Saree',
         category: 'women',
@@ -271,7 +271,7 @@ export const products = [
         range: 'Under 500'
     },
     {
-        id: 17,
+        id: 29,
         img: top,
         title: 'Tops',
         category: 'women',
@@ -282,7 +282,7 @@ export const products = [
         range: 'Under 500'
     },
     {
-        id: 16,
+        id: 30,
         img: jac,
         title: 'Jackets & Coats',
         category: 'women',
@@ -293,7 +293,7 @@ export const products = [
         range: 'Under 500'
     },
     {
-        id: 15,
+        id: 31,
         img: kurta,
         title: 'Kurta',
         category: 'women',
@@ -304,7 +304,7 @@ export const products = [
         range: 'Under 500'
     },
     {
-        id: 23,
+        id: 32,
         img: sports,
         title: 'Sports Ware',
         category: 'women',
