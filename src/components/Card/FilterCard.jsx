@@ -70,7 +70,7 @@ const FilterCard = ({ setOpenFilter, filteredProducts, onFilterChange, selectedF
                 onChange={() => handleTagFilterChange(fil.tag)}
               />
               <label
-                htmlFor={`${fil.tag}`}
+                htmlFor={fil.tag}
                 className="text-black-100 text-xs sm:text-base capitalize"
               >
                 {fil.tag}
