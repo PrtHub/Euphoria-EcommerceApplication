@@ -7,10 +7,35 @@ import { useState } from "react";
 const Products = () => {
   const { category } = useParams();
   const [openFilter, setOpenFilter] = useState(false);
+  const [selectedFilters, setSelectedFilters] = useState({
+    tag: null,
+    range: null,
+    color: null,
+  });
+  
+  const filteredProducts = products.filter((product) => product.category === category);
 
-  const filteredProducts = products.filter(
-    (product) => product.category === category
-  );
+  const handleFilterChange = (filter) => {
+    setSelectedFilters({ ...selectedFilters, ...filter });
+  };
+
+  // Apply the selected filters to the filtered products
+  let filteredProductsState = filteredProducts;
+  if (selectedFilters.tag) {
+    filteredProductsState = filteredProductsState.filter(
+      (product) => product.tag === selectedFilters.tag
+    );
+  }
+  if (selectedFilters.range) {
+    filteredProductsState = filteredProductsState.filter(
+      (product) => product.range === selectedFilters.range
+    );
+  }
+  if (selectedFilters.color) {
+    filteredProductsState = filteredProductsState.filter(
+      (product) => product.color === selectedFilters.color
+    );
+  }
 
   return (
     <>
@@ -34,7 +59,7 @@ const Products = () => {
             </button>
           </header>
           <section className="w-full h-full flex flex-wrap items-center justify-center lg:justify-start gap-10">
-            {filteredProducts?.map((product) => (
+            {filteredProductsState?.map((product) => (
               <main key={product.id}>
                 <ProductCard
                   img={product.img}
@@ -52,6 +77,8 @@ const Products = () => {
               category={category}
               setOpenFilter={setOpenFilter}
               filteredProducts={filteredProducts}
+              onFilterChange={handleFilterChange}
+              selectedFilters={selectedFilters}
             />
           </section>
         )}

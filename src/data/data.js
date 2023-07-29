@@ -111,7 +111,7 @@ export const products = [
         category: 'men',
         color: 'blue',
         tag: 'T-Shirts',
-        range: 'Under 500'
+        range: 'Under 1000'
         
     },
     {
