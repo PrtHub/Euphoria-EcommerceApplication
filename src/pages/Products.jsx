@@ -12,7 +12,6 @@ const Products = () => {
     (product) => product.category === category
   );
 
-  
   return (
     <>
       <SEO
@@ -49,7 +48,11 @@ const Products = () => {
         </section>
         {openFilter && (
           <section className="absolute top-0 right-0 bottom-0 left-0 w-[50%] sm:w-[50%] md:w-[40%] lg:w-[30%] h-fit bg-white shadow-lg rounded">
-            <FilterCard category={category} setOpenFilter={setOpenFilter} filteredProducts={filteredProducts}/>
+            <FilterCard
+              category={category}
+              setOpenFilter={setOpenFilter}
+              filteredProducts={filteredProducts}
+            />
           </section>
         )}
       </main>
