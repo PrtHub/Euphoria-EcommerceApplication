@@ -22,6 +22,7 @@ const Products = () => {
   };
 
   let filteredProductsState = filteredProducts;
+  
   if (selectedFilters.tag) {
     filteredProductsState = filteredProductsState.filter(
       (product) => product.tag === selectedFilters.tag
