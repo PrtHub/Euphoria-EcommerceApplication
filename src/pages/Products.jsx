@@ -12,14 +12,15 @@ const Products = () => {
     range: null,
     color: null,
   });
-  
-  const filteredProducts = products.filter((product) => product.category === category);
+
+  const filteredProducts = products.filter(
+    (product) => product.category === category
+  );
 
   const handleFilterChange = (filter) => {
     setSelectedFilters({ ...selectedFilters, ...filter });
   };
 
-  // Apply the selected filters to the filtered products
   let filteredProductsState = filteredProducts;
   if (selectedFilters.tag) {
     filteredProductsState = filteredProductsState.filter(
