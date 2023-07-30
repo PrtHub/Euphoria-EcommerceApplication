@@ -34,13 +34,17 @@ import {
   usPolo,
 } from "../assets";
 
-export const NewArrival = [
+export const Newproducts = [
   {
     id: 1,
     img: shirt,
     title: "Casual Shirts",
     category: "men",
     tag: "shirts",
+    brand: "Jhanvi",
+    price: "300",
+    color: "black",
+    range: "Under 500",
   },
   {
     id: 2,
@@ -48,6 +52,10 @@ export const NewArrival = [
     title: "Track pants",
     category: "men",
     tag: "track-pants",
+    brand: "Jhanvi",
+    price: "300",
+    color: "black",
+    range: "Under 500",
   },
   {
     id: 3,
@@ -55,6 +63,10 @@ export const NewArrival = [
     title: "Sweaters",
     category: "men",
     tag: "sweater",
+    brand: "Jhanvi",
+    price: "300",
+    color: "black",
+    range: "Under 500",
   },
   {
     id: 4,
@@ -62,6 +74,10 @@ export const NewArrival = [
     title: "Shorts",
     category: "men",
     tag: "shorts",
+    brand: "Jhanvi",
+    price: "300",
+    color: "black",
+    range: "Under 500",
   },
 ];
 
