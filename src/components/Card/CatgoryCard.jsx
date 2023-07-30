@@ -1,10 +1,16 @@
 /* eslint-disable react/prop-types */
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
 import Lazy from "../LazyLoading/Lazy";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const CatgoryCard = ({ img, title, category }) => {
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    window.scrollTo(0, 0);
+    navigate(`${category}/${title}`);
+  };
+
   return (
     <section className="w-[270px] h-[460px] flex flex-col items-start justify-start gap-2 rounded">
       <div className="w-full h-full">
@@ -17,26 +23,25 @@ const CatgoryCard = ({ img, title, category }) => {
           </h1>
           <motion.div
             animate={{
-              x: [-0, 5, -0]
+              x: [-0, 5, -0],
             }}
             transition={{
               duration: 5,
               repeat: Infinity,
               repeatType: "loop",
             }}
+            onClick={handleNavigate}
+            
           >
-           <Link to={`${category}/${title}`}>
-            <BsArrowRight />
-           </Link>
-
+            <BsArrowRight className="cursor-pointer"/>
           </motion.div>
         </div>
-        <Link
-          to={`${category}/${title}`}
-          className="text-light-gray-100 text-xs lg:text-sm"
+        <p
+          onClick={handleNavigate}
+          className="text-light-gray-100 text-xs lg:text-sm cursor-pointer"
         >
           Explore Now
-        </Link>
+        </p>
       </a>
     </section>
   );
