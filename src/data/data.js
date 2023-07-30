@@ -99,7 +99,7 @@ export const products = [
         price: '300',
         category: 'men',
         color: 'blue',
-        tag: 'Shirts',
+        tag: 'shirts',
         range: 'Under 500'
     },
     {
@@ -110,7 +110,7 @@ export const products = [
         price: '300',
         category: 'men',
         color: 'blue',
-        tag: 'T-Shirts',
+        tag: 't-shirts',
         range: 'Under 1000'
         
     },
@@ -122,7 +122,7 @@ export const products = [
         price: '300',
         category: 'men',
         color: 'blue',
-        tag: 'T-Shirts',
+        tag: 't-shirts',
         range: 'Under 500'
     },
     {
@@ -133,7 +133,7 @@ export const products = [
         price: '300',
         category: 'men',
         color: 'blue',
-        tag: 'T-Shirts',
+        tag: 't-shirts',
         range: 'Under 500'
     },
     {
@@ -155,7 +155,7 @@ export const products = [
         price: '300',
         category: 'men',
         color: 'blue',
-        tag: 'Hoodies & Sweatshirts',
+        tag: 'hoodies & sweatshirts',
         range: 'Under 500'
     },
     {
@@ -166,7 +166,7 @@ export const products = [
         price: '300',
         category: 'men',
         color: 'blue',
-        tag: 'Trousers',
+        tag: 'trousers',
         range: 'Under 500'
     },
     {
@@ -177,7 +177,7 @@ export const products = [
         price: '300',
         category: 'men',
         color: 'blue',
-        tag: 'Kurta',
+        tag: 'kurta',
         range: 'Under 500'
     },
     {
@@ -188,7 +188,7 @@ export const products = [
         price: '300',
         category: 'men',
         color: 'blue',
-        tag: 'Jacket',
+        tag: 'jacket',
         range: 'Under 500'
     },
 
@@ -201,7 +201,7 @@ export const products = [
         price: '550',
         category: 'women',
         color: 'pink',
-        tag: 'Hoodies & Sweetshirts',
+        tag: 'hoodies & sweetshirts',
         range: 'Under 1000'
     },
     {
@@ -212,7 +212,7 @@ export const products = [
         price: '607',
         category: 'women',
         color: 'gray',
-        tag: 'Hoodies & Sweetshirts',
+        tag: 'hoodies & sweetshirts',
         range: 'Under 1000'
     },
     {
@@ -223,7 +223,7 @@ export const products = [
         price: '300',
         category:'women',
         color: 'green',
-        tag: 'T-shirts',
+        tag: 't-shirts',
         range: 'Under 500'
     },
     {
@@ -234,7 +234,7 @@ export const products = [
         brand: 'Jhanvi',
         price: '300',
         color: 'black',
-        tag: 'Dress',
+        tag: 'dress',
         range: 'Under 500'
     },
     {
@@ -245,7 +245,7 @@ export const products = [
         brand: 'Jhanvi',
         price: '300',
         color: 'green',
-        tag: 'Lehenga',
+        tag: 'lehenga',
         range: 'Under 500'
     },
     {
@@ -256,7 +256,7 @@ export const products = [
         brand: 'Jhanvi',
         price: '300',
         color: 'green',
-        tag: 'Skirts & Palazzos',
+        tag: 'skirts & palazzos',
         range: 'Under 500'
     },
     {
@@ -267,7 +267,7 @@ export const products = [
         brand: 'Jhanvi',
         price: '300',
         color: 'green',
-        tag: 'Saree',
+        tag: 'saree',
         range: 'Under 500'
     },
     {
@@ -278,7 +278,7 @@ export const products = [
         brand: 'Jhanvi',
         price: '300',
         color: 'green',
-        tag: 'Tops',
+        tag: 'tops',
         range: 'Under 500'
     },
     {
@@ -289,7 +289,7 @@ export const products = [
         brand: 'Jhanvi',
         price: '300',
         color: 'green',
-        tag: 'Jackets & Coats',
+        tag: 'jackets & coats',
         range: 'Under 500'
     },
     {
@@ -300,7 +300,7 @@ export const products = [
         brand: 'Jhanvi',
         price: '300',
         color: 'green',
-        tag: 'Kurta',
+        tag: 'kurta',
         range: 'Under 500'
     },
     {
@@ -311,7 +311,7 @@ export const products = [
         brand: 'Jhanvi',
         price: '300',
         color: 'green',
-        tag: 'Sports Ware',
+        tag: 'sports Ware',
         range: 'Under 500'
     },
  

@@ -1,12 +1,10 @@
 import Shop from "./Shop";
-import Men from "./Men";
-import Women from "./Women";
+
 import Product from "./Product";
-import Joggers from "./Joggers";
+import ProductCategory from "./ProductCategory";
 import Cart from "./Cart";
-import Combos from "./Combos";
 import Success from "./Success";
 import Favorite from "./Favorite";
 import Products from "./Products";
 
-export { Shop, Men, Product, Joggers, Cart, Combos, Women, Success, Favorite, Products };
+export { Shop, Product, Cart, Success, Favorite, Products, ProductCategory };

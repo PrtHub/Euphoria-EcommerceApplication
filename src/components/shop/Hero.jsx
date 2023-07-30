@@ -27,7 +27,7 @@ const Hero = () => {
           para="Tops / skirts"
           title1="Women Fashion"
           title2="Collection"
-          url={<Link to="/products/female">Shop Now</Link>}
+          url={<Link to="/women/skirts">Shop Now</Link>}
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -36,7 +36,7 @@ const Hero = () => {
           para="Sweaters / Tops"
           title1="Winter Fashion"
           title2="Collection"
-          url={<Link to="/products/female">Shop Now</Link>}
+          url={<Link to="/women/sweaters">Shop Now</Link>}
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -45,7 +45,7 @@ const Hero = () => {
           para="Combos / Sweaters"
           title1="Winter Combo"
           title2="Collection"
-          url={<Link to="/products/combo">Shop Now</Link>}
+          url={<Link to="/women/sweaters">Shop Now</Link>}
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -54,7 +54,7 @@ const Hero = () => {
           para="T-shits / Jackets"
           title1="Men Fashion"
           title2="Collection"
-          url={<Link to="/products/male">Shop Now</Link>}
+          url={<Link to="/men/jackets">Shop Now</Link>}
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -63,7 +63,7 @@ const Hero = () => {
           para="Joggers / Sports"
           title1="Joggers Fashion"
           title2="Collection"
-          url={<Link to="/products/joggers">Shop Now</Link>}
+          url={<Link to="/women/joggers">Shop Now</Link>}
         />
       </SwiperSlide>
     </Swiper>
