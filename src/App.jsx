@@ -8,6 +8,7 @@ import {
   Shop,
   Success,
   ProductCategory,
+  BrandProducts,
 } from "./pages";
 import { Footer, Navbar } from "./components";
 import { ToastContainer } from "react-toastify";
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/" element={<Shop />} />
           <Route path="/:category/:tag" element={<ProductCategory />} />
           <Route path="/products/:category" element={<Products />} />
+          <Route path="/products/brand/:brand" element={<BrandProducts />} />
           <Route path="/product/:id" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/favorite" element={<Favorite />} />

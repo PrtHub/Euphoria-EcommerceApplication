@@ -1,4 +1,4 @@
-import { Shirt, activeware, blackshirt, blackshort, blacksweatshirt, dress, hs, jac, jacket, jeans, joggers, kurta, lavenderhoodie, lehenga, mhs, mkurta, nurban, pinkHoddie, plain, polo, printed, saree, skirts, sleeves, sports, top, tshirt, tshirts } from "../assets";
+import { Shirt, activeware, blackshirt, blackshort, blacksweatshirt, dress, hm, hs, jac, jacket, jeans, joggers, kurta, lavenderhoodie, lehenga, levi, mhs, mkurta, nike, nurban, pinkHoddie, plain, polo, printed, puma, saree, skirts, sleeves, sports, top, tshirt, tshirts, usPolo } from "../assets";
 
 export const NewArrival = [
     {
@@ -30,6 +30,29 @@ export const NewArrival = [
         tag: 't-shirts'
     },
     
+]
+
+export const Brands = [
+    {
+        img: nike,
+        brand: 'nike',
+    },
+    {
+        img: usPolo,
+        brand: 'us-polo',
+    },
+    {
+        img: puma,
+        brand: 'puma',
+    },
+    {
+        img: hm,
+        brand: 'hm',
+    },
+    {
+        img: levi,
+        brand: 'levi',
+    }
 ]
 
 export const InLimeLight = [
