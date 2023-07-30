@@ -26,7 +26,7 @@ const CatgoryCard = ({ img, title, category }) => {
               x: [-0, 5, -0],
             }}
             transition={{
-              duration: 5,
+              duration: 1.5,
               repeat: Infinity,
               repeatType: "loop",
             }}
