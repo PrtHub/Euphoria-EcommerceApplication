@@ -27,7 +27,7 @@ const Hero = () => {
           para="Tops / skirts"
           title1="Women Fashion"
           title2="Collection"
-          url={<Link to="/women/skirts">Shop Now</Link>}
+          url={<Link to="/women/skirts & palazzos">Shop Now</Link>}
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -54,7 +54,7 @@ const Hero = () => {
           para="T-shits / Jackets"
           title1="Men Fashion"
           title2="Collection"
-          url={<Link to="/men/jackets">Shop Now</Link>}
+          url={<Link to="/men/jacket">Shop Now</Link>}
         />
       </SwiperSlide>
       <SwiperSlide>
