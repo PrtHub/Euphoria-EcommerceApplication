@@ -5,38 +5,31 @@ export const NewArrival = [
         id: 1,
         img: joggers,
         title: 'Knitted Joggers',
-        category: 'joggers'
+        category: 'men',
+        tag: 'joggers'
     },
     {
         id: 2,
         img: sleeves,
         title: 'Full sleeves',
-        category: 'men'
+        category: 'men',
+        tag: 'full-sleeves'
     },
     {
         id: 3,
         img: nurban,
         title: 'Urban Shirts',
-        category: 'women'
+        category: 'women',
+        tag: 'shirts'
     },
     {
         id: 4,
         img: tshirt,
         title: 'Active T-shirts',
-        category: 'men'
+        category: 'men',
+        tag: 't-shirts'
     },
-    {
-        id: 5,
-        img: tshirt,
-        title: 'Active T-shirts',
-        category: 'men'
-    },
-    {
-        id: 6,
-        img: tshirt,
-        title: 'Active T-shirts',
-        category: 'men'
-    },
+    
 ]
 
 export const InLimeLight = [
