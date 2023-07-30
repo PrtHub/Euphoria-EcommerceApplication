@@ -12,10 +12,10 @@ import nike from "./images/nike.png";
 import usPolo from "./images/usPolo.png";
 import puma from './images/puma.png';
 
-import joggers from "./images/Arrival/joggers.png";
-import sleeves from "./images/Arrival/sleeves.png";
-import nurban from "./images/Arrival/urban.png";
-import tshirt from "./images/Arrival/T-shirts.png";
+import shirt from "./images/Arrival/shirt.png";
+import track from "./images/Arrival/Track.png";
+import sweater from "./images/Arrival/sweater.png";
+import shorts from "./images/Arrival/shorts.png";
 
 import Shirt from "./images/category/Shirt.png";
 import boxer from "./images/category/boxer.png";
@@ -68,10 +68,12 @@ export {
   nike,
   usPolo,
   puma,
-  joggers,
-  sleeves,
-  nurban,
-  tshirt,
+
+  track,
+  shirt,
+  shorts,
+  sweater,
+
   Shirt,
   activeware,
   hoodie,
