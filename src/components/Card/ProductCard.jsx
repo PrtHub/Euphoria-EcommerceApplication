@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import Lazy from "../LazyLoading/Lazy";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { MdOutlineFavoriteBorder, MdOutlineFavorite } from "react-icons/md";
 
 const ProductCard = ({ img, title, brand, price }) => {
@@ -8,11 +9,15 @@ const ProductCard = ({ img, title, brand, price }) => {
 
   return (
     <section className="w-[282px] h-[440px] flex flex-col items-start justify-start gap-2 rounded">
-      <div className="w-full h-[370px] relative">
-        <Lazy
-          img={img}
-          className="w-[282px] h-[370px] object-cover object-center rounded"
-        />
+      <div className="w-full h-[370px] relative overflow-hidden rounded">
+        <section className="w-[282px] h-[370px] object-cover object-center rounded overflow-hidden hover:scale-110 transition-all duration-300 ease-in-out">
+          <LazyLoadImage
+            alt="Your Image"
+            effect="blur"
+            src={img}
+            className="w-full h-full object-cover object-center rounded"
+          />
+        </section>
         <section className="absolute top-5 right-5 bg-white rounded-full p-1">
           {color ? (
             <MdOutlineFavorite

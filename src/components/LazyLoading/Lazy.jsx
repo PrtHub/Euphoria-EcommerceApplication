@@ -4,10 +4,12 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Lazy = ({ img, className }) => {
   return (
-    <LazyLoadImage
-    className={className || ""} alt="" src={img} effect="blur"
-    />
-  )
+    <div className="w-full h-full">
+      <LazyLoadImage
+      className={ className || "w-full h-full object-cover object-center"} alt="" src={img} effect="blur"
+      />
+    </div>
+    )
 }
 
 export default Lazy
