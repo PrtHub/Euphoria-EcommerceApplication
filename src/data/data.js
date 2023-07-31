@@ -136,7 +136,7 @@ export const Newproducts = [
     isNew: true,
   },
   {
-    id: 353,
+    id: 350,
     img: casual2,
     title: "Casual Knitted Shirt",
     category: "men",
