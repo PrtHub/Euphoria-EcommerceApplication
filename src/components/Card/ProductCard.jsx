@@ -4,7 +4,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { MdOutlineFavoriteBorder, MdOutlineFavorite } from "react-icons/md";
 
-const ProductCard = ({ img, title, brand, price }) => {
+const ProductCard = ({ img, title, brand, price, isNew }) => {
   const [color, setColor] = useState(false);
 
   return (
@@ -31,6 +31,11 @@ const ProductCard = ({ img, title, brand, price }) => {
             />
           )}
         </section>
+        {isNew && (
+          <div className="absolute top-3 left-0 bg-[#f95e7f] text-white w-8 h-5 flex items-center justify-center">
+            <p className="capitalize text-sm font-medium">new</p>
+          </div>
+        )}
       </div>
       <article className="w-full flex items-center justify-between gap-1">
         <div className="w-full flex flex-col justify-between">
