@@ -25,8 +25,12 @@ import track3 from "./track3.png";
 import track4 from "./track4.png";
 import track5 from "./track5.png";
 
-
 import shorts from "./shorts.png";
+import short1 from "./short1.png";
+import short2 from "./short2.png";
+import short3 from "./short3.png";
+import short4 from "./short4.png";
+import short5 from "./short5.png";
 
 export {
     top1,
@@ -48,6 +52,11 @@ export {
     sweater5,
 
     shorts,
+    short1,
+    short2,
+    short3,
+    short4,
+    short5,
 
     track,
     track1,
