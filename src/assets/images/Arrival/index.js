@@ -33,8 +33,6 @@ export {
     jumpsuit,
     coords,
 
-
-
     shirt,
     casual1,
     casual2,
