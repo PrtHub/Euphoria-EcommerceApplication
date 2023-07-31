@@ -14,7 +14,10 @@ const CatgoryCard = ({ img, title, category }) => {
   return (
     <section className="w-[270px] h-[460px] flex flex-col items-start justify-start gap-2 rounded">
       <div className="w-full h-full">
-        <Lazy img={img} className="w-[270px] h-[393px] rounded cursor-pointer object-cover object-center" />
+        <Lazy
+          img={img}
+          className="w-[270px] h-[393px] rounded cursor-pointer object-cover object-center"
+        />
       </div>
       <a className="w-full flex flex-col justify-between items-start gap-1">
         <div className="w-full flex justify-between">
