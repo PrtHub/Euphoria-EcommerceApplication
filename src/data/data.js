@@ -42,6 +42,7 @@ export const Newproducts = [
     price: "300",
     color: "black",
     range: "Under 500",
+    isNew: true,
   },
   {
     id: 2,
@@ -53,6 +54,7 @@ export const Newproducts = [
     price: "300",
     color: "black",
     range: "Under 500",
+    isNew: true,
   },
   {
     id: 7,
@@ -64,6 +66,7 @@ export const Newproducts = [
     price: "300",
     color: "black",
     range: "Under 500",
+    isNew: true,
   },
   {
     id: 4,
@@ -75,6 +78,7 @@ export const Newproducts = [
     price: "300",
     color: "black",
     range: "Under 500",
+    isNew: true,
   },
   {
     id: 5,
@@ -86,6 +90,7 @@ export const Newproducts = [
     price: "300",
     color: "black",
     range: "Under 500",
+    isNew: true,
   },
   {
     id: 3,
@@ -97,6 +102,7 @@ export const Newproducts = [
     price: "300",
     color: "black",
     range: "Under 500",
+    isNew: true,
   },
   {
     id: 6,
@@ -108,6 +114,7 @@ export const Newproducts = [
     price: "300",
     color: "black",
     range: "Under 500",
+    isNew: true,
   },
 ];
 
@@ -196,6 +203,7 @@ export const products = [
     color: "blue",
     tag: "shirts",
     range: "Under 500",
+    isNew: false,
   },
   {
     id: 14,
@@ -207,6 +215,7 @@ export const products = [
     color: "blue",
     tag: "t-shirts",
     range: "Under 1000",
+    isNew: false,
   },
   {
     id: 15,
@@ -218,6 +227,7 @@ export const products = [
     color: "blue",
     tag: "t-shirts",
     range: "Under 500",
+    isNew: false,
   },
   {
     id: 16,
@@ -229,6 +239,7 @@ export const products = [
     color: "blue",
     tag: "t-shirts",
     range: "Under 500",
+    isNew: false,
   },
   {
     id: 17,
@@ -240,6 +251,7 @@ export const products = [
     color: "blue",
     tag: "Sports Ware",
     range: "Under 500",
+    isNew: false,
   },
   {
     id: 18,
@@ -251,6 +263,7 @@ export const products = [
     color: "blue",
     tag: "hoodies & sweatshirts",
     range: "Under 500",
+    isNew: false,
   },
   {
     id: 19,
@@ -262,6 +275,7 @@ export const products = [
     color: "blue",
     tag: "trousers",
     range: "Under 500",
+    isNew: false,
   },
   {
     id: 20,
@@ -273,6 +287,7 @@ export const products = [
     color: "blue",
     tag: "kurta",
     range: "Under 500",
+    isNew: false,
   },
   {
     id: 21,
@@ -284,6 +299,7 @@ export const products = [
     color: "blue",
     tag: "jacket",
     range: "Under 500",
+    isNew: false,
   },
 
   //womens products
@@ -297,6 +313,7 @@ export const products = [
     color: "pink",
     tag: "hoodies & sweetshirts",
     range: "Under 1000",
+    isNew: false,
   },
   {
     id: 23,
@@ -308,6 +325,7 @@ export const products = [
     color: "gray",
     tag: "hoodies & sweetshirts",
     range: "Under 1000",
+    isNew: false,
   },
   {
     id: 24,
@@ -319,6 +337,7 @@ export const products = [
     color: "green",
     tag: "t-shirts",
     range: "Under 500",
+    isNew: false,
   },
   {
     id: 25,
@@ -330,6 +349,7 @@ export const products = [
     color: "black",
     tag: "dress",
     range: "Under 500",
+    isNew: false,
   },
   {
     id: 26,
@@ -341,6 +361,7 @@ export const products = [
     color: "green",
     tag: "lehenga",
     range: "Under 500",
+    isNew: false,
   },
   {
     id: 27,
@@ -352,6 +373,7 @@ export const products = [
     color: "green",
     tag: "skirts & palazzos",
     range: "Under 500",
+    isNew: false,
   },
   {
     id: 28,
@@ -363,6 +385,7 @@ export const products = [
     color: "green",
     tag: "saree",
     range: "Under 500",
+    isNew: false,
   },
   {
     id: 29,
@@ -374,6 +397,7 @@ export const products = [
     color: "green",
     tag: "tops",
     range: "Under 500",
+    isNew: false,
   },
   {
     id: 30,
@@ -385,6 +409,7 @@ export const products = [
     color: "green",
     tag: "jackets & coats",
     range: "Under 500",
+    isNew: false,
   },
   {
     id: 31,
@@ -396,6 +421,7 @@ export const products = [
     color: "green",
     tag: "kurta",
     range: "Under 500",
+    isNew: false,
   },
   {
     id: 32,
@@ -407,5 +433,6 @@ export const products = [
     color: "green",
     tag: "sports Ware",
     range: "Under 500",
+    isNew: false,
   },
 ];
