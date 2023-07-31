@@ -12,10 +12,7 @@ import nike from "./images/nike.png";
 import usPolo from "./images/usPolo.png";
 import puma from './images/puma.png';
 
-import shirt from "./images/Arrival/shirt.png";
-import track from "./images/Arrival/Track.png";
-import sweater from "./images/Arrival/sweater.png";
-import shorts from "./images/Arrival/shorts.png";
+
 
 import Shirt from "./images/category/Shirt.png";
 import boxer from "./images/category/boxer.png";
@@ -68,11 +65,6 @@ export {
   nike,
   usPolo,
   puma,
-
-  track,
-  shirt,
-  shorts,
-  sweater,
 
   Shirt,
   activeware,
