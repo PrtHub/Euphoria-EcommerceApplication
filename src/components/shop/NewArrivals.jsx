@@ -11,7 +11,7 @@ const NewArrivals = () => {
           <main key={product.id}>
             <ArrivalCard
               img={product.img}
-              title={product.title}
+              title={product.subtitle}
               tag={product.tag}
               category={product.category}
             />
