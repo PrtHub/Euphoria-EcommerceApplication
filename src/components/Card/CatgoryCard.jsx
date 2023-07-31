@@ -14,11 +14,11 @@ const CatgoryCard = ({ img, title, category }) => {
   return (
     <section className="w-[270px] h-[460px] flex flex-col items-start justify-start gap-2 rounded">
       <div className="w-full h-full">
-        <Lazy img={img} className="w-[270px] h-[393px] rounded" />
+        <Lazy img={img} className="w-[270px] h-[393px] rounded cursor-pointer object-cover object-center" />
       </div>
       <a className="w-full flex flex-col justify-between items-start gap-1">
         <div className="w-full flex justify-between">
-          <h1 className="text-lg font-semibold text-black-100 capitalize">
+          <h1 className="text-lg font-semibold text-black-100 capitalize cursor-pointer">
             {title}
           </h1>
           <motion.div
@@ -31,9 +31,8 @@ const CatgoryCard = ({ img, title, category }) => {
               repeatType: "loop",
             }}
             onClick={handleNavigate}
-            
           >
-            <BsArrowRight className="cursor-pointer"/>
+            <BsArrowRight className="cursor-pointer" />
           </motion.div>
         </div>
         <p
