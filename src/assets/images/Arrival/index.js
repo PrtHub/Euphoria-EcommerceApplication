@@ -1,6 +1,12 @@
 import top1 from './top.png'
 import jumpsuit from './jumpsuit.png'
+
 import coords from './coords.png'
+import co1 from './co1.png'
+import co2 from './co2.png'
+import co3 from './co3.png'
+import co4 from './co4.png'
+import co5 from './co5.png'
 
 
 import shirt from "./shirt.png";
@@ -35,7 +41,13 @@ import short5 from "./short5.png";
 export {
     top1,
     jumpsuit,
+
     coords,
+    co1,
+    co2,
+    co3,
+    co4,
+    co5,
 
     shirt,
     casual1,
