@@ -1,5 +1,17 @@
 import top1 from './top.png'
+import top2 from './top2.png'
+import top3 from './top3.png'
+import top4 from './top4.png'
+import top5 from './top5.png'
+import top6 from './top6.png'
+
+
 import jumpsuit from './jumpsuit.png'
+import jump1 from './jump1.png'
+import jump2 from './jump2.png'
+import jump3 from './jump3.png'
+import jump4 from './jump4.png'
+import jump5 from './jump5.png'
 
 import coords from './coords.png'
 import co1 from './co1.png'
@@ -40,7 +52,18 @@ import short5 from "./short5.png";
 
 export {
     top1,
+    top2,
+    top3,
+    top4,
+    top5,
+    top6,
+
     jumpsuit,
+    jump1,
+    jump2,
+    jump3,
+    jump4,
+    jump5,
 
     coords,
     co1,

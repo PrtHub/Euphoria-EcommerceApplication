@@ -21,7 +21,6 @@ const BigSavingZone = () => {
             <h3 className="text-base sm:text-xs md:text-base font-semibold">
               UPTO 50% OFF
             </h3>
-
             <button className="bg-transparent border-[1px] border-white text-white font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base">
               Shop Now
             </button>
