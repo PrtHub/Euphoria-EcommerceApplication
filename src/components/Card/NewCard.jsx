@@ -10,7 +10,7 @@ const NewCard = ({ img, title, brand, price, isNew, id }) => {
   const navigate = useNavigate()
   const [color, setColor] = useState(false);
 
-  const hnadleNaviagte = () => {
+  const handleNaviagte = () => {
     scroll.scrollToTop({
       duration: 500,
       smooth: true
@@ -19,7 +19,7 @@ const NewCard = ({ img, title, brand, price, isNew, id }) => {
   }
 
   return (
-    <section className="w-[282px] h-[440px] flex flex-col items-start justify-start gap-2 rounded" onClick={hnadleNaviagte}>
+    <section className="w-[282px] h-[440px] flex flex-col items-start justify-start gap-2 rounded" onClick={handleNaviagte}>
       <div className="w-full h-[370px] relative overflow-hidden rounded">
         <section className="w-[282px] h-[370px] object-cover object-center rounded overflow-hidden hover:scale-110 transition-all duration-300 ease-in-out">
           <LazyLoadImage
