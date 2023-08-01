@@ -12,7 +12,7 @@ const NewCard = ({ img, title, brand, price, isNew, id }) => {
 
   const hnadleNaviagte = () => {
     scroll.scrollToTop({
-      duration: 5000,
+      duration: 500,
       smooth: true
     })
     navigate(`/single/${id}`)
