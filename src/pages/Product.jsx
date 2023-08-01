@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { products } from "../data/data";
 import { useState } from "react";
-import { Lazy } from "../components";
+import { Lazy, ProductCard, TitleCard } from "../components";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 
 const Product = () => {
@@ -12,9 +12,15 @@ const Product = () => {
   const selectedProduct = products.find(
     (product) => product.id === parseInt(id)
   );
+   
+  const similarProduct = products.filter((product) => 
+    product.tag === selectedProduct.tag && product.id !== selectedProduct.id
+  );
+
+  const similarProductCount = similarProduct.slice(0, 4);
 
   return (
-    <main className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10 gap-10">
+    <main className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10 gap-20">
       <section className="w-full h-full flex flex-col lg:flex-row items-start  lg:items-center justify-start gap-10 lg:gap-20">
         <section className="w-full h-full sm:w-[410px] sm:h-[540px]">
           <Lazy
@@ -110,6 +116,24 @@ const Product = () => {
               </button>
             )}
           </div>
+        </section>
+      </section>
+      <section
+        className="w-full h-full flex flex-col
+         items-start justify-start gap-10"
+      >
+        <TitleCard title="Similar Products"/>
+        <section className="w-full h-full flex flex-wrap items-start justify-start gap-10 xl:gap-4">
+          {similarProductCount.map((product) => (
+            <ProductCard
+              key={product.id}
+              img={product.img}
+              title={product.title}
+              brand={product.brand}
+              price={product.price}
+              isNew={product.isNew}
+            />
+          ))}
         </section>
       </section>
     </main>
