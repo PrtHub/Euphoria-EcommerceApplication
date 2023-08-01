@@ -743,7 +743,7 @@ export const products = [
     brand: "Jhanvi",
     price: "300",
     color: "green",
-    tag: "sports Ware",
+    tag: "joggers",
     range: "Under 500",
     isNew: false,
   },
