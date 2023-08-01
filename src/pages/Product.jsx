@@ -12,9 +12,10 @@ const Product = () => {
   const selectedProduct = products.find(
     (product) => product.id === parseInt(id)
   );
-   
-  const similarProduct = products.filter((product) => 
-    product.tag === selectedProduct.tag && product.id !== selectedProduct.id
+
+  const similarProduct = products.filter(
+    (product) =>
+      product.tag === selectedProduct.tag && product.id !== selectedProduct.id
   );
 
   const similarProductCount = similarProduct.slice(0, 4);
@@ -122,7 +123,7 @@ const Product = () => {
         className="w-full h-full flex flex-col
          items-start justify-start gap-10"
       >
-        <TitleCard title="Similar Products"/>
+        <TitleCard title="Similar Products" />
         <section className="w-full h-full flex flex-wrap items-start justify-start gap-10 xl:gap-4">
           {similarProductCount.map((product) => (
             <ProductCard
