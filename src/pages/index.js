@@ -7,6 +7,7 @@ import Favorite from "./Favorite";
 import Products from "./Products";
 import BrandProducts from "./BrandProducts";
 import NewProducts from "./NewProducts";
+import BigSavingProducts from "./BigSavingProducts";
 
 export {
   Shop,
@@ -18,4 +19,5 @@ export {
   ProductCategory,
   BrandProducts,
   NewProducts,
+  BigSavingProducts
 };
