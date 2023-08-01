@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/CartSlice";
 
 const Product = () => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const { id } = useParams();
   const [goToCart, setGoToCart] = useState(false);
   const [quantity, setQuantity] = useState(1);
@@ -29,22 +29,22 @@ const Product = () => {
     );
   };
 
-  const title = selectedProduct.title
-  const image = selectedProduct.img
-  const price = selectedProduct.price
+  const title = selectedProduct.title;
+  const image = selectedProduct.img;
+  const price = selectedProduct.price;
 
   const handleAddToCart = () => {
-    dispatch( 
+    dispatch(
       addToCart({
-         id: selectedProduct.id,
-         title,
-         image,
-         price,
-         quantity,
+        id: selectedProduct.id,
+        title,
+        image,
+        price,
+        quantity,
       })
     ),
-    setGoToCart(true)
-  }
+      setGoToCart(true);
+  };
 
   return (
     <main className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10 gap-20">
@@ -154,6 +154,7 @@ const Product = () => {
           {similarProductCount.map((product) => (
             <ProductCard
               key={product.id}
+              id={product.id}
               img={product.img}
               title={product.title}
               brand={product.brand}
