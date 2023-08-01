@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
+import { animateScroll as scroll } from 'react-scroll';
 import { BsArrowRight } from "react-icons/bs";
 import Lazy from "../LazyLoading/Lazy";
 import { useNavigate } from "react-router-dom";
@@ -7,7 +8,10 @@ import { useNavigate } from "react-router-dom";
 const CatgoryCard = ({ img, title, category }) => {
   const navigate = useNavigate();
   const handleNavigate = () => {
-    window.scrollTo(0, 0);
+    scroll.scrollToTop({
+      duration: 500,
+      smooth: true,
+    })
     navigate(`${category}/${title}`);
   };
 
