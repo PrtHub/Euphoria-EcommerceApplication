@@ -8,6 +8,7 @@ import Products from "./Products";
 import BrandProducts from "./BrandProducts";
 import NewProducts from "./NewProducts";
 import BigSavingProducts from "./BigSavingProducts";
+import SingleNew from "./SIngleNew";
 
 export {
   Shop,
@@ -19,5 +20,6 @@ export {
   ProductCategory,
   BrandProducts,
   NewProducts,
-  BigSavingProducts
+  BigSavingProducts,
+  SingleNew
 };

@@ -1,9 +1,10 @@
 import { useParams } from "react-router-dom";
 import { Newproducts } from "../data/data";
-import { FilterCard, ProductCard, SEO, TitleCard } from "../components";
+import { FilterCard, NewCard, SEO, TitleCard } from "../components";
 import { useState } from "react";
 import Select from "react-select";
 import { BsFilter } from "react-icons/bs";
+
 
 const NewProducts = () => {
   const { tag } = useParams();
@@ -99,7 +100,7 @@ const NewProducts = () => {
             {sortProductsByPrice(filteredProductsState, sortBy).map(
               (product) => (
                 <main key={product.id}>
-                  <ProductCard
+                  <NewCard
                     id={product.id}
                     img={product.img}
                     title={product.title}
