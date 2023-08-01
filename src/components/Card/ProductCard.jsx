@@ -3,12 +3,23 @@ import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { MdOutlineFavoriteBorder, MdOutlineFavorite } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 
-const ProductCard = ({ img, title, brand, price, isNew }) => {
+const ProductCard = ({ img, title, brand, price, isNew, id }) => {
+  const navigate = useNavigate()
   const [color, setColor] = useState(false);
 
+  const hnadleNaviagte = () => {
+    scroll.scrollToTop({
+      duration: 5000,
+      smooth: true
+    })
+    navigate(`/product/${id}`)
+  }
+
   return (
-    <section className="w-[282px] h-[440px] flex flex-col items-start justify-start gap-2 rounded">
+    <section className="w-[282px] h-[440px] flex flex-col items-start justify-start gap-2 rounded" onClick={hnadleNaviagte}>
       <div className="w-full h-[370px] relative overflow-hidden rounded">
         <section className="w-[282px] h-[370px] object-cover object-center rounded overflow-hidden hover:scale-110 transition-all duration-300 ease-in-out">
           <LazyLoadImage

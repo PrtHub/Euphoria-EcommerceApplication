@@ -100,6 +100,7 @@ const NewProducts = () => {
               (product) => (
                 <main key={product.id}>
                   <ProductCard
+                    id={product.id}
                     img={product.img}
                     title={product.title}
                     price={product.price}
