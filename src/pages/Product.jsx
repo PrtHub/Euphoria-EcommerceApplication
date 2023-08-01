@@ -3,8 +3,11 @@ import { products } from "../data/data";
 import { useState } from "react";
 import { Lazy, ProductCard, TitleCard } from "../components";
 import { HiOutlineShoppingBag } from "react-icons/hi";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../redux/CartSlice";
 
 const Product = () => {
+  const dispatch = useDispatch()
   const { id } = useParams();
   const [goToCart, setGoToCart] = useState(false);
   const [quantity, setQuantity] = useState(1);
@@ -19,6 +22,29 @@ const Product = () => {
   );
 
   const similarProductCount = similarProduct.slice(0, 4);
+
+  const handleQuantity = (operation) => {
+    setQuantity((prevQuantity) =>
+      operation === "i" ? prevQuantity + 1 : prevQuantity - 1
+    );
+  };
+
+  const title = selectedProduct.title
+  const image = selectedProduct.img
+  const price = selectedProduct.price
+
+  const handleAddToCart = () => {
+    dispatch( 
+      addToCart({
+         id: selectedProduct.id,
+         title,
+         image,
+         price,
+         quantity,
+      })
+    ),
+    setGoToCart(true)
+  }
 
   return (
     <main className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10 gap-20">
@@ -83,17 +109,17 @@ const Product = () => {
             <h3 className="font-medium text-xl text-black-100">Qunatity</h3>
             <div className="flex items-center justify-start gap-4 font-normal text-base text-Primary">
               <span
-              // className={`border-[1px] border-light-gray-100 px-4 py-2 cursor-pointer ${
-              //   quantity <= 1 ? "opacity-50 pointer-events-none" : ""
-              // }`}
-              // onClick={() => handleQuantity("d")}
+                className={`border-[1px] border-light-gray-100 px-4 py-2 cursor-pointer ${
+                  quantity <= 1 ? "opacity-50 pointer-events-none" : ""
+                }`}
+                onClick={() => handleQuantity("d")}
               >
                 -
               </span>
               <p>{quantity}</p>
               <span
                 className="border-[1px] border-light-gray-100 px-4 py-2 cursor-pointer"
-                // onClick={() => handleQuantity("i")}
+                onClick={() => handleQuantity("i")}
               >
                 +
               </span>
@@ -111,7 +137,7 @@ const Product = () => {
               <button
                 className="flex items-center  gap-2 bg-dark-violet text-white font-medium
                  px-6 py-2 rounded"
-                // onClick={handleAddToCart}
+                onClick={handleAddToCart}
               >
                 <HiOutlineShoppingBag /> Add to cart
               </button>

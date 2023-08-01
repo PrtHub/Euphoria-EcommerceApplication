@@ -4,10 +4,13 @@ import { MdClose, MdOutlineFavoriteBorder } from "react-icons/md";
 import { AiOutlineSearch } from "react-icons/ai";
 import { logo } from "../assets";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const location = useLocation();
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  const products = useSelector((state) => state.cart.clothes);
 
   const locationRoute = (route) => {
     if (location.pathname === route) {
@@ -86,7 +89,7 @@ const Navbar = () => {
           <Link to="/cart" className="relative hidden lg:block">
             <HiOutlineShoppingBag className=" w-6 h-6 text-light-gray" />
             <span className="w-5 h-5 absolute -top-3 -right-3 bg-red-500 text-white rounded-full flex justify-center items-center text-sm p-2">
-              0
+              {products.length}
             </span>
           </Link>
           <nav className="block lg:hidden">
