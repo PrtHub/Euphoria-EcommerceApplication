@@ -83,7 +83,7 @@ const Navbar = () => {
           <Link to="/favorite" className="relative hidden lg:block">
             <MdOutlineFavoriteBorder className=" w-6 h-6 text-light-gray" />
             <span className="w-5 h-5 absolute -top-3 -right-3 bg-red-500 text-white rounded-full flex justify-center items-center text-sm p-2">
-              0
+           0
             </span>
           </Link>
           <Link to="/cart" className="relative hidden lg:block">
