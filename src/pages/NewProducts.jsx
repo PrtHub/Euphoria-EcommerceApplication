@@ -11,7 +11,7 @@ const NewProducts = () => {
   const [openFilter, setOpenFilter] = useState(false);
   const [sortBy, setSortBy] = useState("lowToHigh");
   const [selectedFilters, setSelectedFilters] = useState({
-    tag: "shirts",
+    tag: tag,
     color: null,
     range: null,
   });
