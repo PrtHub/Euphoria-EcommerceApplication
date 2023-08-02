@@ -20,12 +20,13 @@ import {
     storage,
   };
 
-  const persistedReducer = persistReducer(persistConfig, cartReducer, favReducer);
+  const persistedCartReducer = persistReducer(persistConfig, cartReducer);
+  const persistedFavReducer = persistReducer(persistConfig, favReducer);
 
   export const store = configureStore({
     reducer: {
-        cart: persistedReducer,
-        fav: persistedReducer
+        cart: persistedCartReducer,
+        fav: persistedFavReducer,
     },
    middleware: (getDefaultMiddleware) => getDefaultMiddleware({
     serializableCheck: {
