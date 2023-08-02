@@ -4,17 +4,12 @@ const initialState = {
   clothes: [],
 };
 
-export const favSlice = createSlice({
+export const favReducer = createSlice({
   name: "fav",
   initialState,
   reducers: {
     addToWishlist: (state, action) => {
-      const item = state.clothes.find((item) => item.id === action.payload.id);
-      if (item) {
-        item.quantity += action.payload.quantity;
-      } else {
-        state.clothes.push(action.payload);
-      }
+      state.items.push(action.payload);
     },
     removeItem: (state, action) => {
       state.clothes = state.clothes.filter(
@@ -27,10 +22,6 @@ export const favSlice = createSlice({
   },
 });
 
-export const {  
-  addToWishlist,
-  removeItem,
-  resetCart,
-} = favSlice.actions;
+export const { addToWishlist, removeItem, resetCart } = favReducer.actions;
 
-export default favSlice.reducer;
+export default favReducer.reducer;

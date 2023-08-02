@@ -1,7 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Lazy, SEO, TitleCard } from "../components";
-import { removeItem } from "../redux/CartSlice";
+
 import { GiShoppingBag } from "react-icons/gi";
+import { removeItem } from "../redux/cartReducer";
 
 const Cart = () => {
   const dispatch = useDispatch();

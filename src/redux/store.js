@@ -11,8 +11,8 @@ import {
     REGISTER,
   } from "redux-persist";
   import storage from "redux-persist/lib/storage";
-  import CartSlice from "./CartSlice";
-  import FavSlice from "./FavSlice";
+ import favReducer from "./favReducer";
+ import cartReducer from "./cartReducer";
 
   const persistConfig = {
     key: "root",
@@ -20,7 +20,7 @@ import {
     storage,
   };
 
-  const persistedReducer = persistReducer(persistConfig, CartSlice, FavSlice);
+  const persistedReducer = persistReducer(persistConfig, cartReducer, favReducer);
 
   export const store = configureStore({
     reducer: {

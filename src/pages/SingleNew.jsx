@@ -4,7 +4,8 @@ import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../redux/CartSlice";
+import { addToCart } from "../redux/cartReducer";
+
 
 const SIngleNew = () => {
   const dispatch = useDispatch();

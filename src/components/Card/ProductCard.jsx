@@ -5,8 +5,11 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import { MdOutlineFavoriteBorder, MdOutlineFavorite } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
+import { useDispatch } from "react-redux";
+import { addToWishlist } from "../../redux/favReducer";
 
 const ProductCard = ({ img, title, brand, price, isNew, id }) => {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const [color, setColor] = useState(false);
 
@@ -18,26 +21,19 @@ const ProductCard = ({ img, title, brand, price, isNew, id }) => {
     navigate(`/product/${id}`);
   };
 
-  // const handleToWishlist = () => {
-  //   if (color) {
-  //     // Product is already in the wishlist, so remove it from the wishlist
-  //     dispatch(removeItem(id));
-  //   } else {
-  //     // Product is not in the wishlist, so add it to the wishlist
-  //     dispatch(
-  //       addToWishlist({
-  //         id,
-  //         img,
-  //         title,
-  //         brand,
-  //         price,
-  //         isNew,
-  //       })
-  //     );
-  //   }
-  //   // Toggle the color state after processing the add/remove action
-  //   setColor((prevColor) => !prevColor);
-  // };
+  const handleToWishlist = () => {
+    dispatch(
+      addToWishlist({
+        id: id,
+        img : img,
+        title: title,
+        brand: brand,
+        price: price,
+        isNew: isNew,
+      })
+    );
+    setColor(true);
+  };
 
   return (
     <section className="w-[282px] h-[440px] flex flex-col items-start justify-start gap-2 rounded cursor-pointer">
@@ -62,7 +58,7 @@ const ProductCard = ({ img, title, brand, price, isNew, id }) => {
           ) : (
             <MdOutlineFavoriteBorder
               className="text-black-100 cursor-pointer"
-              onClick={() => setColor(true)}
+              onClick={handleToWishlist}
             />
           )}
         </section>

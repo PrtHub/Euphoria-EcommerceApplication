@@ -4,7 +4,8 @@ import { useState } from "react";
 import { Lazy, ProductCard, TitleCard } from "../components";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../redux/CartSlice";
+import { addToCart } from "../redux/cartReducer";
+
 
 const Product = () => {
   const dispatch = useDispatch();

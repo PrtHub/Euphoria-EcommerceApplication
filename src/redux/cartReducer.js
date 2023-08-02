@@ -4,19 +4,11 @@ const initialState = {
   clothes: [],
 };
 
-export const cartSlice = createSlice({
+export const cartReducer = createSlice({
   name: "cart",
   initialState,
   reducers: {
     addToCart: (state, action) => {
-      const item = state.clothes.find((item) => item.id === action.payload.id);
-      if (item) {
-        item.quantity += action.payload.quantity;
-      } else {
-        state.clothes.push(action.payload);
-      }
-    },
-    addToWishlist: (state, action) => {
       const item = state.clothes.find((item) => item.id === action.payload.id);
       if (item) {
         item.quantity += action.payload.quantity;
@@ -53,11 +45,10 @@ export const cartSlice = createSlice({
 
 export const {
   addToCart,
-  addToWishlist,
   removeItem,
   updateQuantity,
   resetCart,
   updateSize,
-} = cartSlice.actions;
+} = cartReducer.actions;
 
-export default cartSlice.reducer;
+export default cartReducer.reducer;
