@@ -121,7 +121,7 @@ const Cart = () => {
             </section>
           ))
         )}
-        <section className="w-full h-full max-w-4xl mx-auto mt-10 flex ">
+        {products.length !== 0 && <section className="w-full h-full max-w-4xl mx-auto mt-10 flex items-end">
           <button
             className="w-28 h-10 flex items-center justify-center gap-2 bg-dark-violet font-medium text-white rounded"
             onClick={goBack}
@@ -140,7 +140,7 @@ const Cart = () => {
               Purchase now
             </button>
           </section>
-        </section>
+        </section>}
       </main>
     </>
   );
