@@ -1,9 +1,6 @@
 import {
   Shirt,
   activeware,
-  blackshirt,
-  blackshort,
-  blacksweatshirt,
   dress,
   hm,
   hs,
@@ -11,7 +8,6 @@ import {
   jacket,
   jeans,
   kurta,
-  lavenderhoodie,
   lehenga,
   levi,
   mhs,
@@ -584,59 +580,7 @@ export const Brands = [
   },
 ];
 
-export const InLimeLight = [
-  {
-    id: 7,
-    img: blacksweatshirt,
-    title: "Black Sweatshirt",
-    price: "500",
-    brand: "Jhanvi’s  Brand",
-    category: "women",
-  },
-  {
-    id: 8,
-    img: blackshort,
-    title: "Black Sweatshirt",
-    price: "500",
-    brand: "Jhanvi’s  Brand",
-    category: "women",
-  },
-  {
-    id: 9,
-    img: lavenderhoodie,
-    title: "Black Sweatshirt",
-    price: "500",
-    brand: "Jhanvi’s  Brand",
-    category: "women",
-  },
-  {
-    id: 10,
-    img: blackshirt,
-    title: "Black Sweatshirt",
-    price: "500",
-    brand: "Jhanvi’s  Brand",
-    category: "women",
-  },
-  {
-    id: 11,
-    img: blackshirt,
-    title: "Black Sweatshirt",
-    price: "500",
-    brand: "Jhanvi’s  Brand",
-    category: "women",
-  },
-  {
-    id: 12,
-    img: blackshirt,
-    title: "Black Sweatshirt",
-    price: "500",
-    brand: "Jhanvi’s  Brand",
-    category: "women",
-  },
-];
-
 export const products = [
-
   //Trending
   {
     id: 2432,
