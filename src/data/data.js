@@ -25,8 +25,62 @@ import {
   tshirts,
   usPolo,
 } from "../assets";
-import { jumpsuit, shirt, shorts, sweater, track, top1, coords, casual1, casual2, casual3, casual4, casual5, sweater1, sweater2, sweater3, sweater4, sweater5, track1, track2, track3, track4, track5, short1, short2, short3, short4, short5, co1, co2, co3, co4, co5, jump1, jump2, jump3, jump4, jump5, top2, top3, top4, top5, top6 } from "../assets/images/Arrival";
-import { T1, T10, T2, T3, T4, T5, T6, T7, T8, T9 } from "../assets/images/Trending";
+import {
+  jumpsuit,
+  shirt,
+  shorts,
+  sweater,
+  track,
+  top1,
+  coords,
+  casual1,
+  casual2,
+  casual3,
+  casual4,
+  casual5,
+  sweater1,
+  sweater2,
+  sweater3,
+  sweater4,
+  sweater5,
+  track1,
+  track2,
+  track3,
+  track4,
+  track5,
+  short1,
+  short2,
+  short3,
+  short4,
+  short5,
+  co1,
+  co2,
+  co3,
+  co4,
+  co5,
+  jump1,
+  jump2,
+  jump3,
+  jump4,
+  jump5,
+  top2,
+  top3,
+  top4,
+  top5,
+  top6,
+} from "../assets/images/Arrival";
+import {
+  T1,
+  T10,
+  T2,
+  T3,
+  T4,
+  T5,
+  T6,
+  T7,
+  T8,
+  T9,
+} from "../assets/images/Trending";
 
 export const Newproducts = [
   {
@@ -702,9 +756,6 @@ export const products = [
     range: "Under 1000",
     isNew: false,
   },
- 
-
-
 
   {
     id: 13,
