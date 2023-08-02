@@ -30,7 +30,7 @@ import {
   usPolo,
 } from "../assets";
 import { jumpsuit, shirt, shorts, sweater, track, top1, coords, casual1, casual2, casual3, casual4, casual5, sweater1, sweater2, sweater3, sweater4, sweater5, track1, track2, track3, track4, track5, short1, short2, short3, short4, short5, co1, co2, co3, co4, co5, jump1, jump2, jump3, jump4, jump5, top2, top3, top4, top5, top6 } from "../assets/images/Arrival";
-import { T1, T2, T3, T4, T5, T6 } from "../assets/images/Trending";
+import { T1, T10, T2, T3, T4, T5, T6, T7, T8, T9 } from "../assets/images/Trending";
 
 export const Newproducts = [
   {
@@ -651,6 +651,18 @@ export const products = [
     isNew: false,
   },
   {
+    id: 2442,
+    img: T10,
+    title: "Brand Logo Print Ultra-Dry Running T-shirt",
+    brand: "Slazenger",
+    price: "287",
+    category: "treanding",
+    color: "blue",
+    tag: "dress",
+    range: "Under 500",
+    isNew: false,
+  },
+  {
     id: 2433,
     img: T2,
     title: "Striped Sustainable T-shirt",
@@ -672,6 +684,18 @@ export const products = [
     color: "green",
     tag: "jumpsuit",
     range: "Under 2000",
+    isNew: false,
+  },
+  {
+    id: 2438,
+    img: T7,
+    title: "Boys Cotton Shirt",
+    brand: "H&M",
+    price: "798",
+    category: "treanding",
+    color: "sky",
+    tag: "shirt",
+    range: "Under 1000",
     isNew: false,
   },
   {
@@ -699,7 +723,19 @@ export const products = [
     isNew: false,
   },
   {
-    id: 2436,
+    id: 2440,
+    img: T9,
+    title: "Kids Pure Cotton Clothing Set",
+    brand: "ariel",
+    price: "699",
+    category: "treanding",
+    color: "red",
+    tag: "dress",
+    range: "Under 1000",
+    isNew: false,
+  },
+  {
+    id: 2437,
     img: T6,
     title: "Ethnic Printed Midi Dress",
     brand: "Deewa",
@@ -710,6 +746,20 @@ export const products = [
     range: "Under 500",
     isNew: false,
   },
+  {
+    id: 2439,
+    img: T8,
+    title: "Floral A-Line Cotton Dress",
+    brand: "pspeaches",
+    price: "925",
+    category: "treanding",
+    color: "red",
+    tag: "dress",
+    range: "Under 1000",
+    isNew: false,
+  },
+ 
+
 
 
   {
