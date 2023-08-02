@@ -54,7 +54,6 @@ const Product = () => {
 
   const handleChangeSize = (size) => {
     setSelectedSize(size);
-    // Update the size in the cart when the user changes the size
     dispatch(updateSize({ id: selectedProduct.id, size }));
   };
 
