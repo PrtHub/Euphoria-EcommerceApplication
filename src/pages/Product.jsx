@@ -4,14 +4,14 @@ import { useState } from "react";
 import { Lazy, ProductCard, TitleCard } from "../components";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../redux/cartReducer";
+import { addToCart, updateSize } from "../redux/cartReducer";
 
 const Product = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
   const [goToCart, setGoToCart] = useState(false);
   const [quantity, setQuantity] = useState(1);
-  const [size, setSize] = useState("S");
+  const [selectedSize, setSelectedSize] = useState("S");
 
   const selectedProduct = products.find(
     (product) => product.id === parseInt(id)
@@ -46,11 +46,18 @@ const Product = () => {
         brand,
         color,
         quantity,
-        size
+        size : selectedSize
       })
     ),
       setGoToCart(true);
   };
+
+  const handleChangeSize = (size) => {
+    setSelectedSize(size);
+    // Update the size in the cart when the user changes the size
+    dispatch(updateSize({ id: selectedProduct.id, size }));
+  };
+
 
   return (
     <main className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10 gap-20">
@@ -96,41 +103,41 @@ const Product = () => {
             <div className="flex items-center gap-4">
               <p
                 className={`w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm  cursor-pointer ${
-                  size === "S" ? "bg-dark-violet text-white" : ""
+                  selectedSize === "S" ? "bg-dark-violet text-white" : ""
                 }`}
-                onClick={() => setSize("S")}
+                onClick={() => handleChangeSize("S")}
               >
                 S
               </p>
               <p
-                className={`w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm  cursor-pointer${
-                  size === "M" ? "bg-dark-violet text-white" : ""
+                className={`w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm  cursor-pointer ${
+                  selectedSize === "M" ? "bg-dark-violet text-white" : ""
                 }`}
-                onClick={() => setSize("M")}
+                onClick={() => handleChangeSize("M")}
               >
                 M
               </p>
               <p
                 className={`w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm cursor-pointer ${
-                  size === "L" ? "bg-dark-violet text-white" : ""
+                  selectedSize === "L" ? "bg-dark-violet text-white" : ""
                 }`}
-                onClick={() => setSize("L")}
+                onClick={() => handleChangeSize("L")}
               >
                 L
               </p>
               <p
                 className={`w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm cursor-pointer ${
-                  size === "XL" ? "bg-dark-violet text-white" : ""
+                  selectedSize === "XL" ? "bg-dark-violet text-white" : ""
                 }`}
-                onClick={() => setSize("XL")}
+                onClick={() => handleChangeSize("XL")}
               >
                 XL
               </p>
               <p
                 className={`w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm cursor-pointer ${
-                  size === "2XL" ? "bg-dark-violet text-white" : ""
+                  selectedSize === "2XL" ? "bg-dark-violet text-white" : ""
                 }`}
-                onClick={() => setSize("2XL")}
+                onClick={() => handleChangeSize("2XL")}
               >
                 2XL
               </p>
