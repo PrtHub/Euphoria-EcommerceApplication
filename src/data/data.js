@@ -30,6 +30,7 @@ import {
   usPolo,
 } from "../assets";
 import { jumpsuit, shirt, shorts, sweater, track, top1, coords, casual1, casual2, casual3, casual4, casual5, sweater1, sweater2, sweater3, sweater4, sweater5, track1, track2, track3, track4, track5, short1, short2, short3, short4, short5, co1, co2, co3, co4, co5, jump1, jump2, jump3, jump4, jump5, top2, top3, top4, top5, top6 } from "../assets/images/Arrival";
+import { T1, T2, T3, T4, T5, T6 } from "../assets/images/Trending";
 
 export const Newproducts = [
   {
@@ -635,6 +636,82 @@ export const InLimeLight = [
 ];
 
 export const products = [
+
+  //Trending
+  {
+    id: 2432,
+    img: T1,
+    title: "Ribbed Top with Stylish Neck",
+    brand: "Roadster",
+    price: "459",
+    category: "treanding",
+    color: "olive green",
+    tag: "top",
+    range: "Under 500",
+    isNew: false,
+  },
+  {
+    id: 2433,
+    img: T2,
+    title: "Striped Sustainable T-shirt",
+    brand: "Mango",
+    price: "752",
+    category: "treanding",
+    color: "white",
+    tag: "t-shirt",
+    range: "Under 1000",
+    isNew: false,
+  },
+  {
+    id: 2434,
+    img: T3,
+    title: "Glitter Printed Jumpsuit",
+    brand: "Mango",
+    price: "1849",
+    category: "treanding",
+    color: "green",
+    tag: "jumpsuit",
+    range: "Under 2000",
+    isNew: false,
+  },
+  {
+    id: 2435,
+    img: T4,
+    title: "Printed Straight Kurta",
+    brand: "Anouk",
+    price: "449",
+    category: "treanding",
+    color: "green",
+    tag: "kurta",
+    range: "Under 500",
+    isNew: false,
+  },
+  {
+    id: 2436,
+    img: T5,
+    title: "Puff Sleeve Tie-Up Mini Dress",
+    brand: "Tokyo Talkies",
+    price: "495",
+    category: "treanding",
+    color: "pink",
+    tag: "dress",
+    range: "Under 500",
+    isNew: false,
+  },
+  {
+    id: 2436,
+    img: T6,
+    title: "Ethnic Printed Midi Dress",
+    brand: "Deewa",
+    price: "798",
+    category: "treanding",
+    color: "maroon",
+    tag: "dress",
+    range: "Under 500",
+    isNew: false,
+  },
+
+
   {
     id: 13,
     img: Shirt,
