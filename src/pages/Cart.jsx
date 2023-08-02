@@ -2,11 +2,30 @@ import { useDispatch, useSelector } from "react-redux";
 import { Lazy, SEO, TitleCard } from "../components";
 
 import { GiShoppingBag } from "react-icons/gi";
-import { removeItem } from "../redux/cartReducer";
+import { removeItem, updateQuantity } from "../redux/cartReducer";
+import { BsArrowLeft } from "react-icons/bs";
 
 const Cart = () => {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.cart.clothes);
+
+  const handleQuantityChange = (productId, newQuantity) => {
+    dispatch(updateQuantity({ id: productId, quantity: newQuantity }));
+  };
+
+  const goBack = () => {
+    window.scrollTo(0, 0);
+    window.history.back();
+  };
+
+  const totalPrice = () => {
+    let total = 0;
+
+    products.forEach((product) => {
+      total += product.quantity * product.price;
+    });
+    return total.toFixed(2);
+  };
 
   return (
     <>
@@ -64,9 +83,9 @@ const Cart = () => {
                           ? "opacity-50 pointer-events-none"
                           : ""
                       }`}
-                      // onClick={() =>
-                      //   handleQuantityChange(item.id, item.quantity - 1)
-                      // }
+                      onClick={() =>
+                        handleQuantityChange(item.id, item.quantity - 1)
+                      }
                     >
                       -
                     </button>
@@ -75,9 +94,9 @@ const Cart = () => {
                     </p>
                     <button
                       className="border-Primary border-[1px] px-2 flex items-center justify-center"
-                      // onClick={() =>
-                      //   handleQuantityChange(item.id, item.quantity + 1)
-                      // }
+                      onClick={() =>
+                        handleQuantityChange(item.id, item.quantity + 1)
+                      }
                     >
                       +
                     </button>
@@ -102,6 +121,26 @@ const Cart = () => {
             </section>
           ))
         )}
+        <section className="w-full h-full max-w-4xl mx-auto mt-10 flex ">
+          <button
+            className="w-28 h-10 flex items-center justify-center gap-2 bg-dark-violet font-medium text-white rounded"
+            onClick={goBack}
+          >
+            <BsArrowLeft /> Back
+          </button>
+          <section className="w-full h-full flex flex-col justify-end items-end gap-4">
+            <p className="text-lg sm:text-xl text-black-100 font-medium">
+              Subtotal:{" "}
+              <span className="text-light-gray">&#8377; {totalPrice()}</span>
+            </p>
+            <p className="text-light-gray-100 text-sm font-satoshi font-normal">
+              Taxes and shipping are calculated at checkout
+            </p>
+            <button className="bg-dark-violet px-6 text-white py-2 font-medium rounded">
+              Purchase now
+            </button>
+          </section>
+        </section>
       </main>
     </>
   );
