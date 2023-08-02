@@ -67,11 +67,15 @@ const Cart = () => {
                   </h1>
                   <p className="text-base font-medium text-black-100">
                     Brand:{" "}
-                    <span className="text-light-gray capitalize">{item.brand}</span>
+                    <span className="text-light-gray capitalize">
+                      {item.brand}
+                    </span>
                   </p>
                   <p className="text-base font-medium text-black-100">
                     Color:{" "}
-                    <span className="text-light-gray ml-2 capitalize">{item.color}</span>
+                    <span className="text-light-gray ml-2 capitalize">
+                      {item.color}
+                    </span>
                   </p>
                   <div className="flex items-center gap-2 text-center font-satoshi font-normal text-Primary text-base">
                     <p className="text-base font-medium text-black-100 mr-2">
@@ -121,26 +125,28 @@ const Cart = () => {
             </section>
           ))
         )}
-        {products.length !== 0 && <section className="w-full h-full max-w-4xl mx-auto mt-10 flex items-end">
-          <button
-            className="w-28 h-10 flex items-center justify-center gap-2 bg-dark-violet font-medium text-white rounded"
-            onClick={goBack}
-          >
-            <BsArrowLeft /> Back
-          </button>
-          <section className="w-full h-full flex flex-col justify-end items-end gap-4">
-            <p className="text-lg sm:text-xl text-black-100 font-medium">
-              Subtotal:{" "}
-              <span className="text-light-gray">&#8377; {totalPrice()}</span>
-            </p>
-            <p className="text-light-gray-100 text-sm font-satoshi font-normal">
-              Taxes and shipping are calculated at checkout
-            </p>
-            <button className="bg-dark-violet px-6 text-white py-2 font-medium rounded">
-              Purchase now
+        {products.length !== 0 && (
+          <section className="w-full h-full max-w-4xl mx-auto mt-10 flex items-end">
+            <button
+              className="w-28 h-10 flex items-center justify-center gap-2 bg-dark-violet font-medium text-white rounded"
+              onClick={goBack}
+            >
+              <BsArrowLeft /> Back
             </button>
+            <section className="w-full h-full flex flex-col justify-end items-end gap-4">
+              <p className="text-lg sm:text-xl text-black-100 font-medium">
+                Subtotal:{" "}
+                <span className="text-light-gray">&#8377; {totalPrice()}</span>
+              </p>
+              <p className="text-light-gray-100 text-sm font-satoshi font-normal">
+                Taxes and shipping are calculated at checkout
+              </p>
+              <button className="bg-dark-violet px-6 text-white py-2 font-medium rounded">
+                Purchase now
+              </button>
+            </section>
           </section>
-        </section>}
+        )}
       </main>
     </>
   );
