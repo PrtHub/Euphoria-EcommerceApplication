@@ -67,11 +67,11 @@ const Cart = () => {
                   </h1>
                   <p className="text-base font-medium text-black-100">
                     Brand:{" "}
-                    <span className="text-light-gray v">{item.brand}</span>
+                    <span className="text-light-gray capitalize">{item.brand}</span>
                   </p>
                   <p className="text-base font-medium text-black-100">
                     Color:{" "}
-                    <span className="text-light-gray ml-2">{item.color}</span>
+                    <span className="text-light-gray ml-2 capitalize">{item.color}</span>
                   </p>
                   <div className="flex items-center gap-2 text-center font-satoshi font-normal text-Primary text-base">
                     <p className="text-base font-medium text-black-100 mr-2">
