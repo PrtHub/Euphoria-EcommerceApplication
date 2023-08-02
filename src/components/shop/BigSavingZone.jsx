@@ -22,7 +22,10 @@ const BigSavingZone = () => {
             <h3 className="text-base sm:text-xs md:text-base font-semibold">
               UPTO 50% OFF
             </h3>
-            <Link to="/products/men/hawaii-shirts" className="bg-transparent border-[1px] border-white text-white font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base">
+            <Link
+              to="/products/men/hawaii-shirts"
+              className="bg-transparent border-[1px] border-white text-white font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base"
+            >
               Shop Now
             </Link>
           </article>
@@ -43,9 +46,12 @@ const BigSavingZone = () => {
             <h3 className="text-base sm:text-xs md:text-base font-semibold">
               UPTO 40% OFF
             </h3>
-            <button className="bg-transparent border-[1px] border-white text-white font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base">
+            <Link
+              to="/products/women/printed-tshirt"
+              className="bg-transparent border-[1px] border-white text-white font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base"
+            >
               Shop Now
-            </button>
+            </Link>
           </article>
         </section>
         <section className="w-[300px] sm:w-[32%] lg:w-[32.5%] h-full md:h-[300px] lg:h-[393px] relative">
@@ -63,9 +69,12 @@ const BigSavingZone = () => {
             <h3 className="text-base sm:text-xs md:text-base font-semibold">
               UPTO 50% OFF
             </h3>
-            <button className="bg-transparent border-[1px] border-black-100 text-black-100 font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base">
+            <Link
+              to="/products/women/cargo-joggers"
+              className="bg-transparent border-[1px] border-black-100 text-black-100 font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base"
+            >
               Shop Now
-            </button>
+            </Link>
           </article>
         </section>
         <section className="w-[300px] sm:w-[49%] lg:w-[49.4%] h-72 sm:h-full md:h-[300px] lg:h-[393px] relative ">
@@ -81,9 +90,12 @@ const BigSavingZone = () => {
             <h3 className="text-base sm:text-xs md:text-base font-semibold">
               UPTO 50% OFF
             </h3>
-            <button className="bg-transparent border-[1px] border-black-100 text-black-100 font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base">
+            <Link
+              to="/products/men/urban-shirts"
+              className="bg-transparent border-[1px] border-black-100 text-black-100 font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base"
+            >
               Shop Now
-            </button>
+            </Link>
           </article>
         </section>
         <section className="w-[300px] sm:w-[49%] lg:w-[49.4%] h-72 sm:h-full md:h-[300px] lg:h-[393px] relative ">
@@ -101,9 +113,12 @@ const BigSavingZone = () => {
             <h3 className="text-base sm:text-xs md:text-base font-semibold">
               UPTO 60% OFF
             </h3>
-            <button className="bg-transparent border-[1px] border-black-100 text-black-100 font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base">
+            <Link
+              to="/products/men/oversized-tshirts"
+              className="bg-transparent border-[1px] border-black-100 text-black-100 font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base"
+            >
               Shop Now
-            </button>
+            </Link>
           </article>
         </section>
       </main>
