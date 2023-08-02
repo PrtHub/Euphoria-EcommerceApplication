@@ -77,6 +77,12 @@ const Cart = () => {
                       {item.color}
                     </span>
                   </p>
+                  <p className="text-base font-medium text-black-100">
+                    Size:{" "}
+                    <span className="text-light-gray ml-2 capitalize">
+                      {item.size}
+                    </span>
+                  </p>
                   <div className="flex items-center gap-2 text-center font-satoshi font-normal text-Primary text-base">
                     <p className="text-base font-medium text-black-100 mr-2">
                       Quantity:{" "}

@@ -6,12 +6,12 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/cartReducer";
 
-
 const Product = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
   const [goToCart, setGoToCart] = useState(false);
   const [quantity, setQuantity] = useState(1);
+  const [size, setSize] = useState("S");
 
   const selectedProduct = products.find(
     (product) => product.id === parseInt(id)
@@ -46,6 +46,7 @@ const Product = () => {
         brand,
         color,
         quantity,
+        size
       })
     ),
       setGoToCart(true);
@@ -93,19 +94,44 @@ const Product = () => {
           <section className="flex flex-col gap-2 items-start">
             <h3 className="font-medium text-xl text-black-100">Select Size</h3>
             <div className="flex items-center gap-4">
-              <p className="w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm">
+              <p
+                className={`w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm  cursor-pointer ${
+                  size === "S" ? "bg-dark-violet text-white" : ""
+                }`}
+                onClick={() => setSize("S")}
+              >
                 S
               </p>
-              <p className="w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm">
+              <p
+                className={`w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm  cursor-pointer${
+                  size === "M" ? "bg-dark-violet text-white" : ""
+                }`}
+                onClick={() => setSize("M")}
+              >
                 M
               </p>
-              <p className="w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm">
+              <p
+                className={`w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm cursor-pointer ${
+                  size === "L" ? "bg-dark-violet text-white" : ""
+                }`}
+                onClick={() => setSize("L")}
+              >
                 L
               </p>
-              <p className="w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm">
+              <p
+                className={`w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm cursor-pointer ${
+                  size === "XL" ? "bg-dark-violet text-white" : ""
+                }`}
+                onClick={() => setSize("XL")}
+              >
                 XL
               </p>
-              <p className="w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm">
+              <p
+                className={`w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm cursor-pointer ${
+                  size === "2XL" ? "bg-dark-violet text-white" : ""
+                }`}
+                onClick={() => setSize("2XL")}
+              >
                 2XL
               </p>
             </div>
