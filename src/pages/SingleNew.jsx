@@ -32,6 +32,8 @@ const SIngleNew = () => {
   const title = selectedProduct.title;
   const image = selectedProduct.img;
   const price = selectedProduct.price;
+  const brand = selectedProduct.brand;
+  const color = selectedProduct.color;
 
   const handleAddToCart = () => {
     dispatch(
@@ -40,6 +42,8 @@ const SIngleNew = () => {
         title,
         image,
         price,
+        brand,
+        color,
         quantity,
       })
     ),
