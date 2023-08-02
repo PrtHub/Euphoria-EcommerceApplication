@@ -653,7 +653,7 @@ export const products = [
   {
     id: 2442,
     img: T10,
-    title: "Brand Logo Print Ultra-Dry Running T-shirt",
+    title: "Ultra-Dry Running T-shirt",
     brand: "Slazenger",
     price: "287",
     category: "treanding",
