@@ -14,7 +14,7 @@ const Cart = () => {
         desc="Men Shopping Online - Shop for Men Clothings"
       />
       <main className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10 gap-10">
-        <TitleCard title="Cart" />
+        <TitleCard title="Your shopping cart" />
         {products.length === 0 ? (
           <div className="w-full h-full flex flex-col items-center justify-center gap-5">
             <GiShoppingBag className="text-7xl text-dark-violet" />
