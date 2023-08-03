@@ -16,6 +16,12 @@ import print3 from './print3.png'
 import print4 from './print4.png'
 import print5 from './print5.png'
 
+import over1 from './over1.png'
+import over2 from './over2.png'
+import over3 from './over3.png'
+import over4 from './over4.png'
+import over5 from './over5.png'
+
 
 export {
     hawai1,
@@ -34,5 +40,11 @@ export {
     print2,
     print3,
     print4,
-    print5
+    print5,
+
+    over1,
+    over2,
+    over3,
+    over4,
+    over5
 }
