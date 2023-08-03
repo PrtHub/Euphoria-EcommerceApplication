@@ -708,7 +708,7 @@ export const products = [
     color: "gray",
     tag: "joggers",
     range: "Under 1500",
-    isNew: false,
+    isNew: true,
   },
    {
     id: 3460,
@@ -729,10 +729,10 @@ export const products = [
     brand: "Roadster",
     price: "584",
     zone: "cargo",
-    color: "blaxk",
+    color: "black",
     tag: "joggers",
     range: "Under 1000",
-    isNew: false,
+    isNew: true,
   },
    {
     id: 3461,

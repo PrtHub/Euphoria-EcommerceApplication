@@ -59,6 +59,7 @@ const CargoJoggers = () => {
             title={product.title}
             price={product.price}
             brand={product.brand}
+            isNew={product.isNew}
           />
         </main>
       ))}
