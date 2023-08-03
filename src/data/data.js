@@ -69,6 +69,7 @@ import {
   top5,
   top6,
 } from "../assets/images/Arrival";
+import { hawai1, hawai2, hawai3, hawai4, hawai5 } from "../assets/images/BigSaving";
 import {
   T1,
   T10,
@@ -635,6 +636,69 @@ export const Brands = [
 ];
 
 export const products = [
+   // big saving zone
+   {
+    id: 3454,
+    img: hawai1,
+    title: "Men Striped Casual Shirt",
+    brand: "Hancock",
+    price: "1059",
+    category: "men",
+    zone: "hawai",
+    color: "Multi colour",
+    tag: "shirts",
+    range: "Under 1500",
+    isNew: false,
+  },
+   {
+    id: 3455,
+    img: hawai2,
+    title: "Fit Casual Resort Shirt",
+    brand: "Hancock",
+    price: "1019",
+    zone: "hawai",
+    color: "Multi colour",
+    tag: "shirts",
+    range: "Under 1500",
+    isNew: false,
+  },
+   {
+    id: 3456,
+    img: hawai3,
+    title: "Floral Printed Casual Shirt",
+    brand: "Hancock",
+    price: "819",
+    zone: "hawai",
+    color: "black",
+    tag: "shirts",
+    range: "Under 1000",
+    isNew: false,
+  },
+   {
+    id: 3457,
+    img: hawai4,
+    title: "Printed Cotton Casual Shirt",
+    brand: "Locomotive",
+    price: "412",
+    zone: "hawai",
+    color: "blue",
+    tag: "shirts",
+    range: "Under 500",
+    isNew: false,
+  },
+   {
+    id: 3458,
+    img: hawai5,
+    title: "Printed Casual Resort Shirt",
+    brand: "Hancock",
+    price: "1034",
+    zone: "hawai",
+    color: "blue",
+    tag: "shirts",
+    range: "Under 1500",
+    isNew: false,
+  },
+
   //Trending
   {
     id: 2432,
