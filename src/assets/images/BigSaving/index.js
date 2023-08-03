@@ -22,6 +22,12 @@ import over3 from './over3.png'
 import over4 from './over4.png'
 import over5 from './over5.png'
 
+import urban1 from './urban1.png'
+import urban2 from './urban2.png'
+import urban3 from './urban3.png'
+import urban4 from './urban4.png'
+import urban5 from './urban5.png'
+
 
 export {
     hawai1,
@@ -46,5 +52,11 @@ export {
     over2,
     over3,
     over4,
-    over5
+    over5,
+
+    urban1,
+    urban2,
+    urban3,
+    urban4,
+    urban5
 }
