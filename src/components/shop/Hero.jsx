@@ -27,7 +27,7 @@ const Hero = () => {
           para="Tops / skirts"
           title1="Women Fashion"
           title2="Collection"
-          url={<Link to="/women/skirts & palazzos">Shop Now</Link>}
+          url={<Link to="/women/dress">Shop Now</Link>}
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -54,14 +54,14 @@ const Hero = () => {
           para="T-shits / Jackets"
           title1="Men Fashion"
           title2="Collection"
-          url={<Link to="/men/jacket">Shop Now</Link>}
+          url={<Link to="/products/men">Shop Now</Link>}
         />
       </SwiperSlide>
       <SwiperSlide>
         <HeroCard
           image={Banner6}
           para="Joggers / Sports"
-          title1="Joggers Fashion"
+          title1="Sports Fashion"
           title2="Collection"
           url={<Link to="/women/joggers">Shop Now</Link>}
         />
