@@ -10,8 +10,12 @@ import {
   ProductCategory,
   BrandProducts,
   NewProducts,
-  BigSavingProducts,
   SingleNew,
+  HawaiiShirts,
+  CargoJoggers,
+  OversizedTshirts,
+  PrintedTshirts,
+  UrbanShirts,
 } from "./pages";
 import { Footer, Navbar } from "./components";
 import { ToastContainer } from "react-toastify";
@@ -31,7 +35,11 @@ const App = () => {
           <Route path="/products/:category" element={<Products />} />
           <Route path="/new/:category/:tag" element={<NewProducts />} />
           <Route path="/products/brand/:brand" element={<BrandProducts />} />
-          <Route path="/products/:category/:tag" element={<BigSavingProducts />} />
+          <Route path="/hawaii-shirts" element={<HawaiiShirts />}/>
+          <Route path="/cargo-joggers" element={<CargoJoggers />}/>
+          <Route path="/oversized-tshirts" element={<OversizedTshirts />}/>
+          <Route path="/printed-tshirt" element={<PrintedTshirts />}/>
+          <Route path="/urban-shirt" element={<UrbanShirts />}/>
           <Route path="/product/:id" element={<Product />} />
           <Route path="/single/:id" element={<SingleNew />} />
           <Route path="/cart" element={<Cart />} />

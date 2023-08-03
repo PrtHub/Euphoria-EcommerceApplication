@@ -23,7 +23,7 @@ const BigSavingZone = () => {
               UPTO 50% OFF
             </h3>
             <Link
-              to="/products/men/hawaii-shirts"
+              to="/hawaii-shirts"
               className="bg-transparent border-[1px] border-white text-white font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base"
             >
               Shop Now
@@ -47,7 +47,7 @@ const BigSavingZone = () => {
               UPTO 40% OFF
             </h3>
             <Link
-              to="/products/women/printed-tshirt"
+              to="/printed-tshirt"
               className="bg-transparent border-[1px] border-white text-white font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base"
             >
               Shop Now
@@ -70,7 +70,7 @@ const BigSavingZone = () => {
               UPTO 50% OFF
             </h3>
             <Link
-              to="/products/women/cargo-joggers"
+              to="/cargo-joggers"
               className="bg-transparent border-[1px] border-black-100 text-black-100 font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base"
             >
               Shop Now
@@ -91,7 +91,7 @@ const BigSavingZone = () => {
               UPTO 50% OFF
             </h3>
             <Link
-              to="/products/men/urban-shirts"
+              to="/urban-shirt"
               className="bg-transparent border-[1px] border-black-100 text-black-100 font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base"
             >
               Shop Now
@@ -114,7 +114,7 @@ const BigSavingZone = () => {
               UPTO 60% OFF
             </h3>
             <Link
-              to="/products/men/oversized-tshirts"
+              to="/oversized-tshirts"
               className="bg-transparent border-[1px] border-black-100 text-black-100 font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base"
             >
               Shop Now

@@ -7,8 +7,13 @@ import Favorite from "./Favorite";
 import Products from "./Products";
 import BrandProducts from "./BrandProducts";
 import NewProducts from "./NewProducts";
-import BigSavingProducts from "./BigSavingProducts";
 import SingleNew from "./SIngleNew";
+
+import HawaiiShirts from "./BigSavingProduct/HawaiiShirts";
+import OversizedTshirts from "./BigSavingProduct/OversizedTshirts";
+import PrintedTshirts from "./BigSavingProduct/PrintedTshirts";
+import UrbanShirts from "./BigSavingProduct/UrbanShirts";
+import CargoJoggers from "./BigSavingProduct/CargoJoggers";
 
 export {
   Shop,
@@ -20,6 +25,11 @@ export {
   ProductCategory,
   BrandProducts,
   NewProducts,
-  BigSavingProducts,
-  SingleNew
+  SingleNew,
+
+  HawaiiShirts,
+  OversizedTshirts,
+  PrintedTshirts,
+  UrbanShirts,
+  CargoJoggers
 };
