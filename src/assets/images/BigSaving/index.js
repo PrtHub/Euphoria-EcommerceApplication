@@ -10,6 +10,12 @@ import cargo3 from './cargo3.png'
 import cargo4 from './cargo4.png'
 import cargo5 from './cargo5.png'
 
+import print1 from './print1.png'
+import print2 from './print2.png'
+import print3 from './print3.png'
+import print4 from './print4.png'
+import print5 from './print5.png'
+
 
 export {
     hawai1,
@@ -22,5 +28,11 @@ export {
     cargo2,
     cargo3,
     cargo4,
-    cargo5
+    cargo5,
+
+    print1,
+    print2,
+    print3,
+    print4,
+    print5
 }
