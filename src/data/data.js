@@ -83,7 +83,7 @@ import {
 } from "../assets/images/Trending";
 import { levi1, puma1, us1 } from "../assets/images/brand";
 import { cs1, cs10, cs2, cs3, cs4, cs5, cs6, cs7, cs8, cs9, kd1, kd10, kd2, kd3, kd4, kd5, kd6, kd7, kd8, kd9, ks1, ks10, ks2, ks3, ks4, ks5, ks6, ks7, ks8, ks9 } from "../assets/images/kid";
-import { jog1, jog2, jog3, jog4 } from "../assets/images/men";
+import { jog1, jog2, jog3, jog4, trouser1, trouser2, trouser3, trouser4, trouser5 } from "../assets/images/men";
 import { ws1, ws10, ws2, ws3, ws4, ws5, ws6, ws7, ws8, ws9 } from "../assets/images/women";
 
 export const Newproducts = [
@@ -1578,18 +1578,6 @@ export const products = [
     isNew: false,
   },
   {
-    id: 19,
-    img: jeans,
-    title: "Jeans",
-    brand: "Jhanvi",
-    price: "300",
-    category: "men",
-    color: "blue",
-    tag: "trousers",
-    range: "Under 500",
-    isNew: false,
-  },
-  {
     id: 20,
     img: mkurta,
     title: "Kurta",
@@ -1811,6 +1799,76 @@ export const products = [
     range: "Under 1000",
     isNew: true,
   },
+  {
+    id: 1991,
+    img: trouser1,
+    title: "Men Solid Cropped Chinos",
+    subtitle: "trousers",
+    brand: "Highlander",
+    price: "681",
+    category: "men",
+    color: "grey",
+    tag: "trousers",
+    range: "Under 1000",
+    isNew: false,
+  },
+  {
+    id: 1992,
+    img: trouser2,
+    title: "Men Relaxed Chinos Trousers",
+    subtitle: "trousers",
+    brand: "PLUS 91",
+    price: "699",
+    category: "men",
+    color: "olive green",
+    tag: "trousers",
+    range: "Under 1000",
+    isNew: false,
+  },
+  {
+    id: 1993,
+    img: trouser3,
+    title: "Men Solid Sustainable Chinos",
+    subtitle: "trousers",
+    brand: "Roadster",
+    price: "1499",
+    category: "men",
+    color: "grey",
+    tag: "trousers",
+    range: "Under 1500",
+    isNew: false,
+  },
+  {
+    id: 1994,
+    img: trouser4,
+    title: "Men Basic Sustainable Chinos",
+    subtitle: "trousers",
+    brand: "Roadster",
+    price: "854",
+    category: "men",
+    color: "black",
+    tag: "trousers",
+    range: "Under 1000",
+    isNew: false,
+  },
+  {
+    id: 1995,
+    img: trouser5,
+    title: "Men Slim Fit Cargos Trousers",
+    subtitle: "trousers",
+    brand: "The Indian Garage Co",
+    price: "927",
+    category: "men",
+    color: "grey",
+    tag: "trousers",
+    range: "Under 1000",
+    isNew: false,
+  },
+  
+
+
+
+
   {
     id: 1322,
     img: ws1,
