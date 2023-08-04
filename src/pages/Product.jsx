@@ -88,7 +88,7 @@ const Product = () => {
               </p>
             </section>
           </header>
-          <article className="max-w-5xl flex flex-col justify-start items-start gap-2">
+          <article className="max-w-3xl xl:max-w-5xl flex flex-col justify-start items-start gap-2">
             <h3 className="font-medium text-xl text-black-100">
               Product description
             </h3>
