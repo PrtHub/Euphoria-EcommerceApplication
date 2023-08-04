@@ -13,7 +13,7 @@ const Products = () => {
     tag: null,
     range: null,
     color: null,
-    brand: null
+    brand: null,
   });
 
   const [sortBy, setSortBy] = useState("lowToHigh");
@@ -69,6 +69,8 @@ const Products = () => {
     );
   }
 
+  const noMatchesFound = filteredProductsState.length === 0;
+
   return (
     <>
       <SEO
@@ -106,19 +108,25 @@ const Products = () => {
             </div>
           </header>
           <section className="w-full h-full flex flex-wrap items-center justify-center md:justify-start gap-10">
-            {sortProductsByPrice(filteredProductsState, sortBy).map(
-              (product) => (
-                <main key={product.id}>
-                  <ProductCard
-                  product={product}
-                    id={product.id}
-                    img={product.img}
-                    title={product.title}
-                    price={product.price}
-                    brand={product.brand}
-                    isNew={product.isNew}
-                  />
-                </main>
+            {noMatchesFound ? (
+              <div className="w-full py-10 text-center text-gray-600">
+                No products match the selected filters.
+              </div>
+            ) : (
+              sortProductsByPrice(filteredProductsState, sortBy).map(
+                (product) => (
+                  <main key={product.id}>
+                    <ProductCard
+                      product={product}
+                      id={product.id}
+                      img={product.img}
+                      title={product.title}
+                      price={product.price}
+                      brand={product.brand}
+                      isNew={product.isNew}
+                    />
+                  </main>
+                )
               )
             )}
           </section>
