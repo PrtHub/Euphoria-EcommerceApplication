@@ -20,6 +20,13 @@ import ks8 from './ks8.png';
 import ks9 from './ks9.png';
 import ks10 from './ks10.png';
 
+import kd1 from './kd1.png';
+import kd2 from './kd2.png';
+import kd3 from './kd3.png';
+import kd4 from './kd4.png';
+import kd5 from './kd5.png';
+import kd6 from './kd6.png';
+
 export {
     cs1,
     cs2,
@@ -40,5 +47,11 @@ export {
     ks7,
     ks8,
     ks9,
-    ks10
+    ks10,
+    kd1,
+    kd2,
+    kd3,
+    kd4,
+    kd5,
+    kd6
 }
