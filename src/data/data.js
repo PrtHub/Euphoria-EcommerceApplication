@@ -322,7 +322,7 @@ export const Newproducts = [
     isNew: true,
   },
   {
-    id: 233,
+    id: 236,
     img: track4,
     title: "Men Lifestyle Joggers",
     category: "men",
@@ -346,7 +346,7 @@ export const Newproducts = [
     isNew: true,
   },
   {
-    id: 234,
+    id: 235,
     img: track2,
     title: "Men Casual Track Pant",
     category: "men",
