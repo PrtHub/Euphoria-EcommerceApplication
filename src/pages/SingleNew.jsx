@@ -57,7 +57,7 @@ const SIngleNew = () => {
         <section className="w-full h-full sm:w-[410px] sm:h-[540px]">
           <Lazy
             img={selectedProduct.img}
-            className="w-full h-full sm:w-[410px] sm:h-[540px] object-center"
+            className="w-full h-full sm:w-[410px] sm:h-[540px] object-center rounded"
           />
         </section>
         <section className="flex flex-col justify-start items-start gap-6">
