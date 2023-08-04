@@ -81,6 +81,7 @@ import {
   T8,
   T9,
 } from "../assets/images/Trending";
+import { cs1, cs2, cs3, cs4, cs5 } from "../assets/images/kid";
 import { jog1, jog2, jog3, jog4 } from "../assets/images/men";
 import { ws1, ws10, ws2, ws3, ws4, ws5, ws6, ws7, ws8, ws9 } from "../assets/images/women";
 
@@ -637,6 +638,74 @@ export const Brands = [
 ];
 
 export const products = [
+
+  // kids
+  {
+    id: 5101,
+    img: cs1,
+    title: "Pure Cotton T-shirt with Shorts",
+    brand: "Anthrilo",
+    price: "843",
+    category: "kids",
+    gender: 'boys',
+    color: "Multi colour",
+    tag: "clothing set",
+    range: "Under 1000",
+    isNew: false,
+  },
+  {
+    id: 5102,
+    img: cs2,
+    title: "Black & White Shirt with Shorts",
+    brand: "Aj DEZInES",
+    price: "804",
+    category: "kids",
+    gender: 'boys',
+    color: "Black & White",
+    tag: "clothing set",
+    range: "Under 1000",
+    isNew: false,
+  },
+  {
+    id: 5103,
+    img: cs3,
+    title: "Infants Cotton T-Shirt with Trousers",
+    brand: "ariel",
+    price: "399",
+    category: "kids",
+    gender: 'boys',
+    color: "navy blue",
+    tag: "clothing set",
+    range: "Under 500",
+    isNew: false,
+  },
+  {
+    id: 5104,
+    img: cs4,
+    title: "Pure Cotton T-shirt With Trousers",
+    brand: "Anthrilo",
+    price: "979",
+    category: "kids",
+    gender: 'boys',
+    color: "Black & White",
+    tag: "clothing set",
+    range: "Under 1000",
+    isNew: false,
+  },
+  {
+    id: 5105,
+    img: cs5,
+    title: "Boys Shirt with Checked Shorts",
+    brand: "Aj DEZInES",
+    price: "983",
+    category: "kids",
+    gender: 'boys',
+    color: "Blue and white ",
+    tag: "clothing set",
+    range: "Under 1000",
+    isNew: false,
+  },
+
    // big saving zone
    {
     id: 3454,
@@ -1068,6 +1137,9 @@ export const products = [
     range: "Under 1000",
     isNew: false,
   },
+
+  
+
   {
     id: 14,
     img: printed,
@@ -1493,7 +1565,6 @@ export const products = [
     isNew: true,
   },
 
-  //womens products
   {
     id: 22,
     img: pinkHoddie,

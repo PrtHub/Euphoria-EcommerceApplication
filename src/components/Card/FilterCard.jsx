@@ -6,6 +6,7 @@ const FilterCard = ({ setOpenFilter, filteredProducts, onFilterChange, selectedF
   const uniqueTag = new Set();
   const uniquepriceRange = new Set();
   const uniqueColor = new Set();
+  const uniqueBrand = new Set();
 
   const uniqueFilterTags = filteredProducts.filter((fil) => {
     if (uniqueTag.has(fil.tag)) {
@@ -30,6 +31,14 @@ const FilterCard = ({ setOpenFilter, filteredProducts, onFilterChange, selectedF
     uniqueColor.add(fil.color);
     return true;
   });
+  
+  const uniqueFilterBrand = filteredProducts.filter((fil) => {
+    if (uniqueBrand.has(fil.brand)) {
+      return false;
+    }
+    uniqueBrand.add(fil.brand);
+    return true;
+  });
 
 
   const handleTagFilterChange = (tag) => {
@@ -42,6 +51,9 @@ const FilterCard = ({ setOpenFilter, filteredProducts, onFilterChange, selectedF
  
   const handleColorFilterChange = (color) => {
     onFilterChange({ color: color === selectedFilters.color ? null : color });
+  }
+  const handleBrandFilterChange = (brand) => {
+    onFilterChange({ brand: brand === selectedFilters.brand ? null : brand });
   }
 
   return (
@@ -121,6 +133,30 @@ const FilterCard = ({ setOpenFilter, filteredProducts, onFilterChange, selectedF
                   className="text-black-100 text-xs sm:text-base capitalize"
                 >
                   {fil.color}
+                </label>
+              </section>
+            ))}
+          </section>
+        </section>
+        <section className="flex flex-col items-start justify-start gap-2">
+          <h1 className="text-sm font-semibold text-black-100 uppercase">
+            Brand
+          </h1>
+          <section className="flex flex-col items-start gap-2">
+            {uniqueFilterBrand.map((fil) => (
+              <section key={fil.id} className="flex items-center gap-5">
+                <input 
+                type="checkbox" 
+                name="catCheckbox" 
+                id="catCheckbox" 
+                checked={fil.brand === selectedFilters.brand}
+                onChange={() => handleBrandFilterChange(fil.brand)}
+                />
+                <label
+                  htmlFor="catCheckbox"
+                  className="text-black-100 text-xs sm:text-base capitalize"
+                >
+                  {fil.brand}
                 </label>
               </section>
             ))}

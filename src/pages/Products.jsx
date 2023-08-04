@@ -12,6 +12,7 @@ const Products = () => {
     tag: null,
     range: null,
     color: null,
+    brand: null
   });
 
   const [sortBy, setSortBy] = useState("lowToHigh");
@@ -54,6 +55,11 @@ const Products = () => {
   if (selectedFilters.color) {
     filteredProductsState = filteredProductsState.filter(
       (product) => product.color === selectedFilters.color
+    );
+  }
+  if (selectedFilters.brand) {
+    filteredProductsState = filteredProductsState.filter(
+      (product) => product.brand === selectedFilters.brand
     );
   }
 
