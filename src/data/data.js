@@ -639,6 +639,21 @@ export const Brands = [
 
 export const products = [
 
+  //brand
+  {
+    id: 4401,
+    img: short5,
+    title: "Men Traning Shorts",
+    category: "men",
+    tag: "shorts",
+    brand: "nike",
+    price: "1495",
+    color: "black",
+    range: "Under 1500",
+    isNew: true,
+  },
+
+
   // kids
   {
     id: 5101,
