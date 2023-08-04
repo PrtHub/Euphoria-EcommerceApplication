@@ -15,6 +15,7 @@ const NewProducts = () => {
     tag: tag,
     color: null,
     range: null,
+    brand: null,
   });
 
   const filteredProducts = Newproducts.filter(
@@ -44,6 +45,13 @@ const NewProducts = () => {
       (product) => product.range === selectedFilters.range
     );
   }
+  if (selectedFilters.brand) {
+    filteredProductsState = filteredProductsState.filter(
+      (product) => product.brand === selectedFilters.brand
+    );
+  }
+
+  const noMatchesFound = filteredProductsState.length === 0;
 
   const sortProductsByPrice = (products, sortBy) => {
     const sortedProducts = [...products];
@@ -97,18 +105,25 @@ const NewProducts = () => {
             </div>
           </header>
           <section className="w-full h-full flex flex-wrap items-center justify-center md:justify-start gap-10">
-            {sortProductsByPrice(filteredProductsState, sortBy).map(
-              (product) => (
-                <main key={product.id}>
-                  <NewCard
-                    id={product.id}
-                    img={product.img}
-                    title={product.title}
-                    price={product.price}
-                    brand={product.brand}
-                    isNew={product.isNew}
-                  />
-                </main>
+            {noMatchesFound ? (
+              <div className="w-full py-10 text-center text-gray-600">
+                No products match the selected filters.
+              </div>
+            ) : (
+              sortProductsByPrice(filteredProductsState, sortBy).map(
+                (product) => (
+                  <main key={product.id}>
+                    <NewCard
+                      product={product}
+                      id={product.id}
+                      img={product.img}
+                      title={product.title}
+                      price={product.price}
+                      brand={product.brand}
+                      isNew={product.isNew}
+                    />
+                  </main>
+                )
               )
             )}
           </section>
