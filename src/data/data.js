@@ -5,7 +5,6 @@ import {
   hs,
   jac,
   jacket,
-  jeans,
   kurta,
   lehenga,
   levi,
