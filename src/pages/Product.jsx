@@ -19,10 +19,13 @@ const Product = () => {
 
   const similarProduct = products.filter(
     (product) =>
-      product.tag === selectedProduct.tag && product.id !== selectedProduct.id
+      product.tag === selectedProduct.tag &&
+      product.category === selectedProduct.category &&
+      product.gender === selectedProduct.gender &&
+      product.id !== selectedProduct.id
   );
 
-  const similarProductCount = similarProduct.slice(0, 4);
+  const similarProductCount = similarProduct.slice(0, 8);
 
   const handleQuantity = (operation) => {
     setQuantity((prevQuantity) =>
@@ -46,7 +49,7 @@ const Product = () => {
         brand,
         color,
         quantity,
-        size : selectedSize
+        size: selectedSize,
       })
     ),
       setGoToCart(true);
@@ -56,7 +59,6 @@ const Product = () => {
     setSelectedSize(size);
     dispatch(updateSize({ id: selectedProduct.id, size }));
   };
-
 
   return (
     <main className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10 gap-20">

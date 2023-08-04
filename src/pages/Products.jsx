@@ -9,6 +9,7 @@ const Products = () => {
   const { category } = useParams();
   const [openFilter, setOpenFilter] = useState(false);
   const [selectedFilters, setSelectedFilters] = useState({
+    gender: null,
     tag: null,
     range: null,
     color: null,
@@ -60,6 +61,11 @@ const Products = () => {
   if (selectedFilters.brand) {
     filteredProductsState = filteredProductsState.filter(
       (product) => product.brand === selectedFilters.brand
+    );
+  }
+  if (selectedFilters.gender) {
+    filteredProductsState = filteredProductsState.filter(
+      (product) => product.gender === selectedFilters.gender
     );
   }
 

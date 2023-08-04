@@ -81,7 +81,7 @@ import {
   T8,
   T9,
 } from "../assets/images/Trending";
-import { cs1, cs2, cs3, cs4, cs5 } from "../assets/images/kid";
+import { cs1, cs10, cs2, cs3, cs4, cs5, cs6, cs7, cs8, cs9 } from "../assets/images/kid";
 import { jog1, jog2, jog3, jog4 } from "../assets/images/men";
 import { ws1, ws10, ws2, ws3, ws4, ws5, ws6, ws7, ws8, ws9 } from "../assets/images/women";
 
@@ -705,6 +705,71 @@ export const products = [
     range: "Under 1000",
     isNew: false,
   },
+  {
+    id: 5106,
+    img: cs6,
+    title: "Printed Top with Trousers",
+    brand: "LilPicks",
+    price: "886",
+    category: "kids",
+    gender: 'girls',
+    color: "green",
+    tag: "clothing set",
+    range: "Under 1000",
+    isNew: false,
+  },
+  {
+    id: 5107,
+    img: cs7,
+    title: "Printed Top with Palazzos",
+    brand: "Cutiekins",
+    price: "779",
+    category: "kids",
+    gender: 'girls',
+    color: "Peach-Coloured & Green",
+    tag: "clothing set",
+    range: "Under 1000",
+    isNew: false,
+  },
+  {
+    id: 5108,
+    img: cs8,
+    title: "Printed Dungarees with T-shirt",
+    brand: "Naughty Ninos",
+    price: "899",
+    category: "kids",
+    gender: 'girls',
+    color: "blue",
+    tag: "clothing set",
+    range: "Under 1000",
+    isNew: false,
+  },
+  {
+    id: 5109,
+    img: cs9,
+    title: "Floral Printed Top with Palazzos",
+    brand: "Naughty Ninos",
+    price: "859",
+    category: "kids",
+    gender: 'girls',
+    color: "blue",
+    tag: "clothing set",
+    range: "Under 1000",
+    isNew: false,
+  },
+  {
+    id: 5110,
+    img: cs10,
+    title: "Striped Cotton Clothing Set",
+    brand: "pspeaches",
+    price: "663",
+    category: "kids",
+    gender: 'girls',
+    color: "white",
+    tag: "clothing set",
+    range: "Under 1000",
+    isNew: false,
+  },
 
    // big saving zone
    {
@@ -855,7 +920,7 @@ export const products = [
     isNew: false,
   },
    {
-    id: 3465,
+    id: 346460,
     img: print3,
     title: "Graphic Cotton Lounge Tshirts",
     brand: "Dreamz by Pantaloons",
@@ -868,7 +933,7 @@ export const products = [
     isNew: true,
   },
    {
-    id: 3465,
+    id: 3435353,
     img: print4,
     title: "Printed Lounge Tshirts",
     brand: "La Vie en Rose",
@@ -931,7 +996,7 @@ export const products = [
     isNew: false,
   },
   {
-    id: 3469,
+    id: 343593,
     img: over4,
     title: "Solid Cotton Oversized T-shirt",
     brand: "Harvard",
@@ -966,7 +1031,7 @@ export const products = [
     isNew: true,
   },
   {
-    id: 3470,
+    id: 3474,
     img: urban2,
     title: "Mandarin Collar Shirt",
     brand: "Fubar",

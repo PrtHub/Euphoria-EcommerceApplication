@@ -2,11 +2,17 @@
 
 import { MdClose } from "react-icons/md";
 
-const FilterCard = ({ setOpenFilter, filteredProducts, onFilterChange, selectedFilters }) => {
+const FilterCard = ({
+  setOpenFilter,
+  filteredProducts,
+  onFilterChange,
+  selectedFilters,
+}) => {
   const uniqueTag = new Set();
   const uniquepriceRange = new Set();
   const uniqueColor = new Set();
   const uniqueBrand = new Set();
+  const uniquekids = new Set();
 
   const uniqueFilterTags = filteredProducts.filter((fil) => {
     if (uniqueTag.has(fil.tag)) {
@@ -31,7 +37,7 @@ const FilterCard = ({ setOpenFilter, filteredProducts, onFilterChange, selectedF
     uniqueColor.add(fil.color);
     return true;
   });
-  
+
   const uniqueFilterBrand = filteredProducts.filter((fil) => {
     if (uniqueBrand.has(fil.brand)) {
       return false;
@@ -40,6 +46,13 @@ const FilterCard = ({ setOpenFilter, filteredProducts, onFilterChange, selectedF
     return true;
   });
 
+  const uniqueFilterKids = filteredProducts.filter((fil) => {
+    if (uniquekids.has(fil.gender)) {
+      return false;
+    }
+    uniquekids.add(fil.gender);
+    return true;
+  });
 
   const handleTagFilterChange = (tag) => {
     onFilterChange({ tag: tag === selectedFilters.tag ? null : tag });
@@ -47,14 +60,19 @@ const FilterCard = ({ setOpenFilter, filteredProducts, onFilterChange, selectedF
 
   const handleRangeFilterChange = (range) => {
     onFilterChange({ range: range === selectedFilters.range ? null : range });
-  }
- 
+  };
+
   const handleColorFilterChange = (color) => {
     onFilterChange({ color: color === selectedFilters.color ? null : color });
-  }
+  };
   const handleBrandFilterChange = (brand) => {
     onFilterChange({ brand: brand === selectedFilters.brand ? null : brand });
-  }
+  };
+  const handleKidsFilterChange = (gender) => {
+    onFilterChange({
+      gender: gender === selectedFilters.gender ? null : gender,
+    });
+  };
 
   return (
     <section className="w-full h-full p-5 sm:p-10 flex flex-col items-start justify-start gap-10">
@@ -68,6 +86,28 @@ const FilterCard = ({ setOpenFilter, filteredProducts, onFilterChange, selectedF
         />
       </header>
       <section className="flex flex-col items-start justify-start gap-5">
+        <section className="flex flex-col items-start gap-2">
+          {uniqueFilterKids.map(
+            (fil) =>
+              fil.gender && (
+                <section key={fil.id} className="flex items-center gap-5">
+                  <input
+                    type="checkbox"
+                    name={fil.gender}
+                    id={fil.gender}
+                    checked={fil.gender === selectedFilters.gender}
+                    onChange={() => handleKidsFilterChange(fil.gender)}
+                  />
+                  <label
+                    htmlFor={fil.gender}
+                    className="text-black-100 text-xs sm:text-base capitalize"
+                  >
+                    {fil.gender}
+                  </label>
+                </section>
+              )
+          )}
+        </section>
         <section className="flex flex-col items-start justify-start gap-2">
           <h1 className="text-sm font-semibold text-black-100 uppercase">
             Categories
@@ -97,12 +137,12 @@ const FilterCard = ({ setOpenFilter, filteredProducts, onFilterChange, selectedF
           <section className="flex flex-col items-start gap-2">
             {uniqueFilterRange.map((fil) => (
               <section key={fil.id} className="flex items-center gap-5">
-                <input 
-                type="checkbox" 
-                name={fil.range}
-                id={fil.range}
-                checked={fil.range === selectedFilters.range}
-                onChange={() => handleRangeFilterChange(fil.range)}
+                <input
+                  type="checkbox"
+                  name={fil.range}
+                  id={fil.range}
+                  checked={fil.range === selectedFilters.range}
+                  onChange={() => handleRangeFilterChange(fil.range)}
                 />
                 <label
                   htmlFor={fil.range}
@@ -121,12 +161,12 @@ const FilterCard = ({ setOpenFilter, filteredProducts, onFilterChange, selectedF
           <section className="flex flex-col items-start gap-2">
             {uniqueFilterColor.map((fil) => (
               <section key={fil.id} className="flex items-center gap-5">
-                <input 
-                type="checkbox" 
-                name="catCheckbox" 
-                id="catCheckbox" 
-                checked={fil.color === selectedFilters.color}
-                onChange={() => handleColorFilterChange(fil.color)}
+                <input
+                  type="checkbox"
+                  name="catCheckbox"
+                  id="catCheckbox"
+                  checked={fil.color === selectedFilters.color}
+                  onChange={() => handleColorFilterChange(fil.color)}
                 />
                 <label
                   htmlFor="catCheckbox"
@@ -145,12 +185,12 @@ const FilterCard = ({ setOpenFilter, filteredProducts, onFilterChange, selectedF
           <section className="flex flex-col items-start gap-2">
             {uniqueFilterBrand.map((fil) => (
               <section key={fil.id} className="flex items-center gap-5">
-                <input 
-                type="checkbox" 
-                name="catCheckbox" 
-                id="catCheckbox" 
-                checked={fil.brand === selectedFilters.brand}
-                onChange={() => handleBrandFilterChange(fil.brand)}
+                <input
+                  type="checkbox"
+                  name="catCheckbox"
+                  id="catCheckbox"
+                  checked={fil.brand === selectedFilters.brand}
+                  onChange={() => handleBrandFilterChange(fil.brand)}
                 />
                 <label
                   htmlFor="catCheckbox"
