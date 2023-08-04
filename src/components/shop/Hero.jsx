@@ -3,7 +3,7 @@ import "swiper/css";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css/pagination";
 import HeroCard from "../Card/HeroCard";
-import { Banner1, Banner2, Banner4, Banner5, Banner6 } from "../../assets";
+import { Banner1, Banner3, Banner4, Banner5, Banner6 } from "../../assets";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -41,11 +41,11 @@ const Hero = () => {
       </SwiperSlide>
       <SwiperSlide>
         <HeroCard
-          image={Banner2}
+          image={Banner3}
           para="Combos / Sweaters"
-          title1="Winter Combo"
+          title1="Kids Fashion"
           title2="Collection"
-          url={<Link to="/women/sweaters">Shop Now</Link>}
+          url={<Link to="/products/kids">Shop Now</Link>}
         />
       </SwiperSlide>
       <SwiperSlide>

@@ -1,10 +1,11 @@
 import logo from "./Logo.png";
 
-import Banner5 from "./images/Banner5.jpg";
-import Banner1 from "./images/Banner1.jpg";
-import Banner2 from "./images/Banner2.jpg";
-import Banner4 from "./images/Banner4.jpg";
-import Banner6 from "./images/Banner6.jpg";
+import Banner5 from "./images/banner5.jpg";
+import Banner1 from "./images/banner1.jpg";
+import Banner2 from "./images/banner2.jpg";
+import Banner3 from "./images/banner3.jpg";
+import Banner4 from "./images/banner4.jpg";
+import Banner6 from "./images/banner6.jpg";
 
 import hm from "./images/hm.png";
 import levi from "./images/levi.png";
@@ -60,6 +61,7 @@ export {
   Banner4,
   Banner5,
   Banner6,
+  Banner3,
   hm,
   levi,
   nike,
