@@ -26,6 +26,10 @@ import kd3 from './kd3.png';
 import kd4 from './kd4.png';
 import kd5 from './kd5.png';
 import kd6 from './kd6.png';
+import kd7 from './kd7.png';
+import kd8 from './kd8.png';
+import kd9 from './kd9.png';
+import kd10 from './kd10.png';
 
 export {
     cs1,
@@ -53,5 +57,9 @@ export {
     kd3,
     kd4,
     kd5,
-    kd6
+    kd6,
+    kd7,
+    kd8,
+    kd9,
+    kd10
 }
