@@ -6,11 +6,11 @@ const BigSavingZone = () => {
   return (
     <section className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10 gap-10">
       <TitleCard title="Big Saving Zone" />
-      <main className="w-full h-full flex flex-wrap justify-between gap-3">
-        <section className="w-[300px] sm:w-[32%] lg:w-[32.5%] h-full md:h-[300px] lg:h-[393px] relative">
+      <main className="w-full h-full flex flex-wrap items-center justify-center gap-3">
+        <section className="w-full h-[300px] sm:w-[32%] lg:w-[32.5%] sm:h-full md:h-[300px] lg:h-[393px] relative">
           <img
             src={hawai}
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center rounded"
           />
           <article className="absolute top-10 sm:top-8 lg:top-20 left-5 xl:left-10 flex flex-col  items-start gap-4 sm:gap-2 md:gap-4 text-white">
             <h1 className="font-semibold text-2xl sm:text-base md:text-2xl lg:text-4xl">
@@ -30,10 +30,10 @@ const BigSavingZone = () => {
             </Link>
           </article>
         </section>
-        <section className="w-[300px] sm:w-[32%] lg:w-[32.5%] h-full md:h-[300px] lg:h-[393px] relative">
+        <section className="w-full h-[300px] sm:w-[32%] lg:w-[32.5%] sm:h-full md:h-[300px] lg:h-[393px] relative">
           <img
             src={print}
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center rounded"
           />
           <article className="absolute top-10 sm:top-8 lg:top-20 right-5 xl:right-10 flex flex-col items-end gap-4 sm:gap-2 md:gap-4 text-white">
             <h1 className="font-semibold text-2xl sm:text-base md:text-2xl lg:text-4xl">
@@ -54,10 +54,10 @@ const BigSavingZone = () => {
             </Link>
           </article>
         </section>
-        <section className="w-[300px] sm:w-[32%] lg:w-[32.5%] h-full md:h-[300px] lg:h-[393px] relative">
+        <section className="w-full h-[300px] sm:w-[32%] lg:w-[32.5%] sm:h-full md:h-[300px] lg:h-[393px] relative">
           <img
             src={cargo}
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center rounded"
           />
           <article className="absolute top-10 sm:top-8 lg:top-20 right-5 xl:right-10 flex flex-col sm:items-end md:items-start gap-4 sm:gap-2 md:gap-4 text-black-100">
             <h1 className="font-semibold text-2xl sm:text-base md:text-2xl lg:text-4xl text-end md:text-start">
@@ -77,10 +77,10 @@ const BigSavingZone = () => {
             </Link>
           </article>
         </section>
-        <section className="w-[300px] sm:w-[49%] lg:w-[49.4%] h-72 sm:h-full md:h-[300px] lg:h-[393px] relative ">
+        <section className="w-full sm:w-[49%] lg:w-[49.4%] h-72 sm:h-full md:h-[300px] lg:h-[393px] relative ">
           <img
             src={urban}
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center rounded"
           />
           <article className="absolute top-10 sm:top-8 lg:top-20 right-10 xl:right-20 flex flex-col sm:items-end md:items-start gap-4 sm:gap-2 md:gap-4 text-black-100">
             <h1 className="font-semibold text-2xl sm:text-base md:text-2xl lg:text-4xl">
@@ -98,10 +98,10 @@ const BigSavingZone = () => {
             </Link>
           </article>
         </section>
-        <section className="w-[300px] sm:w-[49%] lg:w-[49.4%] h-72 sm:h-full md:h-[300px] lg:h-[393px] relative ">
+        <section className="w-full sm:w-[49%] lg:w-[49.4%] h-72 sm:h-full md:h-[300px] lg:h-[393px] relative ">
           <img
             src={oversized}
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center rounded"
           />
           <article className="absolute top-10 sm:top-8 lg:top-20 right-10 xl:right-20 flex flex-col sm:items-end md:items-start gap-4 sm:gap-2 md:gap-4 text-black-100">
             <h1 className="font-semibold text-2xl sm:text-base md:text-2xl lg:text-4xl text-end md:text-start">

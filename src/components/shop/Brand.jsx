@@ -13,10 +13,10 @@ const Brand = () => {
             Up To <span className="text-[#FBD103]">60%</span> off on brands
           </p>
         </section>
-        <section className="flex items-center justify-center gap-5">
+        <section className="flex flex-col md:flex-row items-center justify-center gap-5">
           {Brands.map((brand) => (
             <Link to={`/products/brand/${brand.brand}`} key={brand.brand}>
-            <Lazy img={brand.img} className="w-44 h-20 object-cover object-center"/>
+            <Lazy img={brand.img} className="w-44 h-20 object-cover object-center rounded"/>
             </Link>
           ))}
         </section>
