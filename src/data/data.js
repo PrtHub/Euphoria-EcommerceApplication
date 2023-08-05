@@ -654,7 +654,7 @@ export const products = [
     img: us1,
     title: "Logo Printed Hooded Sweatshirt",
     category: "men",
-    tag: "sweatshirt",
+    tag: "hoodies & sweatshirts",
     brand: "U.S. Polo",
     price: "1999",
     color: "blue",
@@ -666,7 +666,7 @@ export const products = [
     img: puma1,
     title: "Essential Hooded Sweatshirt",
     category: "men",
-    tag: "sweatshirt",
+    tag: "hoodies & sweatshirts",
     brand: "puma",
     price: "1675",
     color: "blue",
@@ -678,7 +678,7 @@ export const products = [
     img: levi1,
     title: "Men Striped Pullover Sweatshirt",
     category: "men",
-    tag: "sweatshirt",
+    tag: "hoodies & sweatshirts",
     brand: "levis",
     price: "1399",
     color: "blue",
@@ -1529,13 +1529,13 @@ export const products = [
   {
     id: 18,
     img: mhs,
-    title: "Hoodies & Sweatshirts",
-    brand: "Jhanvi",
-    price: "300",
+    title: "Man Printed Sweatshirt",
+    brand: "Roadster",
+    price: "899",
     category: "men",
-    color: "blue",
+    color: "grey",
     tag: "hoodies & sweatshirts",
-    range: "Under 500",
+    range: "Under 1000",
     isNew: false,
   },
   {
@@ -1977,7 +1977,6 @@ export const products = [
     isNew: false,
   },
   
-
 
 
   {
