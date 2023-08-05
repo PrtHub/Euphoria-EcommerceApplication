@@ -12,9 +12,6 @@ import {
   mkurta,
   nike,
   pinkHoddie,
-  plain,
-  polo,
-  printed,
   puma,
   saree,
   skirts,
@@ -1517,42 +1514,6 @@ export const products = [
   
 
   {
-    id: 14,
-    img: printed,
-    title: "Printed T-Shirts",
-    brand: "Jhanvi",
-    price: "300",
-    category: "men",
-    color: "blue",
-    tag: "t-shirts",
-    range: "Under 1000",
-    isNew: false,
-  },
-  {
-    id: 15,
-    img: polo,
-    title: "Polo T-Shirts",
-    brand: "Jhanvi",
-    price: "300",
-    category: "men",
-    color: "blue",
-    tag: "t-shirts",
-    range: "Under 500",
-    isNew: false,
-  },
-  {
-    id: 16,
-    img: plain,
-    title: "Printed T-Shirts",
-    brand: "Jhanvi",
-    price: "300",
-    category: "men",
-    color: "blue",
-    tag: "t-shirts",
-    range: "Under 500",
-    isNew: false,
-  },
-  {
     id: 17,
     img: activeware,
     title: "Active Ware",
@@ -1929,7 +1890,6 @@ export const products = [
     isNew: false,
   },
   
-
 
 
 
