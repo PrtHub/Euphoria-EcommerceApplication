@@ -39,6 +39,17 @@ import jk7 from "./jk7.png";
 import jk8 from "./jk8.png";
 import jk9 from "./jk9.png";
 
+import k1 from "./k1.png";
+import k3 from "./k3.png";
+import k2 from "./k2.png";
+import k4 from "./k4.png";
+import k5 from "./k5.png";
+import k6 from "./k6.png";
+import k7 from "./k7.png";
+import k8 from "./k8.png";
+import k9 from "./k9.png";
+import k10 from "./k10.png";
+
 export {
   jog1,
   jog2,
@@ -76,4 +87,14 @@ export {
   jk7,
   jk8,
   jk9,
+  k1,
+  k2,
+  k3,
+  k4,
+  k5,
+  k6,
+  k7,
+  k8,
+  k9,
+  k10
 };
