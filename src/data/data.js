@@ -1830,7 +1830,7 @@ export const products = [
     img: trouser6,
     title: "Men Low-Rise Fade Jeans",
     subtitle: "trousers",
-    brand: "Levis",
+    brand: "levis",
     price: "1439",
     category: "men",
     color: "blue",
