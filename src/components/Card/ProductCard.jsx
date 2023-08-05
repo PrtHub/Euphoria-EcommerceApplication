@@ -5,11 +5,12 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import { MdOutlineFavoriteBorder, MdOutlineFavorite } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
-// import { useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
+import { addToWishlist, removeItem } from "../../redux/favReducer";
 
 
 const ProductCard = ({ img, title, brand, price, isNew, id }) => {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const [color, setColor] = useState(false);
 
@@ -21,6 +22,24 @@ const ProductCard = ({ img, title, brand, price, isNew, id }) => {
     navigate(`/product/${id}`);
   };
 
+
+  const handlefav = () => {
+    if(color) {
+      dispatch(removeItem(id))
+      setColor(false);
+    } else {
+      dispatch(
+        addToWishlist({
+          id,
+          img,
+          title,
+          brand,
+          price,
+        })
+      )
+      setColor(true)
+    }
+  }
  
 
   return (
@@ -41,12 +60,12 @@ const ProductCard = ({ img, title, brand, price, isNew, id }) => {
           {color ? (
             <MdOutlineFavorite
               className="text-red-500 cursor-pointer"
-              onClick={() => setColor(false)}
+              onClick={handlefav}
             />
           ) : (
             <MdOutlineFavoriteBorder
               className="text-black-100 cursor-pointer"
-              onClick={() => setColor(true)}
+              onClick={handlefav}
             />
           )}
         </section>

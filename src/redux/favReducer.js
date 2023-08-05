@@ -9,7 +9,12 @@ export const favReducer = createSlice({
   initialState,
   reducers: {
     addToWishlist: (state, action) => {
-      state.items.push(action.payload);
+      const item = state.clothes.find((item) => item.id === action.payload.id);
+      if (item) {
+        item.quantity += action.payload.quantity;
+      } else {
+        state.clothes.push(action.payload);
+      }
     },
     removeItem: (state, action) => {
       state.clothes = state.clothes.filter(

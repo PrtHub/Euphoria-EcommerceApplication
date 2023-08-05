@@ -5,7 +5,7 @@ const Favorite = () => {
   const prodcuts = useSelector((state) => state.fav.clothes)
   console.log(prodcuts)
   return (
-    <div>Favorite</div>
+    <div>Prolsndkbn</div>
   )
 }
 
