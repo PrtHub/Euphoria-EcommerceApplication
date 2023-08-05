@@ -62,14 +62,6 @@ const Navbar = () => {
             >
               <li>Kids</li>
             </Link>
-            <Link
-              to="/products/combos"
-              className={`${
-                locationRoute("/products/combos") ? "text-black-100 font-semibold" : ""
-              }`}
-            >
-              <li>Combos</li>
-            </Link>
           </ul>
         </section>
         <section className="w-full h-full flex items-center justify-end gap-10">
@@ -121,9 +113,9 @@ const Navbar = () => {
                     <li>Shop</li>
                   </Link>
                   <Link
-                    to="/men"
+                    to="/products/men"
                     className={`${
-                      locationRoute("/men")
+                      locationRoute("/products/men")
                         ? "text-black-100 font-semibold"
                         : ""
                     }`}
@@ -131,9 +123,9 @@ const Navbar = () => {
                     <li>Men</li>
                   </Link>
                   <Link
-                    to="/women"
+                    to="/products/women"
                     className={`${
-                      locationRoute("/women")
+                      locationRoute("/products/women")
                         ? "text-black-100 font-semibold"
                         : ""
                     }`}
@@ -141,24 +133,14 @@ const Navbar = () => {
                     <li>Women</li>
                   </Link>
                   <Link
-                    to="/combos"
+                    to="/products/kids"
                     className={`${
-                      locationRoute("/combos")
+                      locationRoute("/products/kids")
                         ? "text-black-100 font-semibold"
                         : ""
                     }`}
                   >
-                    <li>Combos</li>
-                  </Link>
-                  <Link
-                    to="/joggers"
-                    className={`${
-                      locationRoute("/joggers")
-                        ? "text-black-100 font-semibold"
-                        : ""
-                    }`}
-                  >
-                    <li>Joggers</li>
+                    <li>Kids</li>
                   </Link>
                   <li>
                     <div className="w-full h-1 text-blue-600" />
