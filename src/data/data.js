@@ -614,7 +614,7 @@ export const Newproducts = [
 export const Brands = [
   {
     img: nike,
-    brand: "Nike",
+    brand: "nike",
   },
   {
     img: usPolo,
