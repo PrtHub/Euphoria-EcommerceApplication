@@ -14,6 +14,15 @@ import trouser8 from './trouser8.png'
 import trouser9 from './trouser9.png'
 import trouser10 from './trouser10.png'
 
+import ts1 from './ts1.png'
+import ts2 from './ts2.png'
+import ts3 from './ts3.png'
+import ts4 from './ts4.png'
+import ts5 from './ts5.png'
+import ts6 from './ts6.png'
+import ts7 from './ts7.png'
+
+
 
 export {
     jog1,
@@ -30,5 +39,13 @@ export {
     trouser7,
     trouser8,
     trouser9,
-    trouser10
+    trouser10,
+
+    ts1,
+    ts2,
+    ts3,
+    ts4,
+    ts5,
+    ts6,
+    ts7
 }

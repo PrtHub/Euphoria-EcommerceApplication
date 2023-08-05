@@ -79,7 +79,7 @@ import {
 } from "../assets/images/Trending";
 import { levi1, puma1, us1 } from "../assets/images/brand";
 import { cs1, cs10, cs2, cs3, cs4, cs5, cs6, cs7, cs8, cs9, kd1, kd10, kd2, kd3, kd4, kd5, kd6, kd7, kd8, kd9, ks1, ks10, ks2, ks3, ks4, ks5, ks6, ks7, ks8, ks9 } from "../assets/images/kid";
-import { jog1, jog2, jog3, jog4, trouser1, trouser10, trouser2, trouser3, trouser4, trouser5, trouser6, trouser7, trouser8, trouser9 } from "../assets/images/men";
+import { jog1, jog2, jog3, jog4, trouser1, trouser10, trouser2, trouser3, trouser4, trouser5, trouser6, trouser7, trouser8, trouser9, ts1, ts2, ts3, ts4, ts5, ts6, ts7 } from "../assets/images/men";
 import { ws1, ws10, ws2, ws3, ws4, ws5, ws6, ws7, ws8, ws9 } from "../assets/images/women";
 
 export const Newproducts = [
@@ -1511,6 +1511,7 @@ export const products = [
     isNew: false,
   },
 
+
   
 
   {
@@ -1887,6 +1888,92 @@ export const products = [
     color: "blue",
     tag: "trousers & jeans",
     range: "Under 1000",
+    isNew: false,
+  },
+  {
+    id: 2001,
+    img: ts2,
+    title: "Jujutsu Kaisen Gojo T-shirt",
+    brand: "COMICSENSE",
+    price: "944",
+    zone: "oversized",
+    category: "men",
+    color: "purple",
+    tag: "t-shirts",
+    range: "Under 1000",
+    isNew: false,
+  },
+  {
+    id: 2002,
+    img: ts1,
+    title: "Printed Pure Cotton T-shirt",
+    brand: "Here&Now",
+    price: "367",
+    category: "men",
+    color: "blue",
+    tag: "t-shirts",
+    range: "Under 500",
+    isNew: false,
+  },
+  {
+    id: 2003,
+    img: ts3,
+    title: "Solid Polo Collar T-shirt",
+    brand: "Roadster",
+    price: "599",
+    category: "men",
+    color: "grey",
+    tag: "t-shirts",
+    range: "Under 1000",
+    isNew: false,
+  },
+  {
+    id: 2004,
+    img: ts4,
+    title: "Pure Cotton Slim Fit T-shirt",
+    brand: "U.S. Polo",
+    price: "1699",
+    category: "men",
+    color: "black",
+    tag: "t-shirts",
+    range: "Under 2000",
+    isNew: true,
+  },
+  {
+    id: 2005,
+    img: ts5,
+    title: "Solid Knitted Polo T-shirt",
+    brand: "Louis Philippe Sport",
+    price: "1124",
+    category: "men",
+    color: "maroon",
+    tag: "t-shirts",
+    range: "Under 1500",
+    isNew: false,
+  },
+  
+  {
+    id: 2006,
+    img: ts6,
+    title: "Men Pure Cotton T-shirt",
+    brand: "Roadster",
+    price: "304",
+    category: "men",
+    color: "black",
+    tag: "t-shirts",
+    range: "Under 500",
+    isNew: false,
+  },
+  {
+    id: 2007,
+    img: ts7,
+    title: "Printed Pure Cotton T-shirt",
+    brand: "Urbano Fashion",
+    price: "395",
+    category: "men",
+    color: "Teal",
+    tag: "t-shirts",
+    range: "Under 500",
     isNew: false,
   },
   
