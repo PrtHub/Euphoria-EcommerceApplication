@@ -638,18 +638,6 @@ export const products = [
 
   //brand
   {
-    id: 4401,
-    img: short5,
-    title: "Men Traning Shorts",
-    category: "men",
-    tag: "shorts",
-    brand: "nike",
-    price: "1495",
-    color: "black",
-    range: "Under 1500",
-    isNew: true,
-  },
-  {
     id: 4402,
     img: us1,
     title: "Logo Printed Hooded Sweatshirt",
