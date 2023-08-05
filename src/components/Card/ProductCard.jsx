@@ -64,7 +64,7 @@ const ProductCard = ({ img, title, brand, price, isNew, id }) => {
           >
             {title}
           </h1>
-          <p className="text-light-gray-100 text-xs lg:text-sm">{brand}</p>
+          <p className="text-light-gray-100 text-xs lg:text-sm capitalize">{brand}</p>
         </div>
         <p>₹{price}</p>
       </article>

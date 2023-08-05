@@ -79,7 +79,7 @@ import {
 } from "../assets/images/Trending";
 import { levi1, puma1, us1 } from "../assets/images/brand";
 import { cs1, cs10, cs2, cs3, cs4, cs5, cs6, cs7, cs8, cs9, kd1, kd10, kd2, kd3, kd4, kd5, kd6, kd7, kd8, kd9, ks1, ks10, ks2, ks3, ks4, ks5, ks6, ks7, ks8, ks9 } from "../assets/images/kid";
-import { jog1, jog2, jog3, jog4, trouser1, trouser10, trouser2, trouser3, trouser4, trouser5, trouser6, trouser7, trouser8, trouser9, ts1, ts2, ts3, ts4, ts5, ts6, ts7 } from "../assets/images/men";
+import { hs1, hs2, hs3, hs4, hs5, hs6, jog1, jog2, jog3, jog4, trouser1, trouser10, trouser2, trouser3, trouser4, trouser5, trouser6, trouser7, trouser8, trouser9, ts1, ts2, ts3, ts4, ts5, ts6, ts7 } from "../assets/images/men";
 import { ws1, ws10, ws2, ws3, ws4, ws5, ws6, ws7, ws8, ws9 } from "../assets/images/women";
 
 export const Newproducts = [
@@ -614,7 +614,7 @@ export const Newproducts = [
 export const Brands = [
   {
     img: nike,
-    brand: "nike",
+    brand: "Nike",
   },
   {
     img: usPolo,
@@ -1974,6 +1974,78 @@ export const products = [
     color: "Teal",
     tag: "t-shirts",
     range: "Under 500",
+    isNew: false,
+  },
+  {
+    id: 2008,
+    img: hs1,
+    title: "Men Solid Hooded Sweatshir",
+    brand: "Roadster",
+    price: "999",
+    category: "men",
+    color: "white",
+    tag: "hoodies & sweatshirts",
+    range: "Under 1000",
+    isNew: true,
+  },
+  {
+    id: 2009,
+    img: hs2,
+    title: "Brand Logo Printed Sweatshirt",
+    brand: "puma",
+    price: "1499",
+    category: "men",
+    color: "blue",
+    tag: "hoodies & sweatshirts",
+    range: "Under 1500",
+    isNew: true,
+  },
+  {
+    id: 2010,
+    img: hs3,
+    title: "Men Solid Sweatshirt",
+    brand: "Roadster",
+    price: "599",
+    category: "men",
+    color: "olive green",
+    tag: "hoodies & sweatshirts",
+    range: "Under 1000",
+    isNew: false,
+  },
+  {
+    id: 2011,
+    img: hs4,
+    title: "Printed Pure Cotton Sweatshirt",
+    brand: "levis",
+    price: "3218",
+    category: "men",
+    color: "blue",
+    tag: "hoodies & sweatshirts",
+    range: "Under 3000",
+    isNew: false,
+  },
+  {
+    id: 2012,
+    img: hs5,
+    title: "Men Fleece Hooded Sweatshirt",
+    brand: "Adidas",
+    price: "3985",
+    category: "men",
+    color: "dusty pink",
+    tag: "hoodies & sweatshirts",
+    range: "Under 4000",
+    isNew: false,
+  },
+  {
+    id: 2013,
+    img: hs6,
+    title: "Printed Hooded Training Sweatshirt",
+    brand: "nike",
+    price: "3295",
+    category: "men",
+    color: "dusty pink",
+    tag: "hoodies & sweatshirts",
+    range: "Under 3500",
     isNew: false,
   },
   

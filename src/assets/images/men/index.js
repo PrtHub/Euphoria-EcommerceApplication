@@ -22,6 +22,13 @@ import ts5 from './ts5.png'
 import ts6 from './ts6.png'
 import ts7 from './ts7.png'
 
+import hs1 from './hs1.png'
+import hs2 from './hs2.png'
+import hs3 from './hs3.png'
+import hs4 from './hs4.png'
+import hs5 from './hs5.png'
+import hs6 from './hs6.png'
+
 
 
 export {
@@ -47,5 +54,13 @@ export {
     ts4,
     ts5,
     ts6,
-    ts7
+    ts7,
+
+
+    hs1,
+    hs2,
+    hs3,
+    hs4,
+    hs5,
+    hs6
 }
