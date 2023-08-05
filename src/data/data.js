@@ -1,5 +1,4 @@
 import {
-  activeware,
   dress,
   hm,
   hs,
@@ -1611,18 +1610,6 @@ export const products = [
     isNew: false,
   },
 
-  {
-    id: 17,
-    img: activeware,
-    title: "Active Ware",
-    brand: "Jhanvi",
-    price: "300",
-    category: "men",
-    color: "blue",
-    tag: "Sports Ware",
-    range: "Under 500",
-    isNew: false,
-  },
   {
     id: 18,
     img: mhs,
