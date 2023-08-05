@@ -98,7 +98,7 @@ const Navbar = () => {
               />
             )}
             {toggleMenu && (
-              <div className=" bg-dark-white fixed top-0 right-0 w-52 h-full slideAnimation z-20">
+              <div className=" bg-white-100 fixed top-0 right-0 w-52 h-full slideAnimation shadow-md z-20">
                 <MdClose
                   className="w-6 h-6 cursor-pointer absolute top-5 right-7"
                   onClick={() => setToggleMenu(false)}
