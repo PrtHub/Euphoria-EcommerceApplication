@@ -14,14 +14,20 @@ import {
  import favReducer from "./favReducer";
  import cartReducer from "./cartReducer";
 
-  const persistConfig = {
-    key: "root",
+  const cartPersistConfig = {
+    key: "cart",
     version: 1,
     storage,
   };
 
-  const persistedCartReducer = persistReducer(persistConfig, cartReducer);
-  const persistedFavReducer = persistReducer(persistConfig, favReducer);
+  const favPersistConfig = {
+    key: "fav",
+    version: 1,
+    storage,
+  };
+
+  const persistedCartReducer = persistReducer(cartPersistConfig, cartReducer);
+  const persistedFavReducer = persistReducer(favPersistConfig, favReducer);
 
   export const store = configureStore({
     reducer: {
