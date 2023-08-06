@@ -35,6 +35,7 @@ const ProductCard = ({ img, title, brand, price, isNew, id }) => {
           title,
           brand,
           price,
+          isNew
         })
       )
       setColor(true)
