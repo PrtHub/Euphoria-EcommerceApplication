@@ -4,14 +4,14 @@ import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../redux/cartReducer";
-
+import { addToCart, updateSize } from "../redux/cartReducer";
 
 const SIngleNew = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
   const [goToCart, setGoToCart] = useState(false);
   const [quantity, setQuantity] = useState(1);
+  const [selectedSize, setSelectedSize] = useState("");
 
   const selectedProduct = Newproducts.find(
     (product) => product.id === parseInt(id)
@@ -46,9 +46,15 @@ const SIngleNew = () => {
         brand,
         color,
         quantity,
+        selectedSize
       })
     ),
       setGoToCart(true);
+  };
+
+  const handleChangeSize = (size) => {
+    setSelectedSize(size);
+    dispatch(updateSize({ id: selectedProduct.id, size }));
   };
 
   return (
@@ -93,19 +99,44 @@ const SIngleNew = () => {
           <section className="flex flex-col gap-2 items-start">
             <h3 className="font-medium text-xl text-black-100">Select Size</h3>
             <div className="flex items-center gap-4">
-              <p className="w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm">
+              <p
+                className={`w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm  cursor-pointer ${
+                  selectedSize === "S" ? "bg-dark-violet text-white" : ""
+                }`}
+                onClick={() => handleChangeSize("S")}
+              >
                 S
               </p>
-              <p className="w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm">
+              <p
+                className={`w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm  cursor-pointer ${
+                  selectedSize === "M" ? "bg-dark-violet text-white" : ""
+                }`}
+                onClick={() => handleChangeSize("M")}
+              >
                 M
               </p>
-              <p className="w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm">
+              <p
+                className={`w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm cursor-pointer ${
+                  selectedSize === "L" ? "bg-dark-violet text-white" : ""
+                }`}
+                onClick={() => handleChangeSize("L")}
+              >
                 L
               </p>
-              <p className="w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm">
+              <p
+                className={`w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm cursor-pointer ${
+                  selectedSize === "XL" ? "bg-dark-violet text-white" : ""
+                }`}
+                onClick={() => handleChangeSize("XL")}
+              >
                 XL
               </p>
-              <p className="w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm">
+              <p
+                className={`w-10 h-10 text-light-gray border-[1px] border-light-gray rounded-full p-4 flex items-center justify-center text-sm cursor-pointer ${
+                  selectedSize === "2XL" ? "bg-dark-violet text-white" : ""
+                }`}
+                onClick={() => handleChangeSize("2XL")}
+              >
                 2XL
               </p>
             </div>
