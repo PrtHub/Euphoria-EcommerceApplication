@@ -3,22 +3,20 @@ import ArrivalCard from "../Card/ArrivalCard";
 import TitleCard from "../Card/TitleCard";
 
 const NewArrivals = () => {
-
-  const uniqueTag = new Set()
+  const uniqueTag = new Set();
 
   const uniqueproducts = Newproducts.filter((product) => {
-    if(uniqueTag.has(product.tag)) {
-      return false
+    if (uniqueTag.has(product.tag)) {
+      return false;
     }
-    uniqueTag.add(product.tag) 
-    return true
-  })
-  
+    uniqueTag.add(product.tag);
+    return true;
+  });
 
   return (
     <section className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10 gap-10">
       <TitleCard title="New Arrival" />
-      <section className="w-full h-full flex items-center justify-center sm:justify-between overflow-x-scroll gap-10">
+      <section className="w-full h-full flex flex-row gap-10 overflow-x-scroll">
         {uniqueproducts?.map((product) => (
           <main key={product.id}>
             <ArrivalCard

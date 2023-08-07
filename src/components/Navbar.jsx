@@ -80,7 +80,7 @@ const Navbar = () => {
             </Link>
           </ul>
         </section>
-        <section className="w-full h-full flex items-center justify-end gap-10">
+        <section className="w-full h-full flex items-center justify-end gap-5 sm:gap-10">
           <form
             className="hidden sm:flex items-center bg-white-100 px-3 py-2 gap-2"
             onSubmit={handleSearch}
@@ -106,6 +106,9 @@ const Navbar = () => {
               {products.length}
             </span>
           </Link>
+          <section className="block sm:hidden relative">
+            <AiOutlineSearch className="text-black-100 w-5 h-5" />
+          </section>
           <nav className="block lg:hidden">
             {toggleMenu ? (
               <MdClose
