@@ -41,6 +41,8 @@ import saree5 from './saree5.png'
 import saree6 from './saree6.png'
 import saree7 from './saree7.png'
 import saree8 from './saree8.png'
+import saree9 from './saree9.png'
+import saree10 from './saree10.png'
 
 export {
     ws1,
@@ -85,5 +87,7 @@ export {
     saree5,
     saree6,
     saree7,
-    saree8
+    saree8,
+    saree9,
+    saree10
 }

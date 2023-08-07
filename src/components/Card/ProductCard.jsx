@@ -76,7 +76,7 @@ const ProductCard = ({ img, title, brand, price, isNew, id }) => {
           </div>
         )}
       </div>
-      <article className="w-full flex items-center justify-between gap-1">
+      <article className="w-full flex items-center justify-between gap-2">
         <div className="w-full flex flex-col justify-between">
           <h1
             className="text-base font-medium text-black-100"
