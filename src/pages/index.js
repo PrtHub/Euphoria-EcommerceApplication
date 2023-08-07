@@ -8,6 +8,7 @@ import Products from "./Products";
 import BrandProducts from "./BrandProducts";
 import NewProducts from "./NewProducts";
 import SingleNew from "./SIngleNew";
+import Search from "./Search";
 
 import HawaiiShirts from "./BigSavingProduct/HawaiiShirts";
 import OversizedTshirts from "./BigSavingProduct/OversizedTshirts";
@@ -26,6 +27,7 @@ export {
   BrandProducts,
   NewProducts,
   SingleNew,
+  Search,
 
   HawaiiShirts,
   OversizedTshirts,

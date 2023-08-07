@@ -16,6 +16,7 @@ import {
   OversizedTshirts,
   PrintedTshirts,
   UrbanShirts,
+  Search,
 } from "./pages";
 import { Footer, Navbar } from "./components";
 import { ToastContainer } from "react-toastify";
@@ -41,6 +42,7 @@ const App = () => {
           <Route path="/printed-tshirt" element={<PrintedTshirts />}/>
           <Route path="/urban-shirt" element={<UrbanShirts />}/>
           <Route path="/product/:id" element={<Product />} />
+          <Route path="/search/:query" element={<Search />} />
           <Route path="/single/:id" element={<SingleNew />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/favorite" element={<Favorite />} />
