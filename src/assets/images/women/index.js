@@ -9,6 +9,11 @@ import ws8 from './ws8.png'
 import ws9 from './ws9.png'
 import ws10 from './ws10.png'
 
+import wts1 from './wts1.png'
+import wts2 from './wts2.png'
+import wts3 from './wts3.png'
+import wts4 from './wts4.png'
+
 export {
     ws1,
     ws2,
@@ -19,5 +24,10 @@ export {
     ws7,
     ws8,
     ws9,
-    ws10
+    ws10,
+
+    wts1,
+    wts2,
+    wts3,
+    wts4
 }
