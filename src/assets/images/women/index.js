@@ -44,6 +44,12 @@ import saree8 from './saree8.png'
 import saree9 from './saree9.png'
 import saree10 from './saree10.png'
 
+import top7 from './top7.png'
+import top8 from './top8.png'
+import top9 from './top9.png'
+import top10 from './top10.png'
+import top11 from './top11.png'
+
 export {
     ws1,
     ws2,
@@ -89,5 +95,11 @@ export {
     saree7,
     saree8,
     saree9,
-    saree10
+    saree10,
+
+    top7,
+    top8,
+    top9,
+    top10,
+    top11
 }
