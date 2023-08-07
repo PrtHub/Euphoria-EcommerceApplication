@@ -23,6 +23,16 @@ import wss7 from './wss7.png'
 import wss8 from './wss8.png'
 import wss9 from './wss9.png'
 
+import wd1 from './wd1.png'
+import wd2 from './wd2.png'
+import wd3 from './wd3.png'
+import wd4 from './wd4.png'
+import wd5 from './wd5.png'
+import wd6 from './wd6.png'
+import wd7 from './wd7.png'
+import wd8 from './wd8.png'
+import wd9 from './wd9.png'
+
 export {
     ws1,
     ws2,
@@ -47,5 +57,15 @@ export {
     wss6,
     wss7,
     wss8,
-    wss9
+    wss9,
+
+    wd1,
+    wd2,
+    wd3,
+    wd4,
+    wd5,
+    wd6,
+    wd7,
+    wd8,
+    wd9
 }
