@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { products } from "../data/data";
 import { useParams } from "react-router-dom";
-import { ProductCard } from "../components";
+import { ProductCard, TitleCard } from "../components";
 
 const Search = () => {
   const { query } = useParams();
@@ -19,8 +19,8 @@ const Search = () => {
       const title = product.title ? product.title.toLowerCase() : "";
 
       return (
-        tag.includes(searchQuery.toLowerCase()) ||
-        title.includes(searchQuery.toLowerCase())
+        tag === searchQuery.toLowerCase() ||
+        title === searchQuery.toLowerCase()
       );
     });
 
@@ -30,21 +30,28 @@ const Search = () => {
   console.log(query);
 
   return (
-    <div>
-      {searchResults.map((item, index) => (
-        <section key={`${item.id}-${index}`}>
-          <ProductCard
-            product={item}
-            id={item.id}
-            img={item.img}
-            title={item.title}
-            price={item.price}
-            brand={item.brand}
-            isNew={item.isNew}
-          />
+    <main className="w-full h-full">
+      <section className="w-full h-full flex flex-col items-start justify-start px-5 xl:px-10 py-10 gap-10 ">
+        <header className="w-full h-full flex items-start lg:items-center ">
+          <TitleCard title={`Search Results for ${query}`} />
+        </header>
+        <section className="w-full h-full flex flex-wrap items-center justify-center md:justify-start gap-10">
+          {searchResults.map((item, index) => (
+            <section key={`${item.id}-${index}`}>
+              <ProductCard
+                product={item}
+                id={item.id}
+                img={item.img}
+                title={item.title}
+                price={item.price}
+                brand={item.brand}
+                isNew={item.isNew}
+              />
+            </section>
+          ))}
         </section>
-      ))}
-    </div>
+      </section>
+    </main>
   );
 };
 
