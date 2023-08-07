@@ -14,6 +14,15 @@ import wts2 from './wts2.png'
 import wts3 from './wts3.png'
 import wts4 from './wts4.png'
 
+import wss1 from './wss1.png'
+import wss2 from './wss2.png'
+import wss4 from './wss4.png'
+import wss5 from './wss5.png'
+import wss6 from './wss6.png'
+import wss7 from './wss7.png'
+import wss8 from './wss8.png'
+import wss9 from './wss9.png'
+
 export {
     ws1,
     ws2,
@@ -29,5 +38,14 @@ export {
     wts1,
     wts2,
     wts3,
-    wts4
+    wts4,
+
+    wss1,
+    wss2,
+    wss4,
+    wss5,
+    wss6,
+    wss7,
+    wss8,
+    wss9
 }
