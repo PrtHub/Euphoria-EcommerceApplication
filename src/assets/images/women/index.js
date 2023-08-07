@@ -33,6 +33,15 @@ import wd7 from './wd7.png'
 import wd8 from './wd8.png'
 import wd9 from './wd9.png'
 
+import saree1 from './saree1.png'
+import saree2 from './saree2.png'
+import saree3 from './saree3.png'
+import saree4 from './saree4.png'
+import saree5 from './saree5.png'
+import saree6 from './saree6.png'
+import saree7 from './saree7.png'
+import saree8 from './saree8.png'
+
 export {
     ws1,
     ws2,
@@ -67,5 +76,14 @@ export {
     wd6,
     wd7,
     wd8,
-    wd9
+    wd9,
+
+    saree1,
+    saree2,
+    saree3,
+    saree4,
+    saree5,
+    saree6,
+    saree7,
+    saree8
 }
