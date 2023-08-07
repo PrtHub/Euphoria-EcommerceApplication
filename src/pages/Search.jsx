@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { products } from "../data/data";
 import { useParams } from "react-router-dom";
+import { SearchCard } from "../components";
 
 const Search = () => {
   const { query } = useParams();
@@ -32,7 +33,7 @@ const Search = () => {
     <div>
       {searchResults.map((item, index) => (
         <section key={`${item.id}-${index}`}>
-          <p>{item.title}</p>
+         <SearchCard products={item}/>
         </section>
       ))}
     </div>

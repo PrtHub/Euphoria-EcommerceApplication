@@ -17,6 +17,7 @@ import ProductCard from "./Card/ProductCard";
 import TitleCard from "./Card/TitleCard";
 import FilterCard from "./Card/FilterCard";
 import NewCard from "./Card/NewCard";
+import SearchCard from "./Card/SearchCard";
 
 export {
   Navbar,
@@ -36,5 +37,6 @@ export {
   ProductCard,
   TitleCard,
   FilterCard,
-  NewCard
+  NewCard,
+  SearchCard
 };
