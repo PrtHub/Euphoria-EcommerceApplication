@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { products } from "../data/data";
 import { useParams } from "react-router-dom";
-import { SearchCard } from "../components";
+import { ProductCard } from "../components";
 
 const Search = () => {
   const { query } = useParams();
@@ -33,7 +33,15 @@ const Search = () => {
     <div>
       {searchResults.map((item, index) => (
         <section key={`${item.id}-${index}`}>
-         <SearchCard products={item}/>
+          <ProductCard
+            product={item}
+            id={item.id}
+            img={item.img}
+            title={item.title}
+            price={item.price}
+            brand={item.brand}
+            isNew={item.isNew}
+          />
         </section>
       ))}
     </div>
