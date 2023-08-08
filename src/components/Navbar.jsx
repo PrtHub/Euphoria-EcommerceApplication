@@ -10,6 +10,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
   const products = useSelector((state) => state.cart.clothes);
@@ -26,6 +27,7 @@ const Navbar = () => {
     if (searchQuery.length > 0) {
       navigate(`/search/${searchQuery}`);
     }
+    setSearchOpen(false);
   };
 
   return (
@@ -106,8 +108,29 @@ const Navbar = () => {
               {products.length}
             </span>
           </Link>
-          <section className="block sm:hidden relative">
-            <AiOutlineSearch className="text-black-100 w-5 h-5" />
+          <section className="block sm:hidden">
+            <AiOutlineSearch
+              className="text-black-100 w-5 h-5 cursor-pointer"
+              onClick={() => setSearchOpen(true)}
+            />
+            {searchOpen && (
+              <form
+                className="absolute top-0 left-0 z-50 w-full py-6 bg-white flex items-center justify-between px-10 gap-2"
+                onSubmit={handleSearch}
+              >
+                <input
+                  type="text"
+                  placeholder="Search products..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full bg-transparent placeholder:text-light-gray text-light-gray border-none outline-none"
+                />
+                <MdClose
+                  className="w-6 h-6 text-light-gray cursor-pointer"
+                  onClick={() => setSearchOpen(false)}
+                />
+              </form>
+            )}
           </section>
           <nav className="block lg:hidden">
             {toggleMenu ? (
@@ -190,7 +213,7 @@ const Navbar = () => {
                     <li>My Cart Items</li>
                   </Link>
                 </ul>
-                <form
+                {/* <form
                   className="w-52 flex sm:hidden items-center p-2 gap-2 border-b-[1px] border-black-100"
                   onSubmit={handleSearch}
                 >
@@ -202,7 +225,7 @@ const Navbar = () => {
                     onChange={(e) => setSearchQuery(e.target.value)}
                     className="w-full bg-transparent placeholder:text-black-100 text-black-100 border-none outline-none"
                   />
-                </form>
+                </form> */}
               </div>
             )}
           </nav>
