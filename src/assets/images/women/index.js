@@ -52,6 +52,9 @@ import top11 from './top11.png'
 
 import wj1 from './wj1.png'
 import wj2 from './wj2.png'
+import wj3 from './wj3.png'
+import wj4 from './wj4.png'
+import wj5 from './wj5.png'
 
 export {
     ws1,
@@ -107,5 +110,8 @@ export {
     top11,
 
     wj1,
-    wj2
+    wj2,
+    wj3,
+    wj4,
+    wj5
 }
