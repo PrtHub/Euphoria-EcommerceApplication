@@ -28,12 +28,12 @@ const CargoJoggers = () => {
   return (
     <>
     <SEO
-    title={`Online Shopping for Hawai Beach Shirts - Euphoria`}
+    title={`Online Shopping for Cargo Joggers - Euphoria`}
     desc="Online Shopping for Men, Women & Kids Fashion with exclusive deals"
   />
   <section className="w-full h-full flex flex-col items-start justify-start px-5 xl:px-10 py-10 gap-10 ">
     <header className="w-full h-full flex items-start lg:items-center ">
-      <TitleCard title="Hawaiian Shirts" />
+      <TitleCard title="Cargo Joggers" />
       <div className="flex flex-col lg:flex-row  items-center gap-4">
         <Select
           name="sort"
