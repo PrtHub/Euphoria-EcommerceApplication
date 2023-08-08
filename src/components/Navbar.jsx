@@ -34,13 +34,13 @@ const Navbar = () => {
     <>
       <nav className="w-full h-full flex items-center justify-between px-5 xl:px-10 py-5">
         <section className="w-full h-full flex items-center justify-start gap-5 sm:gap-10 xl:gap-20">
-          <div className="w-20 h-10">
+          <Link to='/' className="w-20 h-10">
             <img
               src={logo}
               alt=""
               className="w-full h-full object-cover object-center"
             />
-          </div>
+          </Link>
           <ul className="hidden lg:flex items-center justify-center gap-10 font-satoshi text-base font-medium text-light-gray">
             <Link
               to="/"
