@@ -50,6 +50,9 @@ import top9 from './top9.png'
 import top10 from './top10.png'
 import top11 from './top11.png'
 
+import wj1 from './wj1.png'
+import wj2 from './wj2.png'
+
 export {
     ws1,
     ws2,
@@ -101,5 +104,8 @@ export {
     top8,
     top9,
     top10,
-    top11
+    top11,
+
+    wj1,
+    wj2
 }
