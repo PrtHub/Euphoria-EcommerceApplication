@@ -42,7 +42,7 @@ const Hero = () => {
       <SwiperSlide>
         <HeroCard
           image={Banner3}
-          para="Combos / Sweaters"
+          para="kids / dress"
           title1="Kids Fashion"
           title2="Collection"
           url={<Link to="/products/kids">Shop Now</Link>}
