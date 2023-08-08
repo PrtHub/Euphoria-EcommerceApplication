@@ -114,10 +114,12 @@ const Navbar = () => {
               onClick={() => setSearchOpen(true)}
             />
             {searchOpen && (
-              <form
-                className="absolute top-0 left-0 z-50 w-full py-6 bg-white flex items-center justify-between px-10 gap-2"
-                onSubmit={handleSearch}
-              >
+               <form
+               className={`absolute top-0 left-0 z-50 w-full py-6 bg-white flex items-center justify-between px-10 gap-2 ${
+                 searchOpen ? 'search-bar-fade-in' : 'search-bar-fade-out'
+               }`}
+               onSubmit={handleSearch}
+             >
                 <input
                   type="text"
                   placeholder="Search products..."
