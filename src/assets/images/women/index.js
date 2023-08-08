@@ -55,6 +55,9 @@ import wj2 from './wj2.png'
 import wj3 from './wj3.png'
 import wj4 from './wj4.png'
 import wj5 from './wj5.png'
+import wj6 from './wj6.png'
+import wj7 from './wj7.png'
+import wj8 from './wj8.png'
 
 export {
     ws1,
@@ -113,5 +116,8 @@ export {
     wj2,
     wj3,
     wj4,
-    wj5
+    wj5,
+    wj6,
+    wj7,
+    wj8
 }
