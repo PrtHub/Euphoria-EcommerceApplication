@@ -34,7 +34,7 @@ const Navbar = () => {
     <>
       <nav className="w-full h-full flex items-center justify-between px-5 xl:px-10 py-5">
         <section className="w-full h-full flex items-center justify-start gap-5 sm:gap-10 xl:gap-20">
-          <Link to='/' className="w-20 h-10">
+          <Link to="/" className="w-20 h-10">
             <img
               src={logo}
               alt=""
@@ -114,12 +114,12 @@ const Navbar = () => {
               onClick={() => setSearchOpen(true)}
             />
             {searchOpen && (
-               <form
-               className={`absolute top-0 left-0 z-50 w-full py-6 bg-white flex items-center justify-between px-10 gap-2 ${
-                 searchOpen ? 'search-bar-fade-in' : 'search-bar-fade-out'
-               }`}
-               onSubmit={handleSearch}
-             >
+              <form
+                className={`absolute top-0 left-0 z-50 w-full py-6 bg-white flex items-center justify-between px-10 gap-2 ${
+                  searchOpen ? "search-bar-fade-in" : "search-bar-fade-out"
+                }`}
+                onSubmit={handleSearch}
+              >
                 <input
                   type="text"
                   placeholder="Search products..."
@@ -215,19 +215,6 @@ const Navbar = () => {
                     <li>My Cart Items</li>
                   </Link>
                 </ul>
-                {/* <form
-                  className="w-52 flex sm:hidden items-center p-2 gap-2 border-b-[1px] border-black-100"
-                  onSubmit={handleSearch}
-                >
-                  <AiOutlineSearch className="text-black-100 w-5 h-5" />
-                  <input
-                    type="text"
-                    placeholder="Search products..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full bg-transparent placeholder:text-black-100 text-black-100 border-none outline-none"
-                  />
-                </form> */}
               </div>
             )}
           </nav>
