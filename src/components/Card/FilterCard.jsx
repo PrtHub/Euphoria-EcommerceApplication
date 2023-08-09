@@ -75,7 +75,7 @@ const FilterCard = ({
   };
 
   return (
-    <section className="w-full h-full p-5 sm:p-10 flex flex-col items-start justify-start gap-10">
+    <section className="w-full h-full p-5 sm:p-10 flex flex-col items-start justify-start gap-10 py-10">
       <header className="w-full flex items-center justify-between">
         <h1 className="text-lg font-semibold text-light-gray uppercase">
           Filters
