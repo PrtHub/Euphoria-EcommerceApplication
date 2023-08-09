@@ -115,7 +115,7 @@ const Navbar = () => {
             />
             {searchOpen && (
               <form
-                className={`absolute top-0 left-0 z-50 w-full py-6 bg-white flex items-center justify-between px-10 gap-2 ${
+                className={`absolute top-0 left-0 z-50 w-full  py-6 bg-white flex items-center justify-between px-10 gap-2 ${
                   searchOpen ? "search-bar-fade-in" : "search-bar-fade-out"
                 }`}
                 onSubmit={handleSearch}
@@ -147,12 +147,8 @@ const Navbar = () => {
               />
             )}
             {toggleMenu && (
-              <div className=" bg-white-100 fixed top-0 right-0 w-52 h-full slideAnimation shadow-md z-20">
-                <MdClose
-                  className="w-6 h-6 cursor-pointer absolute top-5 right-7"
-                  onClick={() => setToggleMenu(false)}
-                />
-                <ul className="flex flex-col items-start justify-center gap-10 py-10 px-5 font-satoshi text-base font-normal text-light-gray-100">
+              <div className=" bg-white absolute top-20 right-0 w-48 h-fit slideAnimation shadow-xl rounded-bl z-20">
+                <ul className="flex flex-col items-start justify-center gap-5 py-5 px-5 font-satoshi text-base font-normal text-light-gray-100">
                   <Link
                     to="/"
                     className={`${
