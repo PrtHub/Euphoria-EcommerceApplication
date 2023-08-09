@@ -615,7 +615,7 @@ export const Newproducts = [
     isNew: true,
   },
   {
-    id: 726,
+    id: 7262,
     img: co4,
     title: "Printed Tunic with Trouser",
     subtitle: "Co-ords",

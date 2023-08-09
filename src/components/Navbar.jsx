@@ -147,7 +147,7 @@ const Navbar = () => {
               />
             )}
             {toggleMenu && (
-              <div className=" bg-white absolute top-20 right-0 w-48 h-fit slideAnimation shadow-xl rounded-bl z-20">
+              <div className=" bg-white absolute top-20 right-0 w-48 h-fit slide-left shadow-xl rounded-bl z-20">
                 <ul className="flex flex-col items-start justify-center gap-5 py-5 px-5 font-satoshi text-base font-normal text-light-gray-100">
                   <Link
                     to="/"
