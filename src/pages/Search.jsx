@@ -19,8 +19,7 @@ const Search = () => {
       const title = product.title ? product.title.toLowerCase() : "";
 
       return (
-        tag === searchQuery.toLowerCase() ||
-        title === searchQuery.toLowerCase()
+        tag === searchQuery.toLowerCase() || title === searchQuery.toLowerCase()
       );
     });
 
@@ -36,19 +35,23 @@ const Search = () => {
           <TitleCard title={`Search Results for ${query}`} />
         </header>
         <section className="w-full h-full flex flex-wrap items-center justify-center md:justify-start gap-10">
-          {searchResults.map((item, index) => (
-            <section key={`${item.id}-${index}`}>
-              <ProductCard
-                product={item}
-                id={item.id}
-                img={item.img}
-                title={item.title}
-                price={item.price}
-                brand={item.brand}
-                isNew={item.isNew}
-              />
-            </section>
-          ))}
+          {searchResults.length === 0 ? (
+            <div className="w-full py-10 text-center text-gray-600">No results found for your search query.</div>
+          ) : (
+            searchResults.map((item, index) => (
+              <section key={`${item.id}-${index}`}>
+                <ProductCard
+                  product={item}
+                  id={item.id}
+                  img={item.img}
+                  title={item.title}
+                  price={item.price}
+                  brand={item.brand}
+                  isNew={item.isNew}
+                />
+              </section>
+            ))
+          )}
         </section>
       </section>
     </main>
