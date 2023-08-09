@@ -32,7 +32,7 @@ const BigSavingZone = () => {
                 })
                 naviagte("/hawaii-shirts")
               }}
-              className="bg-transparent border-[1px] border-white text-white font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base"
+              className="bg-transparent border-[1px] border-white text-white font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base hover:bg-white hover:text-black-100 transition-all duration-200"
             >
               Shop Now
             </button>
@@ -62,7 +62,7 @@ const BigSavingZone = () => {
                 })
                 naviagte("/printed-tshirt")
               }}
-              className="bg-transparent border-[1px] border-white text-white font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base"
+              className="bg-transparent border-[1px] border-white text-white font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base  hover:bg-white hover:text-black-100 transition-all duration-200"
             >
               Shop Now
             </button>
@@ -91,7 +91,7 @@ const BigSavingZone = () => {
                 })
                 naviagte("/cargo-joggers")
               }}
-              className="bg-transparent border-[1px] border-black-100 text-black-100 font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base"
+              className="bg-transparent border-[1px] border-black-100 text-black-100 font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base  hover:bg-black-100 hover:text-white-100 transition-all duration-200"
             >
               Shop Now
             </button>
@@ -118,7 +118,7 @@ const BigSavingZone = () => {
                 })
                 naviagte("/urban-shirt")
               }}
-              className="bg-transparent border-[1px] border-black-100 text-black-100 font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base"
+              className="bg-transparent border-[1px] border-black-100 text-black-100 font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base  hover:bg-black-100 hover:text-white-100 transition-all duration-200"
             >
               Shop Now
             </button>
@@ -147,7 +147,7 @@ const BigSavingZone = () => {
                 })
                 naviagte("/oversized-tshirts")
               }}
-              className="bg-transparent border-[1px] border-black-100 text-black-100 font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base"
+              className="bg-transparent border-[1px] border-black-100 text-black-100 font-medium rounded py-1 px-3 lg:px-4 text-base sm:text-xs md:text-base  hover:bg-black-100 hover:text-white-100 transition-all duration-200"
             >
               Shop Now
             </button>
