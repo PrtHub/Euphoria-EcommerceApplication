@@ -5,7 +5,7 @@ import TitleCard from "../Card/TitleCard"
 
 
 const LimeLight = () => {
-  const category = 'treanding'
+  const category = 'trending'
 
   const filteredProduct = products.filter((product) => product.category === category)
   return (
