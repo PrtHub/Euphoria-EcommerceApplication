@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import { motion } from "framer-motion";
 import Lazy from "../LazyLoading/Lazy";
 
 
@@ -21,13 +20,11 @@ const HeroCard = ({image, para, title1, title2, url}) => {
         <p className="text-start text-sm md:text-base lg:text-xl font-medium">
           cool / colorful / comfy
         </p>
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.8 }}
-          className="bg-white text-black-100 font-semibold px-6 py-3 md:px-8 lg:px-10 md:py-4 text-base sm:text-lg md:text-xl rounded"
+        <button
+          className="bg-white text-black-100 font-semibold px-6 py-3 md:px-8 lg:px-10 md:py-4 text-base sm:text-lg md:text-xl rounded hover:bg-transparent border-2 border-white hover:text-white transition-all duration-300"
         >
           {url}
-        </motion.button>
+        </button>
       </article>
     </section>
   );
