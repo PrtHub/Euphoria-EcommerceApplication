@@ -14,6 +14,7 @@ const BrandProducts = () => {
       tag: null,
       range: null,
       color: null,
+      gender: null,
       brand: brand
     });
 
@@ -58,6 +59,11 @@ const BrandProducts = () => {
   if (selectedFilters.color) {
     filteredProductsState = filteredProductsState.filter(
       (product) => product.color === selectedFilters.color
+    );
+  }
+  if (selectedFilters.gender) {
+    filteredProductsState = filteredProductsState.filter(
+      (product) => product.gender === selectedFilters.gender
     );
   }
 
