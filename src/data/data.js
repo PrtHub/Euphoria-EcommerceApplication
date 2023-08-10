@@ -95,7 +95,7 @@ import {
   T8,
   T9,
 } from "../assets/images/Trending";
-import { levi1, ns, puma1, us1 } from "../assets/images/brand";
+import { levi1, ns, nt1, nt2, puma1, us1 } from "../assets/images/brand";
 import {
   cs1,
   cs10,
@@ -831,6 +831,32 @@ export const products = [
     price: "1399",
     color: "blue",
     range: "Under 1500",
+    isNew: false,
+  },
+  {
+    id: 4441,
+    img: nt1,
+    title: "Women Pure Cotton T-shirt",
+    brand: "nike",
+    price: "2153",
+    category: "women",
+    gender: "women",
+    color: "black",
+    tag: "t-shirt",
+    range: "Under 2500",
+    isNew: false,
+  },
+  {
+    id: 4442,
+    img: nt2,
+    title: "Striped Pure Cotton T-shirt",
+    brand: "nike",
+    price: "1675",
+    category: "men",
+    gender: "men",
+    color: "black",
+    tag: "t-shirt",
+    range: "Under 2000",
     isNew: false,
   },
 
