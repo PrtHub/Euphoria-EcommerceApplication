@@ -95,7 +95,7 @@ import {
   T8,
   T9,
 } from "../assets/images/Trending";
-import { levi1, puma1, us1 } from "../assets/images/brand";
+import { levi1, ns, puma1, us1 } from "../assets/images/brand";
 import {
   cs1,
   cs10,
@@ -2175,9 +2175,21 @@ export const products = [
     brand: "nike",
     price: "3295",
     category: "men",
-    color: "pink",
+    color: "black",
     tag: "sweatshirts",
     range: "Under 3500",
+    isNew: false,
+  },
+  {
+    id: 201331324,
+    img: ns,
+    title: "Women Hooded Crop Sweatshirt",
+    brand: "nike",
+    price: "2614",
+    category: "women",
+    color: "grey",
+    tag: "sweatshirts",
+    range: "Under 3000",
     isNew: false,
   },
   {
