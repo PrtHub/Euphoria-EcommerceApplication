@@ -95,7 +95,7 @@ import {
   T8,
   T9,
 } from "../assets/images/Trending";
-import { levi1, nj1, nj2, ns, nt1, nt2, puma1, us1 } from "../assets/images/brand";
+import { levi1, nj1, nj2, njo, njo1, ns, nt1, nt2, puma1, us1 } from "../assets/images/brand";
 import {
   cs1,
   cs10,
@@ -883,6 +883,32 @@ export const products = [
     color: "black",
     tag: "jacket",
     range: "Under 3500",
+    isNew: false,
+  },
+  {
+    id: 4445,
+    img: njo,
+    title: "Cotton Joggers With Side Panels",
+    brand: "nike",
+    price: "4495",
+    category: "men",
+    gender: "men",
+    color: "black",
+    tag: "joggers",
+    range: "Under 4500",
+    isNew: false,
+  },
+  {
+    id: 4446,
+    img: njo1,
+    title: "Women Essential Running Joggers",
+    brand: "nike",
+    price: "2992",
+    category: "women",
+    gender: "women",
+    color: "black",
+    tag: "joggers",
+    range: "Under 3000",
     isNew: false,
   },
 
