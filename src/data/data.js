@@ -95,7 +95,7 @@ import {
   T8,
   T9,
 } from "../assets/images/Trending";
-import { levi1, ns, nt1, nt2, puma1, us1 } from "../assets/images/brand";
+import { levi1, nj1, nj2, ns, nt1, nt2, puma1, us1 } from "../assets/images/brand";
 import {
   cs1,
   cs10,
@@ -857,6 +857,32 @@ export const products = [
     color: "black",
     tag: "t-shirt",
     range: "Under 2000",
+    isNew: false,
+  },
+  {
+    id: 4443,
+    img: nj1,
+    title: "Dri-FIT Running Sporty Jacket",
+    brand: "nike",
+    price: "4615",
+    category: "women",
+    gender: "women",
+    color: "pink",
+    tag: "jacket",
+    range: "Under 5000",
+    isNew: false,
+  },
+  {
+    id: 4444,
+    img: nj2,
+    title: "Hooded Training Sporty Jacket",
+    brand: "nike",
+    price: "3442",
+    category: "men",
+    gender: "men",
+    color: "black",
+    tag: "jacket",
+    range: "Under 3500",
     isNew: false,
   },
 
