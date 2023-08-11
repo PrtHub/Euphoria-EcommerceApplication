@@ -6,6 +6,7 @@ import { GiShoppingBag } from "react-icons/gi";
 import { MdOutlineFavorite } from "react-icons/md";
 import { removeItem } from "../redux/favReducer";
 import { useNavigate } from "react-router-dom";
+import { logToBugfender } from "../utils/Bugfender";
 
 const Favorite = () => {
   const navigate = useNavigate();
@@ -62,6 +63,7 @@ const Favorite = () => {
                     className="text-red-500 cursor-pointer"
                     onClick={() => {
                       dispatch(removeItem(item.id));
+                      logToBugfender("NewCard Component", "Remove item from Wishlist")
                     }}
                   />
                 </section>
