@@ -63,7 +63,7 @@ const Hero = () => {
           para="Joggers / Sports"
           title1="Sports Fashion"
           title2="Collection"
-          url={<Link to="/cargo-joggers">Shop Now</Link>}
+          url={<Link to="/women/joggers">Shop Now</Link>}
         />
       </SwiperSlide>
     </Swiper>
