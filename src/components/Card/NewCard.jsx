@@ -6,8 +6,11 @@ import { MdOutlineFavoriteBorder, MdOutlineFavorite } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 import { logToBugfender } from "../../utils/Bugfender";
+import { useDispatch } from "react-redux";
+import { addToWishlist, removeItem } from "../../redux/favReducer";
 
 const NewCard = ({ img, title, brand, price, isNew, id }) => {
+  const dispatch = useDispatch()
   const navigate = useNavigate();
   const [color, setColor] = useState(false);
 
@@ -22,6 +25,25 @@ const NewCard = ({ img, title, brand, price, isNew, id }) => {
   logToBugfender('Newcard Component', 'Card rendered:', {
     id
   });
+
+  const handlefav = () => {
+    if(color) {
+      dispatch(removeItem(id))
+      setColor(false);
+    } else {
+      dispatch(
+        addToWishlist({
+          id,
+          img,
+          title,
+          brand,
+          price,
+          isNew
+        })
+      )
+      setColor(true)
+    }
+  }
 
   return (
     <section className="w-[282px] h-[440px] flex flex-col items-start justify-start gap-2 rounded cursor-pointer">
@@ -41,12 +63,12 @@ const NewCard = ({ img, title, brand, price, isNew, id }) => {
           {color ? (
             <MdOutlineFavorite
               className="text-red-500 cursor-pointer"
-              onClick={() => setColor(false)}
+              onClick={handlefav}
             />
           ) : (
             <MdOutlineFavoriteBorder
               className="text-black-100 cursor-pointer"
-              onClick={() => setColor(true)}
+              onClick={handlefav}
             />
           )}
         </section>
