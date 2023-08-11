@@ -1,6 +1,7 @@
 import CatgoryCard from "../Card/CatgoryCard";
 import TitleCard from "../Card/TitleCard";
 import { products } from "../../data/data";
+import { logToBugfender } from "../../utils/Bugfender";
 
 const MenCategories = () => {
   const category = "men";
@@ -15,6 +16,10 @@ const MenCategories = () => {
     }
     uniqueTags.add(cat.tag);
     return true;
+  });
+
+  logToBugfender('NewArrivals Component', 'Unique products:', {
+    uniqueMencategoriesCount: uniqueMencategories.length,
   });
 
   return (

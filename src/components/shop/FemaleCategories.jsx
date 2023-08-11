@@ -1,6 +1,7 @@
 import CatgoryCard from "../Card/CatgoryCard"
 import TitleCard from "../Card/TitleCard"
 import { products } from "../../data/data"
+import { logToBugfender } from "../../utils/Bugfender"
 
 
 const FemaleCategories = () => {
@@ -17,6 +18,10 @@ const FemaleCategories = () => {
       uniqueTags.add(cat.tag)
       return true
   })
+
+  logToBugfender('NewArrivals Component', 'Unique products:', {
+    uniqueWomencategoriesCount: uniqueWomencategories.length,
+  });
 
   
   return (

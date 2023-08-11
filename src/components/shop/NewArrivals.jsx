@@ -1,4 +1,5 @@
 import { Newproducts } from "../../data/data";
+import { logToBugfender } from "../../utils/Bugfender";
 import ArrivalCard from "../Card/ArrivalCard";
 import TitleCard from "../Card/TitleCard";
 
@@ -11,6 +12,10 @@ const NewArrivals = () => {
     }
     uniqueTag.add(product.tag);
     return true;
+  });
+
+  logToBugfender('NewArrivals Component', 'Unique products:', {
+    uniqueProductCount: uniqueproducts.length,
   });
 
   return (
