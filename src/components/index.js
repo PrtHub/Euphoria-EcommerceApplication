@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 import BigSavingZone from "./shop/BigSavingZone";
-import FemaleCategories from "./shop/FemaleCategories";
+import WomenCategories from "./shop/WomenCategories";
 import Hero from "./shop/Hero";
 import MenCategories from "./shop/MenCategories";
 import NewArrivals from "./shop/NewArrivals";
@@ -25,7 +25,7 @@ export {
 
   MenCategories,
   NewArrivals,
-  FemaleCategories,
+  WomenCategories,
   LimeLight,
   Hero,
   BigSavingZone,

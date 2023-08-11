@@ -4,7 +4,7 @@ import { products } from "../../data/data"
 import { logToBugfender } from "../../utils/Bugfender"
 
 
-const FemaleCategories = () => {
+const WomenCategories = () => {
   const category = 'women'
  
   const womencategories = products.filter((cat) => cat.category === category)
@@ -26,7 +26,7 @@ const FemaleCategories = () => {
   
   return (
     <section className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10 gap-10">
-      <TitleCard title="Categories For Female" />
+      <TitleCard title="Categories For Women" />
       <section className="w-full h-full flex flex-row gap-10 overflow-x-scroll">
         {uniqueWomencategories?.map((cat) => (
           <main key={cat.id}>
@@ -38,4 +38,4 @@ const FemaleCategories = () => {
   )
 }
 
-export default FemaleCategories
+export default WomenCategories

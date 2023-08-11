@@ -1,12 +1,12 @@
 import {
   BigSavingZone,
-  FemaleCategories,
   Hero,
   MenCategories,
   NewArrivals,
   SEO,
   LimeLight,
   Brand,
+  WomenCategories,
 } from "../components";
 
 const Shop = () => {
@@ -21,7 +21,7 @@ const Shop = () => {
         <NewArrivals />
         <BigSavingZone />
         <MenCategories />
-        <FemaleCategories />
+        <WomenCategories />
         <Brand/>
         <LimeLight />
       </main>
