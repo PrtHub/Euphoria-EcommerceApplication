@@ -1,5 +1,6 @@
 
 import { products } from "../../data/data"
+import { logToBugfender } from "../../utils/Bugfender"
 import ProductCard from "../Card/ProductCard"
 import TitleCard from "../Card/TitleCard"
 
@@ -8,6 +9,9 @@ const LimeLight = () => {
   const category = 'trending'
 
   const filteredProduct = products.filter((product) => product.category === category)
+
+  logToBugfender('LimeLight Component', `Filtered products: ${JSON.stringify(filteredProduct)}`);
+
   return (
     <section className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10 gap-10">
       <TitleCard title="In the Limelight"/>

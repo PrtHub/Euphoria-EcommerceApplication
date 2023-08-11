@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { products } from "../data/data";
 import { useParams } from "react-router-dom";
 import { ProductCard, TitleCard } from "../components";
+import { logToBugfender } from "../utils/Bugfender";
 
 const Search = () => {
   const { query } = useParams();
@@ -24,6 +25,10 @@ const Search = () => {
     });
 
     setSearchResults(filteredProducts);
+
+    logToBugfender('Search Component', `Search query: ${searchQuery}`);
+    logToBugfender('Search Component', `Filtered products: ${JSON.stringify(filteredProducts)}`);
+
   }, [searchQuery]);
 
   console.log(query);
