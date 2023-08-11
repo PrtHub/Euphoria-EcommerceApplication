@@ -16,10 +16,7 @@ const CatgoryCard = ({ img, title, category }) => {
     navigate(`${category}/${title}`);
   };
 
-  logToBugfender('CatgoryCard Component', 'Card rendered:', {
-    title,
-    category,
-  });
+  logToBugfender('CatgoryCard Component', `Navigate to: ${category}/${title}`);
 
   return (
     <section className="w-[270px] h-[460px] flex flex-col items-start justify-start gap-2 rounded">

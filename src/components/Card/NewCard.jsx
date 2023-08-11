@@ -22,14 +22,13 @@ const NewCard = ({ img, title, brand, price, isNew, id }) => {
     navigate(`/single/${id}`);
   };
 
-  logToBugfender('Newcard Component', 'Card rendered:', {
-    id
-  });
+  logToBugfender('NewCard Component', `Navigate to: /single/${id}`);
 
   const handlefav = () => {
     if(color) {
       dispatch(removeItem(id))
       setColor(false);
+      logToBugfender("NewCard Component", "Remove item from Wishlist")
     } else {
       dispatch(
         addToWishlist({
@@ -42,6 +41,13 @@ const NewCard = ({ img, title, brand, price, isNew, id }) => {
         })
       )
       setColor(true)
+      logToBugfender("Product Component", "Item added to wishlist:", {
+        id,
+        title,
+        price,
+        brand,
+        isNew,
+      });
     }
   }
 

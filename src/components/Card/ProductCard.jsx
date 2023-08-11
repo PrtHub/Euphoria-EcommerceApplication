@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 import { useDispatch } from "react-redux";
 import { addToWishlist, removeItem } from "../../redux/favReducer";
+import { logToBugfender } from "../../utils/Bugfender";
 
 
 const ProductCard = ({ img, title, brand, price, isNew, id }) => {
@@ -27,6 +28,7 @@ const ProductCard = ({ img, title, brand, price, isNew, id }) => {
     if(color) {
       dispatch(removeItem(id))
       setColor(false);
+      logToBugfender("NewCard Component", "Remove item from Wishlist")
     } else {
       dispatch(
         addToWishlist({
@@ -39,6 +41,13 @@ const ProductCard = ({ img, title, brand, price, isNew, id }) => {
         })
       )
       setColor(true)
+      logToBugfender("Product Component", "Item added to wishlist:", {
+        id,
+        title,
+        price,
+        brand,
+        isNew,
+      });
     }
   }
  
