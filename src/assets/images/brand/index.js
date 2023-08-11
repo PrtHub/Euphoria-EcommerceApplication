@@ -18,6 +18,9 @@ import ps from './ps.png';
 import ps2 from './ps2.png';
 
 import levi1 from './levi1.png';
+import lj from './lj.png';
+import ls1 from './ls1.png';
+import ls2 from './ls2.png';
 
 export  {
     us1,
@@ -32,6 +35,10 @@ export  {
     pj2,
 
     levi1,
+     lj,
+     ls1,
+     ls2,
+
     ns,
     nt1,
     nt2,
