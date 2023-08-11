@@ -5,6 +5,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import { MdOutlineFavoriteBorder, MdOutlineFavorite } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
+import { logToBugfender } from "../../utils/Bugfender";
 
 const NewCard = ({ img, title, brand, price, isNew, id }) => {
   const navigate = useNavigate();
@@ -17,6 +18,10 @@ const NewCard = ({ img, title, brand, price, isNew, id }) => {
     });
     navigate(`/single/${id}`);
   };
+
+  logToBugfender('Newcard Component', 'Card rendered:', {
+    id
+  });
 
   return (
     <section className="w-[282px] h-[440px] flex flex-col items-start justify-start gap-2 rounded cursor-pointer">

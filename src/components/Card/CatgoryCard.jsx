@@ -4,6 +4,7 @@ import { animateScroll as scroll } from 'react-scroll';
 import { BsArrowRight } from "react-icons/bs";
 import Lazy from "../LazyLoading/Lazy";
 import { useNavigate } from "react-router-dom";
+import { logToBugfender } from "../../utils/Bugfender";
 
 const CatgoryCard = ({ img, title, category }) => {
   const navigate = useNavigate();
@@ -14,6 +15,11 @@ const CatgoryCard = ({ img, title, category }) => {
     })
     navigate(`${category}/${title}`);
   };
+
+  logToBugfender('CatgoryCard Component', 'Card rendered:', {
+    title,
+    category,
+  });
 
   return (
     <section className="w-[270px] h-[460px] flex flex-col items-start justify-start gap-2 rounded">

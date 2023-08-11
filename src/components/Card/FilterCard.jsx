@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import { MdClose } from "react-icons/md";
+import { logToBugfender } from "../../utils/Bugfender";
 
 const FilterCard = ({
   setOpenFilter,
@@ -56,21 +57,46 @@ const FilterCard = ({
 
   const handleTagFilterChange = (tag) => {
     onFilterChange({ tag: tag === selectedFilters.tag ? null : tag });
+
+    logToBugfender('FilterCard Component', 'Tag filter changed:', {
+      newTagFilter: tag,
+      selectedTagFilter: selectedFilters.tag,
+    });
   };
 
   const handleRangeFilterChange = (range) => {
     onFilterChange({ range: range === selectedFilters.range ? null : range });
+
+    logToBugfender('FilterCard Component', 'Price Range filter changed:', {
+      newTagFilter: range,
+      selectedTagFilter: selectedFilters.range,
+    });
   };
 
   const handleColorFilterChange = (color) => {
     onFilterChange({ color: color === selectedFilters.color ? null : color });
+
+    logToBugfender('FilterCard Component', 'Color filter changed:', {
+      newTagFilter: color,
+      selectedTagFilter: selectedFilters.color,
+    });
   };
   const handleBrandFilterChange = (brand) => {
     onFilterChange({ brand: brand === selectedFilters.brand ? null : brand });
+
+    logToBugfender('FilterCard Component', 'Brand filter changed:', {
+      newTagFilter: brand,
+      selectedTagFilter: selectedFilters.brand,
+    });
   };
   const handleKidsFilterChange = (gender) => {
     onFilterChange({
       gender: gender === selectedFilters.gender ? null : gender,
+    });
+
+    logToBugfender('FilterCard Component', 'Gender filter changed:', {
+      newTagFilter: gender,
+      selectedTagFilter: selectedFilters.gender,
     });
   };
 
