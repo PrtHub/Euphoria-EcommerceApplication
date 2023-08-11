@@ -70,6 +70,9 @@ import wk6 from './wk6.png'
 import wk7 from './wk7.png'
 import wk8 from './wk8.png'
 
+import wjo1 from './wjo1.png'
+import wjo2 from './wjo2.png'
+
 export {
     ws1,
     ws2,
@@ -141,5 +144,8 @@ export {
     wk5,
     wk6,
     wk7,
-    wk8
+    wk8,
+
+    wjo1,
+    wjo2
 }
