@@ -4,6 +4,7 @@ import { Lazy, SEO, TitleCard } from "../components";
 import { GiShoppingBag } from "react-icons/gi";
 import { removeItem, updateQuantity } from "../redux/cartReducer";
 import { BsArrowLeft } from "react-icons/bs";
+import { logToBugfender } from "../utils/Bugfender";
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -11,6 +12,11 @@ const Cart = () => {
 
   const handleQuantityChange = (productId, newQuantity) => {
     dispatch(updateQuantity({ id: productId, quantity: newQuantity }));
+    
+    logToBugfender('Cart Component', 'Quantity changed:', {
+      productId,
+      newQuantity,
+    });
   };
 
   const goBack = () => {

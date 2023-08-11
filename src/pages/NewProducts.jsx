@@ -4,6 +4,7 @@ import { FilterCard, NewCard, SEO, TitleCard } from "../components";
 import { useState } from "react";
 import Select from "react-select";
 import { BsFilter } from "react-icons/bs";
+import { logToBugfender } from "../utils/Bugfender";
 
 
 const NewProducts = () => {
@@ -24,6 +25,10 @@ const NewProducts = () => {
 
   const handleFilterChange = (filter) => {
     setSelectedFilters({ ...selectedFilters, ...filter });
+
+    logToBugfender('Products Component', 'Filter changed:', {
+      filter,
+    });
   };
 
   let filteredProductsState = filteredProducts;
