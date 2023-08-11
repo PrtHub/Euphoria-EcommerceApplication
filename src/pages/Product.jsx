@@ -5,6 +5,7 @@ import { Lazy, ProductCard, TitleCard } from "../components";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { useDispatch } from "react-redux";
 import { addToCart, updateSize } from "../redux/cartReducer";
+import { logToBugfender } from "../utils/Bugfender";
 
 const Product = () => {
   const dispatch = useDispatch();
@@ -53,11 +54,24 @@ const Product = () => {
       })
     ),
       setGoToCart(true);
+    logToBugfender("Product Component", "Item added to cart:", {
+      id: selectedProduct.id,
+      title,
+      price,
+      brand,
+      color,
+      quantity,
+      size: selectedSize,
+    });
   };
 
   const handleChangeSize = (size) => {
     setSelectedSize(size);
     dispatch(updateSize({ id: selectedProduct.id, size }));
+    logToBugfender("Product Component", "Size changed:", {
+      id: selectedProduct.id,
+      size,
+    });
   };
 
   return (
