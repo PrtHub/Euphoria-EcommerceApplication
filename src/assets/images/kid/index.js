@@ -31,6 +31,9 @@ import kd8 from './kd8.png';
 import kd9 from './kd9.png';
 import kd10 from './kd10.png';
 
+import kbs from './kbs.png';
+import kbs1 from './kbs1.png';
+
 export {
     cs1,
     cs2,
@@ -61,5 +64,8 @@ export {
     kd7,
     kd8,
     kd9,
-    kd10
+    kd10,
+
+    kbs,
+    kbs1
 }
