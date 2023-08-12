@@ -30,7 +30,7 @@ const Billing = () => {
       navigate("/success");
     }
 
-    logToBugfender('Billing Component', "Payment button clicked");
+    logToBugfender("Billing Component", "Payment button clicked");
   };
 
   const subTotalPrice = () => {
@@ -52,8 +52,8 @@ const Billing = () => {
   return (
     <main className="w-full h-full flex flex-col items-start justify-center gap-10 py-10 px-10">
       <TitleCard title="Check Out" />
-      <section className="w-full h-full max-w-7xl mx-auto flex flex-col-reverse xl:flex-row-reverse items-start justify-between gap-10">
-        <div className="w-full max-w-lg p-8 rounded-lg shadow-md flex flex-col items-start justify-start gap-10">
+      <section className="w-full h-full max-w-7xl mx-auto flex flex-col-reverse xl:flex-row-reverse items-start justify-between gap-20 sm:gap-10">
+        <div className="w-full max-w-lg sm:p-8 rounded-lg shadow-md flex flex-col items-start justify-start gap-10">
           <h1 className="text-black-100 font-semibold text-2xl">
             Billing Details
           </h1>
@@ -118,7 +118,7 @@ const Billing = () => {
             </button>
           </form>
         </div>
-        <div className="flex flex-col items-start justify-start gap-10 p-8 ">
+        <div className="flex flex-col items-start justify-start gap-10 sm:p-8 ">
           <h1 className="text-black-100 font-semibold text-2xl">
             Order Summary
           </h1>
@@ -126,7 +126,7 @@ const Billing = () => {
             {cartProducts.map((product) => (
               <main
                 key={product.id}
-                className="w-full h-full flex items-center justify-center gap-5"
+                className="w-full h-full flex items-start sm:items-center justify-center gap-5"
               >
                 <div className="w-40 h-40">
                   <Lazy
@@ -135,23 +135,25 @@ const Billing = () => {
                   />
                 </div>
                 <div className="w-full flex flex-col gap-2">
-                  <h2 className="text-lg font-medium text-black-100">
+                  <h2 className="text-sm sm:text-lg font-medium text-black-100">
                     {product.title}
                   </h2>
-                  <p className="text-base font-medium text-black-100">
+                  <p className="text-xs sm:text-base font-medium text-black-100">
                     Color:{" "}
                     <span className="text-light-gray ml-2 capitalize">
                       {product.color}
                     </span>
                   </p>
-                  <p className="text-base font-medium text-black-100">
+                  <p className="text-xs sm:text-base font-medium text-black-100">
                     Quantity:{" "}
                     <span className="text-light-gray ml-2 capitalize">
                       {product.quantity}
                     </span>
                   </p>
                 </div>
-                <h2 className="text-light-gray ">&#8377;{product.price}</h2>
+                <h2 className=" text-light-gray text-xs sm:text-base">
+                  &#8377;{product.price}
+                </h2>
               </main>
             ))}
           </section>
