@@ -6,6 +6,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 import { useDispatch } from "react-redux";
 import { addToCart, updateSize } from "../redux/cartReducer";
 import { logToBugfender } from "../utils/Bugfender";
+import { toast } from "react-toastify";
 
 const SIngleNew = () => {
   const dispatch = useDispatch();
@@ -51,6 +52,7 @@ const SIngleNew = () => {
       })
     ),
       setGoToCart(true);
+      toast.success("Product added successfully")
       logToBugfender("Product Component", "Item added to cart:", {
         id: selectedProduct.id,
         title,

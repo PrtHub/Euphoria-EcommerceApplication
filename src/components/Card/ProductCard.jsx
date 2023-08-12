@@ -8,6 +8,7 @@ import { animateScroll as scroll } from "react-scroll";
 import { useDispatch } from "react-redux";
 import { addToWishlist, removeItem } from "../../redux/favReducer";
 import { logToBugfender } from "../../utils/Bugfender";
+import { toast } from "react-toastify";
 
 
 const ProductCard = ({ img, title, brand, price, isNew, id }) => {
@@ -41,6 +42,7 @@ const ProductCard = ({ img, title, brand, price, isNew, id }) => {
         })
       )
       setColor(true)
+      toast.success("Product added successfully")
       logToBugfender("Product Component", "Item added to wishlist:", {
         id,
         title,
