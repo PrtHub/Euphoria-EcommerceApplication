@@ -30,6 +30,7 @@ const NewCard = ({ img, title, brand, price, isNew, id }) => {
       dispatch(removeItem(id))
       setColor(false);
       logToBugfender("NewCard Component", "Remove item from Wishlist")
+      toast.info("Product remove from Wishlist")
     } else {
       dispatch(
         addToWishlist({
