@@ -1,18 +1,37 @@
 # Euphoria - An E-commerce Application
-Euphoria is an Online Shopping Platform for Men, Women & Kid's Fashion. This is a frontend project built using Vite, React, Tailwind, React Router Dom, React Icons, Redux Toolkit, react-helmet-async,react-lazy-load-image-component, react-select,react-toastify,swiper, Canvas Confetti, Redux Persist and bugfender/SDK.
+Euphoria is a modern and user-friendly Online Shopping Platform for Men, Women & Kid's Fashion. This frontend project is built using a combination of technologies and libraries including Vite, React, Tailwind CSS, React Router Dom, React Icons, Redux Toolkit, react-helmet-async, react-lazy-load-image-component, react-select, react-toastify, swiper, Canvas Confetti, Redux Persist, and bugfender/SDK.
 
 ## Features
 
-- Add products to the shopping cart
-- View and update the shopping cart
-- Add products to wishlist
-- Filter out products based on color, brand, and category according to the user.
-- Searching for products.
-- Place orders and show a success message
-- Create data store with Redux-toolkit 
-- Persisted state using Redux Persist
-- Beautiful icons with React Icons
-- Responsive design with Tailwind CSS
+- Browse and shop a wide range of fashion products for Men, Women & Kids.
+- Easily add products to the shopping cart.
+- View and update the contents of the shopping cart.
+- Create a wishlist of favorite products.
+- Filter products by color, brand, and category for personalized shopping.
+- Efficient search functionality for finding specific products.
+- Place orders and receive success confirmation messages.
+- Data management using Redux Toolkit for a smooth user experience.
+- Persisted state using Redux Persist to maintain cart and wishlist data.
+- High-quality icons using React Icons.
+- Responsive design ensuring compatibility across devices with Tailwind CSS.
+
+## Technologies Used
+
+- Vite
+- React
+- Tailwind CSS
+- React Router Dom
+- React Icons
+- Redux Toolkit
+- react-helmet-async
+- react-lazy-load-image-component
+- react-select
+- react-toastify
+- swiper
+- Canvas Confetti
+- Redux Persist
+- bugfender/SDK
+  
 
 ## Installation
 
