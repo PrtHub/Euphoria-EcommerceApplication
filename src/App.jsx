@@ -23,9 +23,6 @@ import { Footer, Navbar } from "./components";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-
-
-
 const App = () => {
   return (
     <>
@@ -37,11 +34,11 @@ const App = () => {
           <Route path="/products/:category" element={<Products />} />
           <Route path="/new/:category/:tag" element={<NewProducts />} />
           <Route path="/products/brand/:brand" element={<BrandProducts />} />
-          <Route path="/hawaii-shirts" element={<HawaiiShirts />}/>
-          <Route path="/cargo-joggers" element={<CargoJoggers />}/>
-          <Route path="/oversized-tshirts" element={<OversizedTshirts />}/>
-          <Route path="/printed-tshirt" element={<PrintedTshirts />}/>
-          <Route path="/urban-shirt" element={<UrbanShirts />}/>
+          <Route path="/hawaii-shirts" element={<HawaiiShirts />} />
+          <Route path="/cargo-joggers" element={<CargoJoggers />} />
+          <Route path="/oversized-tshirts" element={<OversizedTshirts />} />
+          <Route path="/printed-tshirt" element={<PrintedTshirts />} />
+          <Route path="/urban-shirt" element={<UrbanShirts />} />
           <Route path="/product/:id" element={<Product />} />
           <Route path="/search/:query" element={<Search />} />
           <Route path="/single/:id" element={<SingleNew />} />
