@@ -8,7 +8,7 @@ const Success = () => {
   const goToProducts = () => {
     window.scrollTo(0, 0);
     navigate("/");
-    logToBugfender("Success Component", "back to Shop page")
+    logToBugfender("Success Component", "back to Shop page");
   };
   return (
     <>
@@ -20,7 +20,8 @@ const Success = () => {
             Thank You for Purchasing{" "}
           </h1>
           <p className="max-w-sm text-center text-light-gray-100 font-normal font-satoshi">
-          We greatly appreciate your support. Your order is being processed and will be shipped to you soon.
+            We greatly appreciate your support. Your order is being processed
+            and will be shipped to you soon.
           </p>
           <button
             className="bg-dark-violet text-white font-satoshi font-normal px-6 py-3 rounded"
