@@ -14,7 +14,6 @@ const Shop = () => {
     <>
       <SEO
         title="Online Shopping for Men, Women & Kids Fashion - Euphoria"
-        desc="Online Shopping for Men, Women & Kids Fashion with exclusive deals"
       />
       <main className="w-full h-full">
         <Hero />

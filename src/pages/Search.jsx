@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { products } from "../data/data";
 import { useParams } from "react-router-dom";
-import { ProductCard, TitleCard } from "../components";
+import { ProductCard, SEO, TitleCard } from "../components";
 import { logToBugfender } from "../utils/Bugfender";
 import Select from "react-select";
 
@@ -48,6 +48,9 @@ const Search = () => {
 
   return (
     <main className="w-full h-full">
+      <SEO
+       title={`Online Shopping for ${query} - Euphoria`}
+      />
       <section className="w-full h-full flex flex-col items-start justify-start px-5 xl:px-10 py-10 gap-10 ">
         <header className="w-full h-full flex items-start justify-between lg:items-center ">
           <TitleCard title={`Search Results for ${query}`} />

@@ -18,7 +18,6 @@ const Favorite = () => {
     <>
       <SEO
         title="Wishlist"
-        desc="Men Shopping Online - Shop for Men Clothings"
       />
       <main className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10 gap-10">
         <TitleCard title="Your Wishlist" />

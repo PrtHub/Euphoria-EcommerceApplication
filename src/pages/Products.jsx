@@ -80,7 +80,7 @@ const Products = () => {
     <>
       <SEO
         title={`Online Shopping for ${category} Fashion - Euphoria`}
-        desc="Online Shopping for Men, Women & Kids Fashion with exclusive deals"
+        
       />
       <main className="w-full h-full">
         <section className="w-full h-full flex flex-col items-start justify-start px-5 xl:px-10 py-10 gap-10 ">
