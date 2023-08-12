@@ -1,11 +1,34 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Lazy, TitleCard } from "../components";
+import { useState } from "react";
+import { toast } from "react-toastify";
 
 const Billing = () => {
+  const navigate = useNavigate();
   const location = useLocation();
   const cartProducts = location.state?.products || [];
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [address, setAddress] = useState("");
+  const [number, setNumber] = useState("");
 
-  console.log(cartProducts);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!name || !email || !address || !number) {
+      toast.warning("Please fill in all the fields");
+      return;
+    } else if (!/^[a-zA-Z\s]+$/.test(name)) {
+      toast.warning("Invalid name. Please enter a valid name");
+      return;
+    } else if (!/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(email)) {
+      toast.warning("Invalid email. Please enter a valid email address");
+      return;
+    } else if (!/^(?:[0-9]{4}-){3}[0-9]{4}$/.test(number)) {
+      toast.warning("Invalid Card Number. Please enter a valid Card Number");
+    } else {
+      navigate("/success");
+    }
+  };
 
   const subTotalPrice = () => {
     let total = 0;
@@ -31,7 +54,7 @@ const Billing = () => {
           <h1 className="text-black-100 font-semibold text-2xl">
             Billing Details
           </h1>
-          <form className="w-full h-full">
+          <form className="w-full h-full" onSubmit={handleSubmit}>
             <div className="mb-4">
               <label htmlFor="fullName" className="block text-gray-600">
                 Full Name
@@ -39,6 +62,8 @@ const Billing = () => {
               <input
                 type="text"
                 id="fullName"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 className="w-full border border-gray-300 text-light-gray p-2 rounded-md  outline-none"
                 placeholder="John Doe"
               />
@@ -50,6 +75,8 @@ const Billing = () => {
               <input
                 type="email"
                 id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full border border-gray-300 text-light-gray p-2 rounded-md "
                 placeholder="john@example.com"
               />
@@ -60,6 +87,8 @@ const Billing = () => {
               </label>
               <textarea
                 id="address"
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
                 className="w-full border border-gray-300 p-2 text-light-gray rounded-md outline-none"
                 placeholder="123 Street, City, Country"
                 rows="3"
@@ -72,6 +101,8 @@ const Billing = () => {
               <input
                 type="text"
                 id="creditCard"
+                value={number}
+                onChange={(e) => setNumber(e.target.value)}
                 className="w-full border border-gray-300  text-light-gray p-2 rounded-md  outline-none"
                 placeholder="XXXX-XXXX-XXXX-XXXX"
               />
