@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Lazy, SEO, TitleCard } from "../components";
-
+import { animateScroll as scroll } from "react-scroll";
 import { GiShoppingBag } from "react-icons/gi";
 import { removeItem, updateQuantity } from "../redux/cartReducer";
 import { BsArrowLeft } from "react-icons/bs";
@@ -36,6 +36,10 @@ const Cart = () => {
   };
 
   const goToBilling = () => {
+    scroll.scrollToTop({
+      duration: 500,
+      smooth: true,
+    });
     navigate("/billing", { state: { products } });
   };
 
