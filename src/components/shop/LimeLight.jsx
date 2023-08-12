@@ -6,9 +6,9 @@ import TitleCard from "../Card/TitleCard"
 
 
 const LimeLight = () => {
-  const category = 'trending'
+  const Trending = 'trending'
 
-  const filteredProduct = products.filter((product) => product.category === category)
+  const filteredProduct = products.filter((product) => product.Trending === Trending)
 
   logToBugfender('LimeLight Component', `Filtered products: ${JSON.stringify(filteredProduct)}`);
 
