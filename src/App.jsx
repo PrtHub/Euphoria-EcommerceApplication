@@ -17,6 +17,7 @@ import {
   PrintedTshirts,
   UrbanShirts,
   Search,
+  Billing,
 } from "./pages";
 import { Footer, Navbar } from "./components";
 import { ToastContainer } from "react-toastify";
@@ -45,6 +46,7 @@ const App = () => {
           <Route path="/search/:query" element={<Search />} />
           <Route path="/single/:id" element={<SingleNew />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/billing" element={<Billing />} />
           <Route path="/favorite" element={<Favorite />} />
           <Route path="/success" element={<Success />} />
         </Routes>

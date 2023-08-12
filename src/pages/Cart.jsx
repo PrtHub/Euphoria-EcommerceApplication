@@ -5,8 +5,10 @@ import { GiShoppingBag } from "react-icons/gi";
 import { removeItem, updateQuantity } from "../redux/cartReducer";
 import { BsArrowLeft } from "react-icons/bs";
 import { logToBugfender } from "../utils/Bugfender";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
+  const navigate = useNavigate()
   const dispatch = useDispatch();
   const products = useSelector((state) => state.cart.clothes);
 
@@ -31,6 +33,10 @@ const Cart = () => {
       total += product.quantity * product.price;
     });
     return total.toFixed(2);
+  };
+
+  const goToBilling = () => {
+    navigate("/billing", { state: { products } });
   };
 
   return (
@@ -153,7 +159,7 @@ const Cart = () => {
               <p className="text-light-gray-100 text-sm font-satoshi font-normal">
                 Taxes and shipping are calculated at checkout
               </p>
-              <button className="bg-dark-violet px-6 text-white py-2 font-medium rounded">
+              <button onClick={goToBilling} className="bg-dark-violet px-6 text-white py-2 font-medium rounded">
                 Purchase now
               </button>
             </section>

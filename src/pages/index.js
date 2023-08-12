@@ -9,6 +9,7 @@ import BrandProducts from "./BrandProducts";
 import NewProducts from "./NewProducts";
 import SingleNew from "./SIngleNew";
 import Search from "./Search";
+import Billing from "./Billing";
 
 import HawaiiShirts from "./BigSavingProduct/HawaiiShirts";
 import OversizedTshirts from "./BigSavingProduct/OversizedTshirts";
@@ -28,6 +29,7 @@ export {
   NewProducts,
   SingleNew,
   Search,
+  Billing,
 
   HawaiiShirts,
   OversizedTshirts,
