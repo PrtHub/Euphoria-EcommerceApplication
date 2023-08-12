@@ -1609,7 +1609,7 @@ export const products = [
     Trending: "trending",
     category: "men",
     color: "blue",
-    tag: "dress",
+    tag: "t-shirt",
     range: "Under 500",
     isNew: false,
   },
