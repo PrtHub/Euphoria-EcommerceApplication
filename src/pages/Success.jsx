@@ -1,12 +1,14 @@
 import { BsBagCheckFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { Canvas } from "../utils/canvas";
+import { logToBugfender } from "../utils/Bugfender";
 
 const Success = () => {
   const navigate = useNavigate();
   const goToProducts = () => {
     window.scrollTo(0, 0);
     navigate("/");
+    logToBugfender("Success Component", "back to Shop page")
   };
   return (
     <>
