@@ -39,7 +39,7 @@ const Billing = () => {
               <input
                 type="text"
                 id="fullName"
-                className="w-full border border-gray-300 p-2 rounded-md focus:ring focus:ring-indigo-200"
+                className="w-full border border-gray-300 text-light-gray p-2 rounded-md  outline-none"
                 placeholder="John Doe"
               />
             </div>
@@ -50,7 +50,7 @@ const Billing = () => {
               <input
                 type="email"
                 id="email"
-                className="w-full border border-gray-300 p-2 rounded-md focus:ring focus:ring-indigo-200"
+                className="w-full border border-gray-300 text-light-gray p-2 rounded-md "
                 placeholder="john@example.com"
               />
             </div>
@@ -60,7 +60,7 @@ const Billing = () => {
               </label>
               <textarea
                 id="address"
-                className="w-full border border-gray-300 p-2 rounded-md focus:ring focus:ring-indigo-200"
+                className="w-full border border-gray-300 p-2 text-light-gray rounded-md outline-none"
                 placeholder="123 Street, City, Country"
                 rows="3"
               ></textarea>
@@ -72,7 +72,7 @@ const Billing = () => {
               <input
                 type="text"
                 id="creditCard"
-                className="w-full border border-gray-300 p-2 rounded-md focus:ring focus:ring-indigo-200"
+                className="w-full border border-gray-300  text-light-gray p-2 rounded-md  outline-none"
                 placeholder="XXXX-XXXX-XXXX-XXXX"
               />
             </div>
