@@ -2,6 +2,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { Lazy, TitleCard } from "../components";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import { logToBugfender } from "../utils/Bugfender";
 
 const Billing = () => {
   const navigate = useNavigate();
@@ -28,6 +29,8 @@ const Billing = () => {
     } else {
       navigate("/success");
     }
+
+    logToBugfender('Billing Component', "Payment button clicked");
   };
 
   const subTotalPrice = () => {
