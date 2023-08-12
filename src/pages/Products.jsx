@@ -79,8 +79,7 @@ const Products = () => {
   return (
     <>
       <SEO
-        title={`Online Shopping for ${category} Fashion - Euphoria`}
-        
+        title={`Online Shopping for ${category} Fashion - Euphoria`}  
       />
       <main className="w-full h-full">
         <section className="w-full h-full flex flex-col items-start justify-start px-5 xl:px-10 py-10 gap-10 ">

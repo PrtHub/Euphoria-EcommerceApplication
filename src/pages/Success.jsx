@@ -2,6 +2,7 @@ import { BsBagCheckFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { Canvas } from "../utils/canvas";
 import { logToBugfender } from "../utils/Bugfender";
+import { SEO } from "../components";
 
 const Success = () => {
   const navigate = useNavigate();
@@ -12,6 +13,7 @@ const Success = () => {
   };
   return (
     <>
+    <SEO title="Order Successfull"/>
       <div className="content-wrapper flex items-center justify-center py-20">
         <section className="w-auto h-auto flex flex-col items-center justify-center gap-4">
           <Canvas />

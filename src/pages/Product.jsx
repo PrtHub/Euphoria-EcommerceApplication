@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { products } from "../data/data";
 import { useState } from "react";
-import { Lazy, ProductCard, TitleCard } from "../components";
+import { Lazy, ProductCard, SEO, TitleCard } from "../components";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { useDispatch } from "react-redux";
 import { addToCart, updateSize } from "../redux/cartReducer";
@@ -77,6 +77,10 @@ const Product = () => {
   };
 
   return (
+    <>
+    <SEO
+    title={`${title} - Euphoria`}
+    />
     <main className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10 gap-20">
       <section className="w-full h-full flex flex-col lg:flex-row items-start  lg:items-center justify-start gap-10 lg:gap-20">
         <section className="w-full h-full sm:w-[410px] sm:h-[540px]">
@@ -220,6 +224,7 @@ const Product = () => {
         </section>
       </section>
     </main>
+    </>
   );
 };
 

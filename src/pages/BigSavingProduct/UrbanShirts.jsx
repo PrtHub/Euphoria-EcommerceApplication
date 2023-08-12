@@ -27,7 +27,6 @@ const UrbanShirts = () => {
     <>
     <SEO
       title={`Online Shopping Urban Shirts - Euphoria`}
-      desc="Online Shopping for Men, Women & Kids Fashion with exclusive deals"
     />
     <section className="w-full h-full flex flex-col items-start justify-start px-5 xl:px-10 py-10 gap-10 ">
       <header className="w-full h-full flex items-start lg:items-center ">

@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import { Lazy, TitleCard } from "../components";
+import { Lazy, SEO, TitleCard } from "../components";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { logToBugfender } from "../utils/Bugfender";
@@ -50,6 +50,8 @@ const Billing = () => {
   const totalAfterDiscount = (subTotalPrice() - discountAmount).toFixed(2);
 
   return (
+    <>
+    <SEO title="Billing Deatils"/>
     <main className="w-full h-full flex flex-col items-start justify-center gap-10 py-10 px-10">
       <TitleCard title="Check Out" />
       <section className="w-full h-full max-w-7xl mx-auto flex flex-col-reverse xl:flex-row-reverse items-start justify-between gap-20 sm:gap-10">
@@ -180,6 +182,7 @@ const Billing = () => {
         </div>
       </section>
     </main>
+    </>
   );
 };
 

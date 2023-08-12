@@ -1,5 +1,5 @@
 import { Newproducts } from "../data/data";
-import { Lazy, NewCard, TitleCard } from "../components";
+import { Lazy, NewCard, SEO, TitleCard } from "../components";
 import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
 import { HiOutlineShoppingBag } from "react-icons/hi";
@@ -75,6 +75,10 @@ const SIngleNew = () => {
   };
 
   return (
+    <>
+    <SEO
+    title={`${title} - Euphoria`}
+    />
     <main className="w-full h-full flex flex-col items-start px-5 xl:px-10 py-10 gap-20">
       <section className="w-full h-full flex flex-col lg:flex-row items-start  lg:items-center justify-start gap-10 lg:gap-20">
         <section className="w-full h-full sm:w-[410px] sm:h-[540px]">
@@ -218,6 +222,7 @@ const SIngleNew = () => {
         </section>
       </section>
     </main>
+    </>
   );
 };
 
