@@ -67,7 +67,7 @@ const Search = () => {
             getOptionValue={(option) => option.value}
             placeholder="Sort By"
             classNamePrefix="select"
-            className="w-[120px] sm:w-[200px] text-black outline-none"
+            className="w-[200px] text-black outline-none"
           />
         </header>
         <section className="w-full h-full flex flex-wrap items-center justify-center md:justify-start gap-10">
