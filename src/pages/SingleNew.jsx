@@ -8,7 +8,7 @@ import { addToCart, updateSize } from "../redux/cartReducer";
 import { logToBugfender } from "../utils/Bugfender";
 import { toast } from "react-toastify";
 
-const SIngleNew = () => {
+const SingleNew = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
   const [goToCart, setGoToCart] = useState(false);
@@ -226,4 +226,4 @@ const SIngleNew = () => {
   );
 };
 
-export default SIngleNew;
+export default SingleNew;
