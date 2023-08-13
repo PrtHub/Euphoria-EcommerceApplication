@@ -1587,19 +1587,7 @@ export const products = [
   },
 
   //Trending
-  {
-    id: 2432,
-    img: T1,
-    title: "Ribbed Top with Stylish Neck",
-    brand: "Roadster",
-    price: "459",
-    Trending: "trending",
-    category: "women",
-    color: "green",
-    tag: "top",
-    range: "Under 500",
-    isNew: false,
-  },
+ 
   {
     id: 2442,
     img: T10,
@@ -3401,6 +3389,19 @@ export const products = [
     price: "599",
     color: "pink",
     range: "Under 1000",
+    isNew: false,
+  },
+  {
+    id: 2432,
+    img: T1,
+    title: "Ribbed Top with Stylish Neck",
+    brand: "Roadster",
+    price: "459",
+    Trending: "trending",
+    category: "women",
+    color: "green",
+    tag: "tops",
+    range: "Under 500",
     isNew: false,
   },
   {

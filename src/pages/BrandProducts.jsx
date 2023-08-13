@@ -109,7 +109,7 @@ const BrandProducts = () => {
               </button>
             </div>
           </header>
-          <section className="w-full h-full flex flex-wrap items-center justify-center md:justify-start gap-10">
+          <section className="w-full h-full flex flex-wrap items-center justify-center gap-10">
             {noMatchesFound ? (
               <div className="w-full py-10 text-center text-gray-600">
                 No products match the selected filters.

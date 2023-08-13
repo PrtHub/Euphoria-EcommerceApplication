@@ -51,7 +51,7 @@ const PrintedTshirts = () => {
            />
          </div>
        </header>
-       <section className="w-full h-full flex flex-wrap items-center justify-center md:justify-start gap-10">
+       <section className="w-full h-full flex flex-wrap items-center justify-center gap-10">
          {sortedProductsByPrice(filteredProducts, sortBy).map((product) => (
            <main key={product.id}>
              <ProductCard

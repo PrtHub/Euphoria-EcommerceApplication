@@ -70,7 +70,7 @@ const Search = () => {
             className="w-[200px] text-black outline-none"
           />
         </header>
-        <section className="w-full h-full flex flex-wrap items-center justify-center md:justify-start gap-10">
+        <section className="w-full h-full flex flex-wrap items-center justify-center gap-10">
           {searchResults.length === 0 ? (
             <div className="w-full py-10 text-center text-gray-600">
               No results found for your search query.
