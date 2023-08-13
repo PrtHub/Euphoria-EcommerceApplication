@@ -7,7 +7,7 @@ import Favorite from "./Favorite";
 import Products from "./Products";
 import BrandProducts from "./BrandProducts";
 import NewProducts from "./NewProducts";
-import SingleNew from "./SIngleNew";
+import SingleNew from "./SingleNew";
 import Search from "./Search";
 import Billing from "./Billing";
 
